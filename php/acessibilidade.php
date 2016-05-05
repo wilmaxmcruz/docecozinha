@@ -1,4 +1,4 @@
 <?php ?>
-<div class="acessibilidade section">	
-	Acessibilidade
-</div>
+<section class="acessibilidade secao">	
+	
+</section>
