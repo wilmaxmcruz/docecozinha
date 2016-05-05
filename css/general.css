@@ -1,0 +1,227 @@
+/*** configuração ***/
+*html {
+	height: 100%;
+}
+html, body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300; 
+	min-width:900px; 	
+	width:100%;
+	font-size:16px;
+	color:#212121;	
+} 
+body {
+	margin:0;
+	padding:0;
+	background-color:#FFFFFF;	
+}
+
+/*************** Base **************/
+.clear {	
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.container {
+	width:auto;
+	height:auto;
+	margin:auto;	
+	/*border: 1px solid red;*/
+}
+.section {
+	width:900px;
+	height:auto;
+	margin:auto; 
+	clear: both;
+	position: relative;
+	/*border: 1px solid green;*/
+}
+
+.hidden {
+	display: none !important;
+}
+
+/*******************************************/
+/************* Acessibilidade **************/
+/*******************************************/
+.access {
+	background-color: #e1e1e1;
+	color: #000;
+	height: 65px;
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+
+.access ul li {
+    float: left;
+    padding: 0 35px;
+    height: 36px;
+    text-align: center;
+}
+
+.access ul li:first-child {	
+    padding-left: 0;
+}
+
+.access ul li:last-child {	
+    padding-right: 0;
+}
+
+/**************************************/
+/************* Cabeçalho **************/
+/**************************************/
+.header {
+	background-color: #3c3c3c;
+	color: #fff;
+	height: 150px;
+}
+
+.header .divisoria {
+	width: 2px;
+	height: 2px;
+	margin: 0 8px 0 3px;
+	background-color: #ffffff;
+	display: inline-block;
+}
+
+.menu,
+.entre {
+	width: 346px;
+	margin-top: 35px;
+}
+
+.menu {
+	padding-right: 20px;
+	box-sizing: border-box; 
+}
+
+.header .title {
+	text-align: right;
+	font-size: 30px;
+	font-weight: 100; 
+}
+
+.header .line {
+	border: 0px;
+	border-bottom: 1px solid #ffffff;
+}
+
+.menu ul li {
+	float: left;
+	margin-bottom: 10px;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.entre {
+	padding-left: 20px;
+	box-sizing: border-box;	
+}
+
+.entre .title {
+	text-align: left;
+	letter-spacing: 0px;
+}
+
+.entre a {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+/**********************************/
+/************* Busca **************/
+/***********************************/
+.search {
+	text-align: center;
+	margin: 30px auto;
+}
+
+.easy-autocomplete {
+	margin: 30px auto;	
+	position: relative;
+}
+
+.easy-autocomplete-container {
+	text-align: left;
+	position: absolute;
+	background-color: #ededed;
+	top: 50px;
+	left: 0;
+	width: 400px;
+	z-index: 999;
+}
+
+.easy-autocomplete-container .eac-item {
+	margin: 10px;
+	font-size: 18px;
+}
+
+.search input[type="text"] {
+	width: 400px;
+	height: 50px;
+	font-size: 28px;
+	padding: 5px 45px 5px 10px;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300; 
+	background: #ededed url("images/lupa.svg") no-repeat right 10px center;
+	border: 1px solid #231F20;
+}
+
+/***********************************/
+/************* Rodapé **************/
+/***********************************/
+.footer {
+	background-color: #ffffff;
+	color: #000;	
+	height: 168px;
+	text-align: center;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+
+.social .title {
+	margin-bottom: 25px;
+	font-size: 25px;
+	color: #212121;
+}
+
+.social ul {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;	
+}
+
+.social ul li {
+	margin: 0 15px;
+}
+
+.social ul li a {
+	width: 44px;
+	height: 44px;
+	background: url("images/social.png") no-repeat;	
+	float: left;
+}
+
+.youtube > a { background-position: 0 0 !important; }
+.youtube > a:hover { background-position: 0 -44px !important; }
+.pinterest > a { background-position: -44px 0 !important; }
+.pinterest > a:hover { background-position: -44px -44px !important; }
+.facebook > a { background-position: -88px 0 !important; }
+.facebook > a:hover { background-position: -88px -44px !important; }
+.twitter > a { background-position: -132px 0 !important; }
+.twitter > a:hover { background-position: -132px -44px !important; }
+.instagram > a { background-position: -176px 0 !important; }
+.instagram > a:hover { background-position: -176px -44px !important; }
+
+.strip {
+	height: 30px;
+	background-color: #d4323e;
+}

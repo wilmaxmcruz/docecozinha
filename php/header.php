@@ -1,0 +1,96 @@
+<?php ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>-.- Doce Cozinha -.-</title>
+	<link rel="shortcut icon" href="css/images/favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,300italic' rel='stylesheet' type='text/css'>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />		
+	<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<link href="css/general.css" rel="stylesheet" type="text/css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- JavaScript Lib -->	
+	<script type="text/javascript" src="js/lib/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.easy-autocomplete.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel='mask-icon' href='docecozinha.svg' color='#ffffff'>
+</head>
+
+<body>
+	<div class="container access">
+		<div class="section">
+			<ul>
+				<li>
+					<a href="javascript:void(0)">Conteúdo principal<br>(ALT + 1)</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">Menu do site<br>(ALT + 2)</a>
+				</li>
+				<li>
+					<a id="acessibilidade" href="javascript:void(0)">Acessibilidade<br>(ALT + 3)</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">Aumentar<br>as letras</a>		
+				</li>
+				<li>
+					<a href="javascript:void(0)">Diminuir<br>as letras</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">Contraste</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container header">
+		<div class="section">
+			<div class="menu left">
+				<div class="title">Menu</div>
+				<hr class="line">
+				<ul>
+					<li>
+						<a id="index" href="javascript:void(0)">Carnes</a>
+						<span class="divisoria"></span>
+					</li>
+					<li>
+						<a id="login" href="javascript:void(0)">Doces</a>
+						<span class="divisoria"></span>
+					</li>
+					<li>
+						<a id="lista" href="javascript:void(0)">Massas</a>
+						<span class="divisoria"></span>
+					</li>
+					<li>
+						<a id="detalhes" href="javascript:void(0)">Saladas</a>
+						<span class="divisoria"></span>
+					</li>
+					<li>
+						<a id="inserir" href="javascript:void(0)">Salgados</a>
+						<span class="divisoria"></span>
+					</li>
+					<li>
+						<a id="exportar" href="javascript:void(0)">Sopas</a>
+					</li>
+				</ul>
+			</div>
+			<img class="logo left" src="images/logo.svg" alt="Logo da Doce Cozinha">
+			<div class="entre left">
+				<a class="title" href="javascript:void(0)">Entrar</a>
+				<hr class="line">
+				<a href="javascript:void(0)">Inserir uma receita</a>
+			</div>
+		</div>		
+	</div>
+	<div class="container">
+		<div class="search section">
+			<input id="search" type="text" >
+		</div>
+	</div>
+	
