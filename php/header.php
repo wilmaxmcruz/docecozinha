@@ -60,23 +60,23 @@
 							<span class="divisoria"></span>
 						</li>
 						<li>
-							<a id="login" href="javascript:void(0)">Doces</a>
+							<a id="doces" href="javascript:void(0)">Doces</a>
 							<span class="divisoria"></span>
 						</li>
 						<li>
-							<a id="lista" href="javascript:void(0)">Massas</a>
+							<a id="massas" href="javascript:void(0)">Massas</a>
 							<span class="divisoria"></span>
 						</li>
 						<li>
-							<a id="detalhes" href="javascript:void(0)">Saladas</a>
+							<a id="saladas" href="javascript:void(0)">Saladas</a>
 							<span class="divisoria"></span>
 						</li>
 						<li>
-							<a id="inserir" href="javascript:void(0)">Salgados</a>
+							<a id="salgados" href="javascript:void(0)">Salgados</a>
 							<span class="divisoria"></span>
 						</li>
 						<li>
-							<a id="exportar" href="javascript:void(0)">Sopas</a>
+							<a id="sopas" href="javascript:void(0)">Sopas</a>
 						</li>
 					</ul>
 				</div>
