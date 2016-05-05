@@ -1,4 +1,4 @@
 <?php ?>
-<div class="lista section">	
+<section class="lista secao">	
 	Lista de receitas
-</div>
+</section>

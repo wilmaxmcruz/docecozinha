@@ -1,4 +1,4 @@
 <?php ?>
-<div class="detalhes section">	
+<section class="detalhes secao">	
 	Detalhes da receita
-</div>
+</section>

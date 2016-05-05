@@ -1,4 +1,4 @@
 <?php ?>
-<div class="inserir section">	
+<section class="inserir secao">	
 	Inserir Receita
-</div>
+</section>

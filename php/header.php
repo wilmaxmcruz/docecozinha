@@ -27,7 +27,7 @@
 <body>
 	<header>
 		<div class="container access">
-			<div class="section">
+			<div class="secao">
 				<nav>
 					<ul>
 						<li>
@@ -49,8 +49,8 @@
 				</nav>
 			</div>
 		</div>
-		<div class="container header">
-			<div class="section">
+		<div class="container cabecalho">
+			<section class="secao">
 				<div class="menu left">
 					<div class="title">Menu</div>
 					<hr class="line">
@@ -86,12 +86,12 @@
 					<hr class="line">
 					<a href="javascript:void(0)">Inserir uma receita</a>
 				</div>
-			</div>		
+			</section>		
 		</div>
 	</header>
 	<div class="container">
-		<div class="search section">
+		<section class="search secao">
 			<input id="search" type="text" >
-		</div>
+		</section>
 	</div>
 	

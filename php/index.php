@@ -1,7 +1,7 @@
 <?php ?>
-<div class="index section">	
-	Conteúdo Inicial
+<section class="index secao">	
+	<div></div>
 	<div class="recommendation">
 		Camila
 	</div>
-</div>
+</section>

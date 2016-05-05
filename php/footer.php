@@ -1,6 +1,6 @@
 <?php ?>
-	<div class="container footer">
-		<div class="social section">
+	<div class="container rodape">
+		<section class="social secao">
 			<div class="title">
 				Fale com a gente por meio de nossas redes sociais
 			</div>
@@ -21,7 +21,7 @@
 					<a href="javascript:void(0)"></a>
 				</li>
 			</ul>
-		</div>		
+		</section>		
 	</div>
 	<div class="container strip">
 	</div>

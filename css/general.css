@@ -33,7 +33,7 @@ body {
 	margin:auto;	
 	/*border: 1px solid red;*/
 }
-.section {
+.secao {
 	width:900px;
 	height:auto;
 	margin:auto; 
@@ -75,13 +75,13 @@ body {
 /**************************************/
 /************* Cabeçalho **************/
 /**************************************/
-.header {
+.cabecalho {
 	background-color: #3c3c3c;
 	color: #fff;
 	height: 150px;
 }
 
-.header .divisoria {
+.cabecalho .divisoria {
 	width: 2px;
 	height: 2px;
 	margin: 0 8px 0 3px;
@@ -100,13 +100,13 @@ body {
 	box-sizing: border-box; 
 }
 
-.header .title {
+.cabecalho .title {
 	text-align: right;
 	font-size: 30px;
 	font-weight: 100; 
 }
 
-.header .line {
+.cabecalho .line {
 	border: 0px;
 	border-bottom: 1px solid #ffffff;
 }
@@ -176,7 +176,7 @@ body {
 /***********************************/
 /************* Rodapé **************/
 /***********************************/
-.footer {
+.rodape {
 	background-color: #ffffff;
 	color: #000;	
 	height: 168px;

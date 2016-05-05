@@ -1,4 +1,4 @@
 <?php ?>
-<div class="login section">	
+<section class="login secao">	
 	Login / Cadastro
-</div>
+</section>

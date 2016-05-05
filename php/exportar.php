@@ -1,4 +1,4 @@
 <?php ?>
-<div class="exportar section">	
+<section class="exportar secao">	
 	Exportar Receita
-</div>
+</section>
