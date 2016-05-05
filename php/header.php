@@ -56,7 +56,7 @@
 					<hr class="line">
 					<ul>
 						<li>
-							<a id="index" href="javascript:void(0)">Carnes</a>
+							<a id="carnes" href="javascript:void(0)">Carnes</a>
 							<span class="divisoria"></span>
 						</li>
 						<li>
