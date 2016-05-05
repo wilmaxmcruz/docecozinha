@@ -1,5 +1,5 @@
 <?php ?>
-<div class="acessibilidade section">	
+<section class="acessibilidade secao">	
 	Acessibilidade do site
 
 As ferramentas de acessibilidade, encontradas no topo desse site, foram desenvolvidas para atender diferentes tipos de deficiências como: baixa visão, daltonismo e mobilidade reduzida. Essas ferramentas permitem:
@@ -18,4 +18,4 @@ Teclando-se ALT + 3, chega-se a esta página (Acessibilidade deste site), que po
 Estes atalhos podem ser utilizados nos navegadores Internet Explorer e Chrome.
 No Firefox, no lugar de Alt + número, deve-se teclar simultaneamente Alt + Shift + número.
 No Opera, deve-se teclar Shift + Escape + número.
-</div>
+</section>
