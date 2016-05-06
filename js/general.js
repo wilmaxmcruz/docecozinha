@@ -5,6 +5,15 @@ $(function ()
 		placeholder: "Procurar receitas"
 	};
 	$("#search").easyAutocomplete(options);
+
+
+	$('.bxslider').bxSlider({
+		pager: false,
+		minSlides: 4,
+		maxSlides: 5,
+		slideWidth: 200,
+		slideMargin: 30
+	});
 });
 
 $(document).on("click", "a", function()
