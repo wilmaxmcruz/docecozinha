@@ -13,10 +13,10 @@
 					<hr class="divisoria">
 					<span class="nome">Canapé de batata</span>
 					<div class="avaliacao">
-						<div class="estrela"></div>
-						<div class="estrela"></div>
-						<div class="estrela"></div>
-						<div class="estrela"></div>
+						<div class="estrela ativa"></div>
+						<div class="estrela ativa"></div>
+						<div class="estrela ativa"></div>
+						<div class="estrela ativa"></div>
 						<div class="estrela"></div>
 					</div>
 				</div>
