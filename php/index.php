@@ -1,36 +1,54 @@
 <?php ?>
 <section class="index secao">	
-	<a href="javascript:changePage('lista', 'carnes');">
-		<label>Carnes</label>
-		<div class="flag carnes"></div>
-		<img src="images/menu/carnes.jpg" alt="carnes" title="carnes">
-	</a>
-	<a href="javascript:changePage('lista', 'doces');">
-	<label>Doces</label>
-		<div class="flag doces"></div>
-		<img src="images/menu/doces.jpg" alt="doces" title="doces">
-	</a>
-	<a href="javascript:changePage('lista', 'massas');">
-		<label>Massas</label>
-		<div class="flag massas"></div>
-		<img src="images/menu/massas.jpg" alt="massas" title="massas">
-	</a>
-	<a href="javascript:changePage('lista', 'saladas');">
-		<label>Saladas</label>
-		<div class="flag saladas"></div>
-		<img src="images/menu/saladas.jpg" alt="saladas" title="saladas">
-	</a>
-	<a href="javascript:changePage('lista', 'salgados');">
-		<label>Salgados</label>
-		<div class="flag salgados"></div>
-		<img src="images/menu/salgados.jpg" alt="salgados" title="salgados">
-	</a>
-	<a href="javascript:changePage('lista', 'sopas');">
-		<label>Sopas</label>
-		<div class="flag sopas"></div>
-		<img src="images/menu/sopas.jpg" alt="sopas" title="sopas">
-	</a>
-	<div class="recomendacao">
+	<div class="conteudo-inicial">
+		<ul class="clear">
+			<li>			
+				<a href="javascript:changePage('lista', 'carnes');">					
+					<label>Carnes</label>					
+					<div class="flag carnes"></div>
+					<img src="images/menu/carnes.jpg" alt="carnes" title="carnes">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:changePage('lista', 'doces');">
+					<label>Doces</label>
+					<div class="flag doces"></div>
+					<img src="images/menu/doces.jpg" alt="doces" title="doces">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:changePage('lista', 'massas');">
+					<label>Massas</label>
+					<div class="flag massas"></div>
+					<img src="images/menu/massas.jpg" alt="massas" title="massas">
+				</a>
+			</li>
+		</ul>
+		<ul class="clear">
+			<li>
+				<a href="javascript:changePage('lista', 'saladas');">
+					<label>Saladas</label>
+					<div class="flag saladas"></div>
+					<img src="images/menu/saladas.jpg" alt="saladas" title="saladas">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:changePage('lista', 'salgados');">
+					<label>Salgados</label>
+					<div class="flag salgados"></div>
+					<img src="images/menu/salgados.jpg" alt="salgados" title="salgados">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:changePage('lista', 'sopas');">
+					<label>Sopas</label>
+					<div class="flag sopas"></div>
+					<img src="images/menu/sopas.jpg" alt="sopas" title="sopas">
+				</a>
+			</li>
+		</ul>			
+	</div>
+	<div class="recomendacao clear">
 		<h2>
 			Últimas receitas cadastradas
 		</h2>

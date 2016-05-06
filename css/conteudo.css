@@ -1,3 +1,50 @@
 /**********************************/
 /************* Index **************/
 /**********************************/
+.index .conteudo-inicial ul {
+	height: 188px;
+}
+
+.index .conteudo-inicial ul:first-child {
+	margin-bottom: 30px;
+}
+
+.index .conteudo-inicial ul li {
+	float: left;
+	margin: 0 15px; 	
+}
+
+.index .conteudo-inicial ul li:first-child {
+	margin-left: 0;
+} 
+
+.index .conteudo-inicial ul li:last-child {
+	margin-right: 0;
+}
+
+.index .conteudo-inicial a {
+	position: relative;
+}
+
+.index .conteudo-inicial a > img {
+	width: 280px;
+	height: 188px;
+	background: url('images/transparence.png') no-repeat 0 0;
+}
+
+.index .conteudo-inicial label {
+	position: absolute;
+	top: -163px;
+	left: 10px;
+	font-size: 28px;
+	color: #ffffff;
+}
+
+.index .conteudo-inicial .flag {
+    background-color: #ff0042;
+    width: 280px;
+    height: 10px;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+}
