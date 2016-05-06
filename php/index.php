@@ -61,48 +61,38 @@
 		<aside>
 			<ul class="bxslider">
 				<li>
-					<a class="salgados" href="javascript:void(0)">						
+					<a href="javascript:void(0)">						
 						<img src="images/receitas/canape-de-batata.jpg" alt="Canapé de batata" title="Canapé de batata">
 						<label>Canapé de batata</label>
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="20px" viewBox="0 0 72 20" enable-background="new 0 0 72 20" xml:space="preserve">
-							<polygon points="72,20 0,20 0,0 72,0 66,10 "/>
-						</svg>
+						<div class="flag salgados"></div>
 					</a>
 				</li>
 				<li>
-					<a class="carnes" href="javascript:void(0)">						
+					<a href="javascript:void(0)">						
 						<img src="images/receitas/vulcao-de-carne-e-bacon.jpg" alt="Vulcão de carne e bacon" title="Vulcão de carne e bacon">
 						<label>Vulcão de carne e bacon</label>
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="20px" viewBox="0 0 72 20" enable-background="new 0 0 72 20" xml:space="preserve">
-							<polygon points="72,20 0,20 0,0 72,0 66,10 "/>
-						</svg>
+						<div class="flag carnes"></div>
 					</a>
 				</li>
 				<li>
-					<a class="salgados" href="javascript:void(0)">												
+					<a href="javascript:void(0)">												
 						<img src="images/receitas/pao-recheado.jpg" alt="Pão recheado" title="Pão recheado">
 						<label>Pão recheado</label>
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="20px" viewBox="0 0 72 20" enable-background="new 0 0 72 20" xml:space="preserve">
-							<polygon points="72,20 0,20 0,0 72,0 66,10 "/>
-						</svg>
+						<div class="flag salgados"></div>
 					</a>
 				</li>
 				<li>
-					<a class="doces" href="javascript:void(0)">						
+					<a href="javascript:void(0)">						
 						<img src="images/receitas/alfajor.jpg" alt="Alfajor" title="Alfajor">
 						<label>Alfajor</label>
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="20px" viewBox="0 0 72 20" enable-background="new 0 0 72 20" xml:space="preserve">
-							<polygon points="72,20 0,20 0,0 72,0 66,10 "/>
-						</svg>
+						<div class="flag doces"></div>
 					</a>
 				</li>
 				<li>
-					<a class="massas" href="javascript:void(0)">						
+					<a href="javascript:void(0)">						
 						<img src="images/receitas/macarrao-parisiense.jpg" alt="Macarrão parisiense" title="Macarrão parisiense">
 						<label>Macarrão parisiense</label>
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="20px" viewBox="0 0 72 20" enable-background="new 0 0 72 20" xml:space="preserve">
-							<polygon points="72,20 0,20 0,0 72,0 66,10 "/>
-						</svg>
+						<div class="flag massas"></div>
 					</a>
 				</li>
 			</ul>

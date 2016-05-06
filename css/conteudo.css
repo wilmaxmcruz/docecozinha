@@ -97,25 +97,73 @@
 	display: inline-block; 
 }
 
-.recomendacao .flag {
-    width: 280px;
-    height: 8px;
+.recomendacao .bxslider .flag {
+    width: 72px;
+    height: 20px;
     position: absolute;
-    bottom: 4px;
-    left: 0;
+	top: -130px;
+    left: -8px;
+    background: url('images/flag.svg') no-repeat 0 0;
 }
 
-.recomendacao .bxslider a.carnes svg > polygon { fill: #00796b; }
-.recomendacao .bxslider a.doces svg > polygon { fill: #2196f3; }
-.recomendacao .bxslider a.massas svg > polygon { fill: #ffc107; }
-.recomendacao .bxslider a.saladas svg > polygon { fill: #7b1fa2; }
-.recomendacao .bxslider a.salgados svg > polygon { fill: #cddc39; }
-.recomendacao .bxslider a.sopas svg > polygon { fill: #ff5722; }
+.recomendacao .bxslider .flag.carnes { background-position: 0 0; }
+.recomendacao .bxslider .flag.doces { background-position: 0 -20px; }
+.recomendacao .bxslider .flag.massas { background-position: 0 -40px; }
+.recomendacao .bxslider .flag.saladas { background-position: 0 -60px; }
+.recomendacao .bxslider .flag.salgados { background-position: 0 -80px; }
+.recomendacao .bxslider .flag.sopas { background-position: 0 -100px; }
 
 
 /***********************************/
 /************* Listas **************/
 /***********************************/
+.lista h1 {
+    letter-spacing: -1px;
+}
 
+.lista .resultado {
+	text-transform: capitalize;
+	font-weight: 500;
+}
+
+.lista ul li {
+	background-color: #eaeaea;
+	border: 1px solid #bababa;
+	width: 435px;
+	height: 150px;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.lista ul li .foto {
+	width: 124px;
+	height: 124px;
+	background-repeat: no-repeat;
+	background-position: center center; 
+	float: left;
+}
+
+.lista ul li .info {
+	float: right;
+}
+
+.lista .avaliacao .estrela {
+	width: 20px;
+	height: 20px;
+	background: url('images/star.svg') no-repeat 0 0;
+	float: left;
+}
+
+.lista .avaliacao .estrela.ativa {
+	background-position: 0 -20px;
+}
+
+/*.recomendacao .bxslider a.carnes svg > polygon { fill: #00796b; }
+.recomendacao .bxslider a.doces svg > polygon { fill: #2196f3; }
+.recomendacao .bxslider a.massas svg > polygon { fill: #ffc107; }
+.recomendacao .bxslider a.saladas svg > polygon { fill: #7b1fa2; }
+.recomendacao .bxslider a.salgados svg > polygon { fill: #cddc39; }
+.recomendacao .bxslider a.sopas svg > polygon { fill: #ff5722; }*/
 
 
