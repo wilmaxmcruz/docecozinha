@@ -30,7 +30,7 @@
 		<div class="flag sopas"></div>
 		<img src="images/menu/sopas.jpg" alt="sopas" title="sopas">
 	</a>
-	<div class="recommendation">
+	<div class="recomendacao">
 		<h2>
 			Últimas receitas cadastradas
 		</h2>

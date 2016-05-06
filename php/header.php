@@ -34,13 +34,13 @@
 				<nav>
 					<ul>
 						<li>
-							<a href="javascript:void(0)">Conteúdo principal<br>(ALT + 1)</a>
+							<a href="javascript:changePage('index');">Conteúdo principal<br>(ALT + 1)</a>
 						</li>
 						<li>
 							<a href="javascript:void(0)">Menu do site<br>(ALT + 2)</a>
 						</li>
 						<li>
-							<a id="acessibilidade" href="javascript:void(0)">Acessibilidade<br>(ALT + 3)</a>
+							<a href="javascript:changePage('acessibilidade');">Acessibilidade<br>(ALT + 3)</a>
 						</li>
 						<li>
 							<a href="javascript:void(0)">Aumentar<br>as letras</a>		
@@ -83,11 +83,13 @@
 						</li>
 					</ul>
 				</div>
-				<img class="logo left" src="images/logo.svg" alt="Logo da Doce Cozinha">
+				<a href="javascript:changePage('index');">
+					<img class="logo left" src="images/logo.svg" alt="Logo da Doce Cozinha">
+				</a>
 				<div class="entre left">
-					<a class="title" href="javascript:void(0)">Entrar</a>
+					<a class="title" href="javascript:changePage('login');">Entrar</a>
 					<hr class="line">
-					<a href="javascript:void(0)">Inserir uma receita</a>
+					<a href="javascript:changePage('login');">Inserir uma receita</a>
 				</div>
 			</section>		
 		</div>
