@@ -1,5 +1,5 @@
 <?php ?>
-	<div class="container rodape">
+	<footer class="container rodape">
 		<section class="social secao">
 			<div class="title">
 				Fale com a gente por meio de nossas redes sociais
@@ -22,7 +22,7 @@
 				</li>
 			</ul>
 		</section>		
-	</div>
+	</footer>
 	<div class="container strip">
 	</div>
 </body>

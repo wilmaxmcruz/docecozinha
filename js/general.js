@@ -5,15 +5,7 @@ $(function ()
 		placeholder: "Procurar receitas"
 	};
 	$("#search").easyAutocomplete(options);
-
-
-	$('.bxslider').bxSlider({
-		pager: false,
-		minSlides: 4,
-		maxSlides: 5,
-		slideWidth: 200,
-		slideMargin: 30
-	});
+	ativeSlider();
 });
 
 $(document).on("click", "a", function()
@@ -26,16 +18,34 @@ $(document).on("click", "a", function()
 	}
 });
 
-function changePage(page) 
-{	
+function ativeSlider()
+{
+	$('.bxslider').bxSlider({
+		pager: false,
+		minSlides: 4,
+		maxSlides: 5,
+		slideWidth: 200,
+		slideMargin: 30
+	});
+}
+
+function changePage(page, filter) 
+{
+	if(filter == undefined)
+	{
+		filter = "";
+	}
+
 	$.ajax(
 	{				
 		url: 'php/' + page + '.php', 
 		type: 'POST',
 		cache: false,
+		data: { filter: filter },
 		success: function(result) 
 		{
 			$("#content").html(result);
+			ativeSlider();
 		},
 		complete: function (result) 
 		{

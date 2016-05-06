@@ -59,27 +59,27 @@
 					<hr class="line">
 					<ul>
 						<li>
-							<a id="carnes" href="javascript:void(0)">Carnes</a>
+							<a href="javascript:changePage('lista', 'carnes');">Carnes</a>
 							<span class="divisoria"></span>
 						</li>
 						<li>
-							<a id="doces" href="javascript:void(0)">Doces</a>
+							<a href="javascript:changePage('lista', 'doces');">Doces</a>
 							<span class="divisoria"></span>
 						</li>
 						<li>
-							<a id="massas" href="javascript:void(0)">Massas</a>
+							<a href="javascript:changePage('lista', 'massas');">Massas</a>
 							<span class="divisoria"></span>
 						</li>
 						<li>
-							<a id="saladas" href="javascript:void(0)">Saladas</a>
+							<a href="javascript:changePage('lista', 'saladas');">Saladas</a>
 							<span class="divisoria"></span>
 						</li>
 						<li>
-							<a id="salgados" href="javascript:void(0)">Salgados</a>
+							<a href="javascript:changePage('lista', 'salgados');">Salgados</a>
 							<span class="divisoria"></span>
 						</li>
 						<li>
-							<a id="sopas" href="javascript:void(0)">Sopas</a>
+							<a href="javascript:changePage('lista', 'sopas');">Sopas</a>
 						</li>
 					</ul>
 				</div>
@@ -96,7 +96,7 @@
 	</header>
 	<div class="container">
 		<section class="search secao">
-			<input id="search" type="text" >
+			<input id="search" type="search" >
 		</section>
 	</div>
 	
