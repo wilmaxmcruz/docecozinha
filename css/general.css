@@ -59,13 +59,36 @@ input:required:valid {
 	display: none !important;
 }
 
+hr.divisoria {
+	border: 0px;
+	border-bottom: 1px solid #000000;
+	padding: 0;
+}
+
 h1 {
-	font-size: 30px;	
+	font-size: 30px;
+	margin-bottom: 20px;	
 }
 
 h2 {
 	font-size: 26px;
 }
+
+button {
+    background-color: #D4323E;
+    padding: 7px 12px;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 100;
+}
+
+.carnes { background-color: #00796b; padding: 3px; color:#ffffff; }
+.doces { background-color: #2196f3; padding: 3px; color:#ffffff;  }
+.massas { background-color: #ffc107; padding: 3px; color:#ffffff;  }
+.saladas { background-color: #7b1fa2; padding: 3px; color:#ffffff;  }
+.salgados { background-color: #B4C131; padding: 3px; color:#ffffff;  }
+.sopas { background-color: #ff5722; padding: 3px; color:#ffffff;  }
+
 
 /*******************************************/
 /************* Acessibilidade **************/
@@ -128,8 +151,7 @@ h2 {
 }
 
 .cabecalho .line {
-	border: 0px;
-	border-bottom: 1px solid #ffffff;
+	border-bottom-color: #ffffff;
 }
 
 .menu ul li {
