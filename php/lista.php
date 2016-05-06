@@ -23,4 +23,9 @@
 			</a>
 		</li>		
 	</ul>
+	<div class="mais-receitas">
+		<hr class="divisoria">
+		<button>Ver mais receitas</button>
+		<hr class="divisoria">
+	</div>
 </section>
