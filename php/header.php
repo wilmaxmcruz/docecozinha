@@ -10,6 +10,7 @@
 	<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
 	<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
 	<link href="css/general.css" rel="stylesheet" type="text/css" />
+	<link href="css/conteudo.css" rel="stylesheet" type="text/css" />
 	
 
 	<!--[if lt IE 9]>
