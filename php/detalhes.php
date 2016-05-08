@@ -62,18 +62,18 @@
 					</p>
 				</div>
 				<span class="pointer"></span>
-				<span class="foto"></span>
+				<span class="foto" style="background-image:url('images/usuarios/sandra.jpg')"></span>
 			</li>
 			<li class="comentario">				
 				<div class="texto">
-					<span class="usuario">Sandra Calixto</span> em <span class="data">26/04/2016</span>
+					<span class="usuario">Joaquim Barbosa</span> em <span class="data">26/04/2016</span>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 					</p>
 				</div>
 				<span class="pointer"></span>
-				<span class="foto"></span>		
+				<span class="foto" style="background-image:url('images/usuarios/joaquim.jpg')"></span>		
 			</li>
 		</ul>
 		<textarea placeholder="Envie um comentário para essa receita"></textarea>

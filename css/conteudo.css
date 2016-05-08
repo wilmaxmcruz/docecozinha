@@ -384,6 +384,9 @@
 	width: 70px;
 	height: 70px;
 	background-color: #ff0042;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70px;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
     overflow: hidden; 
