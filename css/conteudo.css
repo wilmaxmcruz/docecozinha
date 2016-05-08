@@ -498,3 +498,80 @@
 	margin-top: 10px;
 }
 
+
+/************************************/
+/************* Inserir **************/
+/************************************/
+.inserir .infos-receita h2 {
+	margin-top: 20px;
+}
+
+.inserir .infos-receita {
+    width: 540px;
+}
+
+.inserir button {
+    clear: both;
+    display: block;
+}
+
+.inserir .infos-receita .autor {
+	margin-top: 0;
+}
+
+.inserir .ingrediente {
+	width: 490px;
+}
+
+.inserir .infos-receita .categorias {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.inserir .infos-receita .categorias input[type="checkbox"] {
+	width: 40px; 
+	height: 40px; 
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+	border: 1px solid;
+}
+
+.inserir .infos-receita .categorias input[type="checkbox"]:checked {
+    background: url('images/checked.svg') no-repeat center center;
+}
+
+.inserir .infos-receita .categorias label {
+    font-size: 22px;
+    margin-right: 10px;
+    margin-left: 5px;
+    width: 115px;
+    left: 0;
+    display: inline-block;
+    margin: 10px 10px 10px 5px;
+    position: relative;
+    top: -16px;
+}
+
+.inserir .infos-receita textarea {
+    border: 1px solid #bababa;
+    width: inherit;
+    height: 150px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #000;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+
+.inserir .fotos-receita {
+    width: 320px;
+}
+
+.inserir .fotos-receita h2 {
+	margin-bottom: 20px;
+}
