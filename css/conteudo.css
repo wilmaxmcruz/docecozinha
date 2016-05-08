@@ -427,3 +427,69 @@
 	right: 10px;
 	bottom: 70px;
 }
+
+
+/*******************************************/
+/************* Login/Cadastro **************/
+/*******************************************/
+.acesso h1 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.acesso .login {
+	width: 220px;
+}
+
+.acesso .login input {
+	width: 190px;	
+}
+
+.acesso .login button {
+	width: 190px;
+	margin-top: 10px;
+}
+
+.acesso .cadastro {
+	width: 680px;
+	border: 0;
+	border-left: 1px solid #3c3c3c; 
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.acesso .cadastro .preferencias {
+	width: 100%;	
+	padding-top: 10px;
+}
+
+.acesso .cadastro .preferencias input[type="checkbox"] {
+	width: 40px; 
+	height: 40px; 
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+	border: 1px solid;
+}
+
+.preferencias input[type="checkbox"]:checked {
+    background: url('images/checked.svg') no-repeat center center;
+}
+
+.acesso .cadastro .preferencias label {
+    font-size: 22px;
+    margin-right: 10px;
+    margin-left: 5px;
+    width: 150px;
+    left: 0;
+    display: inline-block;
+    margin: 10px 10px 10px 5px;
+    position: relative;
+    top: -16px;
+}
+
+.acesso .cadastro button {
+	width: 190px;
+	margin-top: 10px;
+}
+
