@@ -5,8 +5,8 @@
 		<div>
 			<input type="text" name="autor" placeholder="Autor da receita" required>
 			<input type="text" name="titulo" placeholder="Título da receita" required>
-			<a>
-				<img src="" alt="Botão com um símbolo de adição para inserir fotos da receita"></img>
+			<a href="javascript:void(0);">
+				<img src="images/formulario/mais-fotos.svg" alt="Botão com um símbolo de adição para inserir fotos da receita"></img>
 			</a>
 		</div>
 		<div>
@@ -20,8 +20,8 @@
 			
 			<div>
 				<input type="text" name="ingredientes" placeholder="Ingrediente" required>
-				<a>
-					<img src="" alt="Botão com um símbolo de adição para inserir um novo ingrediente"></img>
+				<a href="javascript:void(0);">
+					<img src="images/formulario/mais-ingredientes.svg" alt="Botão com um símbolo de adição para inserir um novo ingrediente"></img>
 				</a>
 			</div>
 			<div>

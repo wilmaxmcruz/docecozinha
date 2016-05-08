@@ -90,7 +90,7 @@
 				<div class="entre left">
 					<a class="title" href="javascript:changePage('login');">Entrar</a>
 					<hr class="line">
-					<a href="javascript:changePage('login');">Inserir uma receita</a>
+					<a href="javascript:changePage('inserir');">Inserir uma receita</a>
 				</div>
 			</section>		
 		</div>
