@@ -16,6 +16,10 @@ body {
 	background-color:#FFFFFF;	
 }
 
+strong {
+	font-weight: 500;
+}
+
 input:required:invalid, 
 input:focus:invalid, 
 textarea:required:invalid {

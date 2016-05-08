@@ -585,3 +585,27 @@
     margin: 0 15px 15px 0;
     display: inline-block;
 }
+
+
+/*******************************************/
+/************* Acessibilidade **************/
+/*******************************************/
+.acessibilidade {
+	font-size: 20px;
+}
+
+.acessibilidade p {
+	margin: 30px 0;
+	line-height: 26px;
+}
+
+.acessibilidade ul {
+	background-color: #DADADA;
+	list-style: disc inside none;
+	padding: 10px 25px;
+	box-sizing: border-box;
+}
+
+.acessibilidade li {
+	margin: 8px 0;
+}
