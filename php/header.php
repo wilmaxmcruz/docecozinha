@@ -11,7 +11,8 @@
 	<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
 	<link href="css/general.css" rel="stylesheet" type="text/css" />
 	<link href="css/conteudo.css" rel="stylesheet" type="text/css" />
-	
+	<link id="plus" href="" rel="stylesheet" type="text/css" />
+	<link id="contrast" href="" rel="stylesheet" type="text/css" />
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,10 +45,10 @@
 							<a href="javascript:changePage('acessibilidade');">Acessibilidade<br>(ALT + 3)</a>
 						</li>
 						<li>
-							<a href="javascript:void(0)">Aumentar<br>as letras</a>		
+							<a id="tamanho-letras" class="aumentar" href="javascript:void(0)"><span>Aumentar</span><br>as letras</a>		
 						</li>
 						<li>
-							<a href="javascript:void(0)">Contraste</a>
+							<a id="contraste" class="contraste" href="javascript:void(0)">Contraste</a>
 						</li>
 					</ul>
 				</nav>

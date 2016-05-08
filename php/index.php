@@ -61,35 +61,35 @@
 		<aside>
 			<ul class="bxslider">
 				<li>
-					<a href="javascript:void(0)">						
+					<a href="javascript:changePage('detalhes');">						
 						<img src="images/receitas/canape-de-batata.jpg" alt="Canapé de batata" title="Canapé de batata">
 						<label>Canapé de batata</label>
 						<div class="flag salgados"></div>
 					</a>
 				</li>
 				<li>
-					<a href="javascript:void(0)">						
+					<a href="javascript:changePage('detalhes');">						
 						<img src="images/receitas/vulcao-de-carne-e-bacon.jpg" alt="Vulcão de carne e bacon" title="Vulcão de carne e bacon">
 						<label>Vulcão de carne e bacon</label>
 						<div class="flag carnes"></div>
 					</a>
 				</li>
 				<li>
-					<a href="javascript:void(0)">												
+					<a href="javascript:changePage('detalhes');">												
 						<img src="images/receitas/pao-recheado.jpg" alt="Pão recheado" title="Pão recheado">
 						<label>Pão recheado</label>
 						<div class="flag salgados"></div>
 					</a>
 				</li>
 				<li>
-					<a href="javascript:void(0)">						
+					<a href="javascript:changePage('detalhes');">						
 						<img src="images/receitas/alfajor.jpg" alt="Alfajor" title="Alfajor">
 						<label>Alfajor</label>
 						<div class="flag doces"></div>
 					</a>
 				</li>
 				<li>
-					<a href="javascript:void(0)">						
+					<a href="javascript:changePage('detalhes');">						
 						<img src="images/receitas/macarrao-parisiense.jpg" alt="Macarrão parisiense" title="Macarrão parisiense">
 						<label>Macarrão parisiense</label>
 						<div class="flag massas"></div>

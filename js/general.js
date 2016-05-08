@@ -8,13 +8,33 @@ $(function ()
 	ativeSlider();
 });
 
-$(document).on("click", "a", function()
+$(document).on("click", "#tamanho-letras", function()
 {
-	var id = $(this).attr("id");
-	
-	if(id != undefined)
+	if($(this).hasClass("aumentar"))
 	{
-		changePage(id);
+		$("#plus").attr("href", "css/fonts-plus.css");
+		$(this).children("span").html("Diminuir");
+		$(this).removeClass("aumentar");
+	}
+	else 
+	{
+		$("#plus").attr("href", "");
+		$(this).children("span").html("Aumentar");
+		$(this).addClass("aumentar");
+	}
+});
+
+$(document).on("click", "#contraste", function()
+{
+	if($(this).hasClass("contraste"))
+	{
+		$("#contrast").attr("href", "css/contraste.css");
+		$(this).removeClass("contraste");
+	}
+	else 
+	{
+		$("#contrast").attr("href", "");
+		$(this).addClass("contraste");
 	}
 });
 
