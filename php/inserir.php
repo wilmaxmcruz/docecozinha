@@ -25,15 +25,6 @@
 			<a class="foto" href="javascript:void(0);">
 				<img src="images/formulario/mais-fotos.svg" alt="Botão com um símbolo de adição para inserir fotos da receita"></img>
 			</a>
-			<a class="foto" href="javascript:void(0);">
-				<img src="images/formulario/mais-fotos.svg" alt="Botão com um símbolo de adição para inserir fotos da receita"></img>
-			</a>
-			<a class="foto" href="javascript:void(0);">
-				<img src="images/formulario/mais-fotos.svg" alt="Botão com um símbolo de adição para inserir fotos da receita"></img>
-			</a>
-			<a class="foto" href="javascript:void(0);">
-				<img src="images/formulario/mais-fotos.svg" alt="Botão com um símbolo de adição para inserir fotos da receita"></img>
-			</a>
 		</div>
 		<button type="button" onclick="alert('Receita salva com sucesso!')">Inserir receita</button>
 	</form>

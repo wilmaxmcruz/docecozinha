@@ -16,14 +16,17 @@ body {
 	background-color:#FFFFFF;	
 }
 
-input:required:invalid, input:focus:invalid {
+input:required:invalid, 
+input:focus:invalid, 
+textarea:required:invalid {
 	background-image: url('images/invalid.svg');
 	background-position: right center;
 	background-repeat: no-repeat;
 	-moz-box-shadow: none;
 }
 
-input:required:valid {
+input:required:valid, 
+textarea:required:valid {
 	background-image: url('images/valid.svg');
 	background-position: right center;
 	background-repeat: no-repeat;
