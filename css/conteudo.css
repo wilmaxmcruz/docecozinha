@@ -333,3 +333,70 @@
 .receita .comentarios {
 	width: 378px;
 }
+
+.receita .comentarios .exportar {
+	float: right;
+	background: #3c3c3c url('images/icones/exportar.svg') no-repeat 10px center;
+	padding: 8px 10px 8px 38px;
+	box-sizing: border-box;
+	color: #ffffff;
+}
+
+.receita .comentarios h2 {
+	width: inherit;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.receita .comentarios .texto {
+	width: 295px;
+	box-sizing: border-box;
+	border: 1px solid #bababa;
+	background-color: #eaeaea;
+	padding: 10px;
+	font-size: 14px;
+	float: left;
+	margin-bottom: 15px;
+}
+
+.receita .comentarios .texto span {
+	font-weight: 500;	
+}
+
+.receita .comentarios .texto p {
+	font-style: italic;
+	line-height: 20px;
+	margin-top: 10px;
+}
+
+.receita .comentarios .pointer {
+	float: left;
+	width: 6px;
+	height: 70px;
+	background: url('images/icones/pointer.svg') no-repeat 0 center;
+	background-size: 6px;
+}
+
+.receita .comentarios .foto {
+	float: right;
+	width: 70px;
+	height: 70px;
+	background-color: #ff0042;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+    overflow: hidden; 
+}
+
+.receita .comentarios textarea {
+    border: 1px solid #bababa;
+    width: inherit;
+    height: 150px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #000;
+    margin-bottom: 15px;
+    resize: none;
+}
