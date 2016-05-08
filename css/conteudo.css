@@ -433,25 +433,30 @@
 /************* Login/Cadastro **************/
 /*******************************************/
 .acesso h1 {
-	font-size: 24px;
+	font-size: 28px;
 	margin: 0;
 }
 
+.acesso h2 {
+	font-size: 24px;
+}
+
+
 .acesso .login {
-	width: 220px;
+	width: 235px;
 }
 
 .acesso .login input {
-	width: 190px;	
+	width: 230px;	
 }
 
 .acesso .login button {
-	width: 190px;
+	width: 230px;
 	margin-top: 10px;
 }
 
 .acesso .cadastro {
-	width: 680px;
+	width: 655px;
 	border: 0;
 	border-left: 1px solid #3c3c3c; 
 	padding-left: 20px;
@@ -480,7 +485,7 @@
     font-size: 22px;
     margin-right: 10px;
     margin-left: 5px;
-    width: 150px;
+    width: 145px;
     left: 0;
     display: inline-block;
     margin: 10px 10px 10px 5px;
