@@ -1,9 +1,8 @@
 <?php ?>
-<section class="detalhes secao">
-	<div class="detalhes">	
+<section class="receita secao">
+	<div class="detalhes left">	
 		<h1>Pudim de leite condensado</h1>		
-		<span>Categoria: </span><span class="categoria">Carnes</span> | 
-		<span>Publicado por: </span><span class="publicado">Doce Cozinha</span>
+		<span class="autoria">Categoria: <span class="categoria">Carnes</span> | Publicado por: <span class="publicado">Doce Cozinha</span></span>
 		<div class="avaliacao">
 			<div class="estrela ativa"></div>
 			<div class="estrela ativa"></div>
@@ -19,15 +18,19 @@
 			<img class="mini" src="" alt="Imagem miniatura 3">
 		</div>
 		<div class="infos">
-			<div class="tempo"></div>
-			<div class="rendimento"></div>
+			<div class="tempo">40 minutos</div>
+			<div class="rendimento">6 pessoas</div>
 		</div>
-		<ul class="ingredientes">
-			<li>1 lata de leite condensado</li>
-			<li>1 xícara de leite</li>
-			<li>4 ovos</li>
-		</ul>
+		<div class="ingredientes">
+			<h2>Ingredientes</h2>
+			<ul>
+				<li>1 lata de leite condensado</li>
+				<li>1 xícara de leite</li>
+				<li>4 ovos</li>
+			</ul>
+		</div>
 		<div class="preparo">
+			<h2>Modo de Preparo</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -36,9 +39,9 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
-		</div>
-		<h2>Avalie essa receita</h2>
-		<div class="avalie">			
+		</div>		
+		<div class="avalie">
+			<h2>Avalie essa receita</h2>
 			<div class="estrela"></div>
 			<div class="estrela"></div>
 			<div class="estrela"></div>
@@ -46,7 +49,7 @@
 			<div class="estrela"></div>
 		</div>
 	</div>
-	<div class="comentarios">
+	<div class="comentarios right">
 		<a href="javascript:changePage('exportar');">Exportar receita</a>
 		<h2>Comentários</h2>
 		<ul>

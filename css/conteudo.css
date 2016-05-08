@@ -158,18 +158,6 @@
 	font-weight: 300;
 }
 
-.lista .infos .avaliacao .estrela {
-	width: 20px;
-	height: 20px;
-	background: url('images/star.svg') no-repeat 0 0;
-	float: left;
-	margin-right: 6px;
-}
-
-.lista .infos .avaliacao .estrela.ativa {
-	background-position: 0 -20px;
-}
-
 .lista .infos > div:first-child {
 	margin-top: 0;
 }
@@ -202,4 +190,122 @@
     border-bottom-color: #D4323E;
     width: 320px;
     margin-top: 20px;
+}
+
+
+/*************************************/
+/************* Detalhes **************/
+/*************************************/
+.receita .detalhes {
+	width: 488px;
+}
+
+.receita .detalhes .autoria {
+	font-size: 14px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.receita .detalhes .avaliacao {
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+.receita .detalhes .galeria {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 488px;
+	height: 252px;
+	margin-bottom: 20px;
+}
+
+.receita .detalhes .galeria .principal {
+	width: 378px;
+	height: 252px;
+	float: left;
+	margin-right: 5px;
+}
+
+.receita .detalhes .galeria .mini {
+	width: 102px;
+	height: 80px;
+	margin-bottom: 6px;
+	float: left;
+}
+
+.receita .detalhes .galeria .mini:last-child {
+    margin-bottom: 0;
+}
+
+
+.receita .detalhes .galeria .flag {
+    width: 72px;
+    height: 20px;
+    position: absolute;
+    top: 220px;
+    left: -8px;
+    background: url('images/flag.svg') no-repeat 0 0;
+    padding: 0;
+}
+
+.receita .detalhes .galeria .flag.carnes { background-position: 0 0; }
+.receita .detalhes .galeria .flag.doces { background-position: 0 -20px; }
+.receita .detalhes .galeria .flag.massas { background-position: 0 -40px; }
+.receita .detalhes .galeria .flag.saladas { background-position: 0 -60px; }
+.receita .detalhes .galeria .flag.salgados { background-position: 0 -80px; }
+.receita .detalhes .galeria .flag.sopas { background-position: 0 -100px; }
+
+.receita .detalhes .infos {
+    margin-bottom: 20px;
+    height: 80px;
+}
+
+.receita .detalhes .infos .tempo,
+.receita .detalhes .infos .rendimento {
+	float: left;
+	width: 230px;
+	height: 80px;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 18px;
+	box-sizing: border-box;
+	background-color: #eaeaea;
+	border: 1px solid #bababa;
+}
+
+.receita .detalhes .infos .rendimento {
+	margin-left: 25px;
+}
+
+.receita .detalhes .ingredientes,
+.receita .detalhes .preparo {
+	width: 485px;
+	box-sizing: border-box;
+	background-color: #eaeaea;
+	border: 1px solid #bababa;
+	display: inline-block;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.receita .detalhes .ingredientes ul {
+	list-style: disc inside none; 
+}
+
+.receita .avalie .estrela {
+	width: 36px;
+	height: 36px;
+	background: url('images/star.svg') no-repeat 0 0;
+	background-size: 36px 72px;
+	float: left;
+	margin-right: 24px;
+}
+
+.receita .avalie .estrela.ativa {
+	background-position: 0 -36px;
+}
+
+.receita .comentarios {
+	width: 378px;
 }

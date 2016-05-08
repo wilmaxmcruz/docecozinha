@@ -89,6 +89,18 @@ button {
 .salgados { background-color: #B4C131; padding: 3px; color:#ffffff;  }
 .sopas { background-color: #ff5722; padding: 3px; color:#ffffff;  }
 
+.avaliacao .estrela {
+	width: 20px;
+	height: 20px;
+	background: url('images/star.svg') no-repeat 0 0;
+	float: left;
+	margin-right: 6px;
+}
+
+.avaliacao .estrela.ativa {
+	background-position: 0 -20px;
+}
+
 
 /*******************************************/
 /************* Acessibilidade **************/
@@ -226,6 +238,7 @@ button {
 	text-align: center;
 	padding-top: 30px;
 	box-sizing: border-box;
+	clear: both;
 }
 
 .social .title {
