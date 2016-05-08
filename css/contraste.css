@@ -1,11 +1,25 @@
 html, body {
-	color:#FFFFFF;	
+	color: #FFFFFF;	
 } 
-body {
-	margin:0;
-	padding:0;
-	background-color:#000000;	
+body,
+.cabecalho,
+.menu-acessibilidade,
+.rodape,
+.rodape .title,
+.receita .comentarios .texto,
+.receita .detalhes .infos .tempo,
+.receita .detalhes .infos .rendimento,
+.receita .detalhes .ingredientes,
+.receita .detalhes .preparo
+ {
+	background-color: #000000 !important;	
+	color: yellow !important;
 }
+
 a {
-	color: yellow;
+	color: yellow;	
+}
+
+.lista ul li {
+	background-color: #000000;	
 }
