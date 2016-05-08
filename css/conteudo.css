@@ -63,7 +63,7 @@
 .index .conteudo-inicial .flag.salgados { background-color: #B4C131; }
 .index .conteudo-inicial .flag.sopas { background-color: #ff5722; }
 
-/***************/
+/********* Recomendacao **********/
 
 .recomendacao {
 	background-color: #3c3c3c;
@@ -121,11 +121,6 @@
 /***********************************/
 .lista h1 {
     letter-spacing: -1px;
-}
-
-.lista .resultado {
-	text-transform: capitalize;
-	font-weight: 500;
 }
 
 .lista ul li {
@@ -303,6 +298,7 @@
 
 .receita .detalhes .preparo {
 	background: #eaeaea url('images/icones/preparo.svg')  no-repeat 20px 20px;
+	line-height: 20px;
 }
 
 .receita .detalhes .ingredientes {
@@ -310,7 +306,11 @@
 }
 
 .receita .detalhes .ingredientes ul {
-	list-style: disc inside none; 
+	list-style: disc inside none; 	
+}
+
+.receita .detalhes .ingredientes ul li {
+	margin-bottom: 7px;	
 }
 
 .receita .avalie h2 {
@@ -329,6 +329,8 @@
 .receita .avalie .estrela.ativa {
 	background-position: 0 -36px;
 }
+
+/************ Comentarios **************/
 
 .receita .comentarios {
 	width: 378px;
@@ -399,4 +401,29 @@
     color: #000;
     margin-bottom: 15px;
     resize: none;
+}
+
+
+/*************************************/
+/************* Exportar **************/
+/*************************************/
+.exportar .xml,
+.exportar .json {
+	width: 428px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.exportar .codigo {
+	height: 500px;
+	background-color: #eaeaea;
+	border: 1px solid #bababa;
+	margin: 10px 0 20px; 
+}
+
+.exportar a.copiar {
+	position: absolute;
+	right: 10px;
+	bottom: 70px;
 }

@@ -101,6 +101,11 @@ button {
 	background-position: 0 -20px;
 }
 
+.resultado {
+	text-transform: capitalize;
+	font-weight: 500;
+}
+
 
 /*******************************************/
 /************* Acessibilidade **************/
@@ -236,7 +241,7 @@ button {
 	color: #000;	
 	height: 168px;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 50px;
 	box-sizing: border-box;
 	clear: both;
 }

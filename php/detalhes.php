@@ -50,7 +50,7 @@
 		</div>
 	</div>
 	<div class="comentarios right">
-		<a class="exportar" href="javascript:changePage('exportar');">Exportar receita</a>
+		<a class="exportar" href="javascript:changePage('exportar', 'Pudim de leite condensado');">Exportar essa receita</a>
 		<h2>Comentários</h2>
 		<ul>
 			<li class="comentario">
