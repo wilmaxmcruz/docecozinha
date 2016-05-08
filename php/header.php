@@ -30,7 +30,7 @@
 
 <body>
 	<header>
-		<div class="container access">
+		<div class="container menu-acessibilidade">
 			<div class="secao">
 				<nav>
 					<ul>
