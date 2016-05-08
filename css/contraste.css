@@ -2,6 +2,10 @@ html, body {
 	color: #FFFFFF;	
 } 
 body,
+button,
+h1,
+h2,
+label,
 .cabecalho,
 .menu-acessibilidade,
 .rodape,
@@ -10,16 +14,23 @@ body,
 .receita .detalhes .infos .tempo,
 .receita .detalhes .infos .rendimento,
 .receita .detalhes .ingredientes,
-.receita .detalhes .preparo
+.receita .detalhes .preparo,
+.acessibilidade ul,
+.recomendacao,
+.easy-autocomplete-container
  {
 	background-color: #000000 !important;	
 	color: yellow !important;
 }
 
 a {
-	color: yellow;	
+	color: yellow !important;	
 }
 
 .lista ul li {
-	background-color: #000000;	
+	background-color: #000000 !important;	
+}
+
+input[type="checkbox"] {
+	border: 2px solid yellow !important;
 }
