@@ -554,7 +554,7 @@
 }
 
 .inserir .infos-receita textarea {
-    border: 1px solid #bababa;
+    border: 1px solid #656565;
     width: inherit;
     height: 150px;
     font-size: 20px;
@@ -563,10 +563,15 @@
     padding: 10px;
     box-sizing: border-box;
     color: #000;
-    margin-bottom: 15px;
+    margin: 15px 0;
     resize: none;
 }
 
+.inserir .infos-receita .add-ingrediente {
+    margin-top: 12px;
+    display: block;
+    float: right;
+}
 
 .inserir .fotos-receita {
     width: 320px;
@@ -574,4 +579,9 @@
 
 .inserir .fotos-receita h2 {
 	margin-bottom: 20px;
+}
+
+.inserir .fotos-receita a.foto {
+    margin: 0 15px 15px 0;
+    display: inline-block;
 }

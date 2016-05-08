@@ -123,6 +123,11 @@ select {
 	margin: 10px 0;
 }
 
+input[type="text"]:disabled {
+	background-color: #DADADA;
+	color: #000000;
+}
+
 
 /************************************************/
 /************* Menu Acessibilidade **************/
