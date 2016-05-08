@@ -225,6 +225,8 @@
 	height: 252px;
 	float: left;
 	margin-right: 5px;
+	border: 1px solid #bababa;
+	box-sizing: border-box;
 }
 
 .receita .detalhes .galeria .mini {
@@ -232,6 +234,8 @@
 	height: 80px;
 	margin-bottom: 6px;
 	float: left;
+	border: 1px solid #bababa;
+	box-sizing: border-box;
 }
 
 .receita .detalhes .galeria .mini:last-child {
@@ -270,27 +274,47 @@
 	padding-top: 30px;
 	font-size: 18px;
 	box-sizing: border-box;
-	background-color: #eaeaea;
-	border: 1px solid #bababa;
+	border: 1px solid #bababa;	
+}
+
+.receita .detalhes .infos .tempo {
+	background: #eaeaea url('images/icones/tempo.svg')  no-repeat 18px center;
 }
 
 .receita .detalhes .infos .rendimento {
+	background: #eaeaea url('images/icones/rendimento.svg')  no-repeat 18px center;
 	margin-left: 25px;
 }
 
 .receita .detalhes .ingredientes,
-.receita .detalhes .preparo {
+.receita .detalhes .preparo {	
 	width: 485px;
 	box-sizing: border-box;
-	background-color: #eaeaea;
 	border: 1px solid #bababa;
 	display: inline-block;
 	padding: 20px;
 	margin-bottom: 20px;
 }
 
+.receita .detalhes .ingredientes h2,
+.receita .detalhes .preparo h2 {
+	margin: 3px 0 20px 40px
+}
+
+.receita .detalhes .preparo {
+	background: #eaeaea url('images/icones/preparo.svg')  no-repeat 20px 20px;
+}
+
+.receita .detalhes .ingredientes {
+	background: #eaeaea url('images/icones/ingredientes.svg')  no-repeat 20px 20px;
+}
+
 .receita .detalhes .ingredientes ul {
 	list-style: disc inside none; 
+}
+
+.receita .avalie h2 {
+	margin-bottom: 20px;
 }
 
 .receita .avalie .estrela {

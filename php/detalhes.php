@@ -12,10 +12,10 @@
 		</div>
 		<div class="galeria">
 			<div class="flag carnes"></div>
-			<img class="principal" src="" alt="Imagem principal">
-			<img class="mini" src="" alt="Imagem miniatura 1">
-			<img class="mini" src="" alt="Imagem miniatura 2">
-			<img class="mini" src="" alt="Imagem miniatura 3">
+			<img class="principal" src="images/receitas/pudim-de-leite-condensado-1.jpg" alt="Imagem principal">
+			<img class="mini" src="images/receitas/pudim-de-leite-condensado-2.jpg" alt="Imagem miniatura 1">
+			<img class="mini" src="images/receitas/pudim-de-leite-condensado-3.jpg" alt="Imagem miniatura 2">
+			<img class="mini" src="images/receitas/pudim-de-leite-condensado-4.jpg" alt="Imagem miniatura 3">
 		</div>
 		<div class="infos">
 			<div class="tempo">40 minutos</div>
