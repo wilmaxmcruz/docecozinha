@@ -1,5 +1,5 @@
 <?php ?>
-<section class="lista secao" itemscope itemtype="http://schema.org/Recipe">	
+<section id="conteudo-principal" class="lista secao" itemscope itemtype="http://schema.org/Recipe">	
 	<h1>Lista de receitas relacionadas com: <span class="resultado"><?php echo $_POST['filter']; ?></span></h1>
 	<ul>
 		<li>

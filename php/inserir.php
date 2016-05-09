@@ -1,5 +1,5 @@
 <?php ?>
-<section class="inserir secao" itemscope itemtype="http://schema.org/Recipe">
+<section id="conteudo-principal" class="inserir secao" itemscope itemtype="http://schema.org/Recipe">
  	<h1 itemprop="name">Inserir Receita</h1>
 	
 		<div class="infos-receita left">

@@ -24,7 +24,7 @@
 	<script type="text/javascript" src="js/lib/jquery.easy-autocomplete.js"></script>
 	<script type="text/javascript" src="js/lib/jquery.bxslider.js"></script>	
 	<script type="text/javascript" src="js/general.js"></script>
-
+	
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel='mask-icon' itemprop="url" href='docecozinha.svg' color='#ffffff'>
 </head>
@@ -36,18 +36,18 @@
 				<nav>
 					<ul>
 						<li>
-							<a href="javascript:changePage('index');">Conteúdo principal<br>(ALT + 1)</a>
+							<a href="#conteudo-principal">Conteúdo principal<br>(ALT + 1)</a>
 						</li>
 						<li>
-							<a href="javascript:void(0)">Menu do site<br>(ALT + 2)</a>
+							<a href="#menu-site">Menu do site<br>(ALT + 2)</a>
 						</li>
-						<li>
+						<li id="acessibilidade">
 							<a href="javascript:changePage('acessibilidade');">Acessibilidade<br>(ALT + 3)</a>
 						</li>
-						<li>
+						<li id="aumentar-diminuir">
 							<a id="tamanho-letras" class="aumentar" href="javascript:void(0)"><span>Aumentar</span><br>as letras</a>		
 						</li>
-						<li>
+						<li id="contraste">
 							<a id="contraste" class="contraste" href="javascript:void(0)">Contraste</a>
 						</li>
 					</ul>
@@ -60,7 +60,7 @@
 					<div class="title">Menu</div>
 					<hr class="line">
 					<ul>
-						<li>
+						<li id="menu-site">
 							<a href="javascript:changePage('lista', 'carnes');">Carnes</a>
 							<span class="divisoria"></span>
 						</li>
