@@ -15,8 +15,33 @@
 			<input type="date" name="data-nascimento" placeholder="Data de nascimento" max="2012-01-01" required>
 			<input type="text" name="cidade" placeholder="Cidade" maxlength="50">
 			<select>
-				<option value="saopaulo">São Paulo</option>
+				<option value="acre">Acre</option>
+				<option value="alagoas">Alagoas</option>
+				<option value="amapa">Amapá</option>
+				<option value="amazonas">Amazonas</option>
+				<option value="bahia">Bahia</option>
+				<option value="ceara">Ceará</option>
+				<option value="distritofederal">Distrito Federal</option>
+				<option value="espiritosanto">Espírito Santo</option>
+				<option value="goias">Goiás</option>
+				<option value="maranhao">Maranhão</option>
+				<option value="matogrosso">Mato Grosso</option>
+				<option value="matogrossodosul">Mato Grosso do Sul</option>
 				<option value="minasgerais">Minas Gerais</option>
+				<option value="para">Pará</option>
+				<option value="paraiba">Paraíba</option>
+				<option value="parana">Paraná</option>
+				<option value="pernambuco">Pernambuco</option>
+				<option value="piaui">Piauí</option>
+				<option value="riodejaneiro">Rio de Janeiro</option>
+				<option value="riograndenorte">Rio Grande do Norte</option>
+				<option value="riograndesul">Rio Grande do Sul</option>
+				<option value="rondonia">Rondônia</option>
+				<option value="roraima">Roraima</option>
+				<option value="santacatarina">Santa Catarina</option>
+				<option value="saopaulo">São Paulo</option>
+				<option value="sergipe">Sergipe</option>
+				<option value="tocantins">Tocantins</option>
 			</select>
 			<input type="tel" name="telefone" placeholder="Telefone">
 			<input type="email" name="email" placeholder="E-mail" required>
