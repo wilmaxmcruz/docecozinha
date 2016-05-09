@@ -163,7 +163,6 @@ function changePage(page, filter)
 	});		
 }
 
-
 function userLogged()
 {
 	if(_usuario != null)
@@ -190,9 +189,14 @@ function loadList(filter)
 								"<span class='nome' itemprop='alternateName'>" + receita['titulo'] + "</span>" +
 								"<div class='avaliacao'>";
 								
-			for (var i = 1; i <= parseInt(receita['avaliacao']); i++) 
+			for (var i = 1; i <= 5; i++) 
 			{
-				li += "<div class='estrela'></div>";
+				var ativa = "ativa";
+				if(i > parseInt(receita['avaliacao']))
+				{
+					ativa = "";
+				}
+				li += "<div class='estrela " + ativa + "'></div>";
 			}
 			li += "</div></div></a></li>";
 			$(".lista > ul").append(li);
