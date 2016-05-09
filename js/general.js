@@ -349,6 +349,7 @@ function exportReceita(filter)
 				"	\"preparo\" : \"" + receita['preparo'] + "\",<br>" +
 				"	\"imagens\" : <br>" +
 				"	[<br>";
+
 	$.each(receita['imagens'], function(i, imagem)
 	{		
 		var virgula = ",";
@@ -367,5 +368,34 @@ function exportReceita(filter)
 			"}";
 	$(".exportar > .json > .codigo").html(json);
 
+	var xml = "&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;<br>" +
+				"&lt;recipe&gt;<br>" +
+				"	&lt;autor&gt;" + receita['autor'] + "&lt;/autor&gt;<br>" +
+				"	&lt;titulo&gt;" + receita['titulo'] + "&lt;/titulo&gt;<br>" +
+				"	&lt;tempoPrep&gt;" + receita['tempo'] + "&lt;/tempoPrep&gt;<br>" +
+				"	&lt;porcoes&gt;" + receita['rendimento'] + "&lt;/porcoes&gt;<br>" +
+				"	&lt;ingredientes&gt;<br>";
+	
+	$.each(receita['ingredientes'], function(i, ingred)
+	{
+		xml += "		&lt;item&gt;" + ingred + "&lt;/item&gt;<br>";
+	});
+		
+	xml +=		"	&lt;/ingredientes&gt;<br>" +
+				"	&lt;preparo&gt;" + receita['preparo'] + "&lt;/preparo&gt;<br>" +
+				"	&lt;imagens&gt;<br>";
 
+	$.each(receita['imagens'], function(i, imagem)
+	{
+		xml += "		&lt;img&gt;http://www.docecozinha.com.br/" + imagem + "&lt;/img&gt;<br>";
+	});
+
+	xml +=		"	&lt;/imagens&gt;<br>" +
+				"	&lt;detalhes&gt;<br>" +
+				"		&lt;avaliacao&gt;" + receita['avaliacao'] + "&lt;/avaliacao&gt;<br>" +
+				"		&lt;categoria&gt;" + receita['categoria'] + "&lt;/categoria&gt;<br>" +
+				"		&lt;data&gt;" + receita['data'] + "&lt;/data&gt;<br>" +
+				"	&lt;/detalhes&gt;<br>" +
+				"&lt;/recipe&gt;";
+	$(".exportar > .xml > .codigo").html(xml);
 }
