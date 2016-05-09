@@ -1,0 +1,142 @@
+{
+	"receitas": [
+		{
+			"id" : 1,
+			"autor" : "Camila",
+			"titulo" : "Pudim de leite condensado",
+			"tempo" : "40 minutos",
+			"rendimento" : "20 porções",
+			"ingredientes" : [
+				"1 lata de leite condensado",
+				"1 xícara de leite",
+				"4 ovos",
+				"3 colheres de açucar"
+			],
+			"preparo" : "bla bla bla",
+			"imagens" : [
+				"images/receitas/pudim-de-leite-condensado-1.jpg",
+				"images/receitas/pudim-de-leite-condensado-2.jpg",
+				"images/receitas/pudim-de-leite-condensado-3.jpg",
+				"images/receitas/pudim-de-leite-condensado-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "doces",
+			"data" : "26/04/2016"
+		},
+		{
+			"id" : 2,
+			"autor" : "Wilmax",
+			"titulo" : "Teste de sobremesa",
+			"tempo" : "40 minutos",
+			"rendimento" : "20 porções",
+			"ingredientes" : [
+				"1 lata de leite condensado",
+				"1 xícara de leite",
+				"4 ovos",
+				"3 colheres de açucar"
+			],
+			"preparo" : "bla bla bla",
+			"imagens" : [
+				"images/receitas/pudim-de-leite-condensado-1.jpg",
+				"images/receitas/pudim-de-leite-condensado-2.jpg",
+				"images/receitas/pudim-de-leite-condensado-3.jpg",
+				"images/receitas/pudim-de-leite-condensado-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "carnes",
+			"data" : "26/04/2016"
+		},
+		{
+			"id" : 3,
+			"autor" : "José",
+			"titulo" : "Teste de sobremesa",
+			"tempo" : "40 minutos",
+			"rendimento" : "20 porções",
+			"ingredientes" : [
+				"1 lata de leite condensado",
+				"1 xícara de leite",
+				"4 ovos",
+				"3 colheres de açucar"
+			],
+			"preparo" : "bla bla bla",
+			"imagens" : [
+				"images/receitas/pudim-de-leite-condensado-1.jpg",
+				"images/receitas/pudim-de-leite-condensado-2.jpg",
+				"images/receitas/pudim-de-leite-condensado-3.jpg",
+				"images/receitas/pudim-de-leite-condensado-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "massas",
+			"data" : "26/04/2016"
+		},
+		{
+			"id" : 4,
+			"autor" : "Wilmax",
+			"titulo" : "Teste de sobremesa",
+			"tempo" : "40 minutos",
+			"rendimento" : "20 porções",
+			"ingredientes" : [
+				"1 lata de leite condensado",
+				"1 xícara de leite",
+				"4 ovos",
+				"3 colheres de açucar"
+			],
+			"preparo" : "bla bla bla",
+			"imagens" : [
+				"images/receitas/pudim-de-leite-condensado-1.jpg",
+				"images/receitas/pudim-de-leite-condensado-2.jpg",
+				"images/receitas/pudim-de-leite-condensado-3.jpg",
+				"images/receitas/pudim-de-leite-condensado-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "doces",
+			"data" : "26/04/2016"
+		},
+		{
+			"id" : 5,
+			"autor" : "Wilmax",
+			"titulo" : "Teste de sobremesa",
+			"tempo" : "40 minutos",
+			"rendimento" : "20 porções",
+			"ingredientes" : [
+				"1 lata de leite condensado",
+				"1 xícara de leite",
+				"4 ovos",
+				"3 colheres de açucar"
+			],
+			"preparo" : "bla bla bla",
+			"imagens" : [
+				"images/receitas/pudim-de-leite-condensado-1.jpg",
+				"images/receitas/pudim-de-leite-condensado-2.jpg",
+				"images/receitas/pudim-de-leite-condensado-3.jpg",
+				"images/receitas/pudim-de-leite-condensado-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "doces",
+			"data" : "26/04/2016"
+		},
+		{
+			"id" : 6,
+			"autor" : "Wilmax",
+			"titulo" : "Teste de sobremesa",
+			"tempo" : "40 minutos",
+			"rendimento" : "20 porções",
+			"ingredientes" : [
+				"1 lata de leite condensado",
+				"1 xícara de leite",
+				"4 ovos",
+				"3 colheres de açucar"
+			],
+			"preparo" : "bla bla bla",
+			"imagens" : [
+				"images/receitas/pudim-de-leite-condensado-1.jpg",
+				"images/receitas/pudim-de-leite-condensado-2.jpg",
+				"images/receitas/pudim-de-leite-condensado-3.jpg",
+				"images/receitas/pudim-de-leite-condensado-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "doces",
+			"data" : "26/04/2016"
+		}
+	]
+}

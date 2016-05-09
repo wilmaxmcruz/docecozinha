@@ -1,11 +1,35 @@
+var _receitas = [];
+var _usuario = null;
+
 $(function () 
 {
 	var options = {
 		data: ["blue", "green", "pink", "red", "yellow"],
 		placeholder: "Procurar receitas"
 	};
-	$("#search").easyAutocomplete(options);
+	$("#search").easyAutocomplete(options);	
 	ativeSlider();
+
+	$.ajax(
+	{				
+		url: 'database/receitas.json', 
+		dataType: 'json',
+		cache: false,
+		success: function(data) 
+		{
+			_receitas = $.makeArray(data['receitas']);	
+			ativeSlider();	
+		},
+		complete: function (data) 
+		{
+
+		},
+		error: function(r, s, e)
+		{
+			console.log("ERROR!!!");
+			console.log(r.responseText);
+		}
+	});	
 });
 
 $(document).on("click", "#tamanho-letras", function()
@@ -40,6 +64,18 @@ $(document).on("click", "#contraste", function()
 
 function ativeSlider()
 {
+	/*$.each(_receitas, function(i, receita)
+	{
+		var li = "<li>" +
+					"<a href='javascript:changePage(\"detalhes\", \"" + receita['titulo'] + "\");'>" +
+						"<img src='" + receita['imagens'][0] + "' alt='" + receita['titulo'] + "' title='" + receita['titulo'] + "'>" +
+						"<label>" + receita['titulo'] + "</label>" +
+						"<div class='flag " + receita['categoria'] + "'></div>" +
+					"</a>" +
+				"</li>";
+		$("ul.bxslider").append(li);
+	});	*/
+
 	$('.bxslider').bxSlider({
 		pager: false,
 		minSlides: 4,
