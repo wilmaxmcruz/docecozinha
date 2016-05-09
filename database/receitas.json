@@ -630,11 +630,6 @@
 			"comentarios" :
 			[
 				{
-					"usuario" : "Célia",
-					"data" : "26/04/2016",
-					"comentario" : "Maravilhoso! Acabei de fazer e ficou top."
-				},
-				{
 					"usuario" : "Janaina",
 					"data" : "21/03/2015",
 					"comentario" : "Fica realmente muito bom!"
@@ -691,8 +686,253 @@
 					"usuario" : "Jayne",
 					"data" : "08/12/2015",
 					"comentario" : "Adorei a receita. Parabéns!"
+				},
+				{
+					"usuario" : "Jocelma",
+					"data" : "26/04/2015",
+					"comentario" : "Precisa colocar sal na carne???"
+				},
+				{
+					"usuario" : "Célia",
+					"data" : "26/04/2016",
+					"comentario" : "Maravilhoso! Acabei de fazer e ficou top."
+				}
+			]
+		},
+		{
+			"id" : 17,
+			"autor" : "DoceCozinha",
+			"titulo" : "Carne de Panela",
+			"tempo" : "25 minutos",
+			"rendimento" : "5 porções",
+			"ingredientes" : [
+				"1 kg de carne (acém, patinho ou lombo de porco)",
+				"8 cebolas grandes cortadas em rodelas",
+				"3 ou 4 cubos de caldo de carne"
+
+			],
+			"preparo" : "Forre o fundo de uma panela de pressão com metade das cebolas. Esfarele um cubo de caldo de carne por cima das cebolas, adicione a carne, adicione outro cubo de caldo de carne e cubra com o restante das cebolas. Feche a panela de pressão, sem adicionar água, e deixe cozinhar por 25 minutos. Se preferir, adicione batatas em rodelas e deixe cozinhar por mais 10 minutos",
+			"imagens" : [
+				"images/receitas/carnepanela-1.jpg",
+				"images/receitas/carnepanela-2.jpg",
+				"images/receitas/carnepanela-3.jpg",
+				"images/receitas/carnepanela-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "carnes",
+			"data" : "10/04/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Leonardo",
+					"data" : "03/05/2016",
+					"comentario" : "Eu acrescento calabresa, bacon e alho. Não leva sal. Fica maravilhosa!"
+				},
+				{
+					"usuario" : "Thainá",
+					"data" : "03/05/2015",
+					"comentario" : "Fiz seguindo exatamente a receita, não coloquei água, e ficou maravilhoso."
+				}
+				
+			]
+		},
+		{
+			"id" : 18,
+			"autor" : "Ana",
+			"titulo" : "Salada Simples",
+			"tempo" : "30 minutos",
+			"rendimento" : "6 porções",
+			"ingredientes" : [
+				"1 alface americana",
+				"2 cenouras raladas",
+				"1 beterraba ralada",
+				"1 tomate sem pele e sem semente",
+				"1 cebola cortada em rodelas ou picada",
+				"1 colher (chá) de sal",
+				"1 pitada de açúcar",
+				"1 colher (sopa) de azeite extra virgem de oliva",
+				"2 a 3 colheres de vinagre"
+			],
+			"preparo" : "Lave bem todos os ingredientes. Rasgue as folhas do alface para que fiquem menores. Rale as cenouras e a beterraba. O tomate, após estar sem pele e semente, deve ser picado. A cebola pode ser cortada em pedacinhos ou em rodelas, como preferir. Junte tudo. Molho: Junte o açúcar, sal, azeite e vinagre em uma xícara. Misture bem com uma colher e despeje sobre a salada",
+			"imagens" : [
+				"images/receitas/salada-1.jpg",
+				"images/receitas/salada-2.jpg",
+				"images/receitas/salada-3.jpg",
+				"images/receitas/salada-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "saladas",
+			"data" : "10/04/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Leonardo",
+					"data" : "03/05/2016",
+					"comentario" : "Eu acrescento calabresa, bacon e alho. Não leva sal. Fica maravilhosa!"
+				},
+				{
+					"usuario" : "Thainá",
+					"data" : "03/05/2015",
+					"comentario" : "Fiz seguindo exatamente a receita, não coloquei água, e ficou maravilhoso."
+				},
+				{
+					"usuario" : "Jocelma",
+					"data" : "26/04/2015",
+					"comentario" : "Precisa colocar sal na carne???"
+				}
+			]
+		},
+		{
+			"id" : 19,
+			"autor" : "Nai",
+			"titulo" : "Salada de Maionese",
+			"tempo" : "60 minutos",
+			"rendimento" : "5 porções",
+			"ingredientes" : [
+				"2 ovos cozidos",
+				"1 ovo cru",
+				"óleo de milho, canola ou girassol",
+				"1/2 banda de limão",
+				"cebolinha e sal a gosto",
+				"5 batatas"
+			],
+			"preparo" : "Cozinhe as batatas e corte-as em cubinhos. Separe as gemas e as claras dos ovos cozidos. Coloque as claras picadas em cubos junto das batatas. Em um prato, amasse as gemas cozidas e adicione a gema crua, apenas a gema crua. Misture as gemas cozidas com a crua até formar uma papinha. Em seguida, adicione o óleo de milho ao poucos, mexendo com um garfo ou colher em um único sentido - a quantidade de óleo vai depender da quantidade de maionese que você precisa. Quando a quantidade estiver satisfatória, adicione o limão. Esprema meia banda de limão, adicione o sal a gosto e continue misturando. Experimente o sabor e veja se está bom. Quando estiver pronto, com a quantidade que você preferir, tempere as batatas com azeite e sal e misture a maionese. Pra finalizar, corte cebolinha a gosto e jogue na salada",
+			"imagens" : [
+				"images/receitas/maionese-1.jpg",
+				"images/receitas/maionese-2.jpg",
+				"images/receitas/maionese-3.jpg",
+				"images/receitas/maionese-4.jpg"
+			],
+			"avaliacao" : 3,
+			"categoria" : "saladas",
+			"data" : "01/05/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Johana",
+					"data" : "03/05/2016",
+					"comentario" : "Adorei!!!"
+				},
+				{
+					"usuario" : "Jeferson",
+					"data" : "01/05/2015",
+					"comentario" : "Parabéns, simples e gostoso."
+				}
+			]
+		},
+		{
+			"id" : 20,
+			"autor" : "Viviane",
+			"titulo" : "Salpicão de Frango",
+			"tempo" : "40 minutos",
+			"rendimento" : "15 porções",
+			"ingredientes" : [
+				"1 peito de frango (grande)",
+				"1 lata de milho",
+				"1 lata de ervilha",
+				"1 cenoura ralada",
+				"1 lata ou 1 caixa de creme de leite",
+				"uva passa a gosto",
+				"batata palha",
+				"sal a gosto",
+				"1 tablete de caldo de galinha",
+				"salsinha",
+				"cebolinha",
+				"cebola"
+			],
+			"preparo" : "Coloque em uma panela o tablete de caldo de galinha, uma pitada de sal e água suficiente para cozinhar o frango. Enquanto o frango cozinha, misture em um recipiente o milho, a ervilha, a cenoura e as uvas passas. Tempere com sal, salsinha, cebolinha e a cebola. Quando o frango estiver cozido, desfie e coloque-o no recipiente com o restante dos ingredientes. Acrescente o creme de leite e a batata palha. Coloque em um recipiente e leve para assar por aproximadamente 7 minutos.",
+			"imagens" : [
+				"images/receitas/salpicao-1.jpg",
+				"images/receitas/salpicao-2.jpg",
+				"images/receitas/salpicao-3.jpg",
+				"images/receitas/salpicao-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "saladas",
+			"data" : "29/04/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Silvia",
+					"data" : "05/05/2016",
+					"comentario" : "Pode por maçã?"
+				}
+			]
+		},
+		{
+			"id" : 21,
+			"autor" : "Janete",
+			"titulo" : "Coxinha",
+			"tempo" : "40 minutos",
+			"rendimento" : "10 porções",
+			"ingredientes" : [
+				"4 xícaras de trigo",
+				"4 xícaras de leite",
+				"1 caldo de galinha",
+				"1/2 colher de margarina"
+			],
+			"preparo" : "Leve ao fogo o leite, a margarina e o caldo. Deixe ferver. Despeje de uma só vez o trigo e mexa bem. Depois retire da panela e coloque sobre a mesa. Sove um pouco e comece a modelar as coxinhas. Coloque para fritar em óleo quente, espere dourar, retire e sirva",
+			"imagens" : [
+				"images/receitas/coxinha-1.jpg",
+				"images/receitas/coxinha-2.jpg",
+				"images/receitas/coxinha-3.jpg",
+				"images/receitas/coxinha-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "salgados",
+			"data" : "16/03/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Lari",
+					"data" : "29/04/2016",
+					"comentario" : "Ótima!"
+				},
+				{
+					"usuario" : "Joaquim",
+					"data" : "20/04/2016",
+					"comentario" : "Deu certinho. Muito fácil de fazer."
+				}
+			]
+		},
+		{
+			"id" : 22,
+			"autor" : "Eugênia",
+			"titulo" : "Massa de Esfirra",
+			"tempo" : "60 minutos",
+			"rendimento" : "50 porções",
+			"ingredientes" : [
+				"30 g de fermento biológico",
+				"2 colheres de sopa de açúcar",
+				"1 colher de sobremesa de sal",
+				"1 e 1/2 xícaras de leite morno",
+				"1 xícara de óleo",
+				"1 kg de farinha de trigo (aproximadamente)"
+			],
+			"preparo" : "Dissolva o fermento com o açúcar e depois misture todos os ingredientes,menos a farinha. Vá colocando a farinha aos poucos até formar uma massa pesada, que solte das mãos. Sove por 5 minutos. Faça bolinhas de aproximadamente 3 cm e vá dispondo em uma assadeira. Deixe crescer por 30 minutos. Abra cada bolinha e recheie com uma porção de recheio bem espremido (para sair o suco). Feche em formato de triângulo. Coloque novamente na assadeira (não necessita untar), lembrando que elas crescem. Pincele com gema. Asse por aproximadamente 30 minutos em forno médio (180ºC) ou até que dourem",
+			"imagens" : [
+				"images/receitas/esfirra-1.jpg",
+				"images/receitas/esfirra-2.jpg",
+				"images/receitas/esfirra-3.jpg",
+				"images/receitas/esfirra-4.jpg"
+			],
+			"avaliacao" : 4,
+			"categoria" : "salgados",
+			"data" : "02/03/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Jan",
+					"data" : "13/04/2016",
+					"comentario" : "Adorei! Ficou muito macia."
+				},
+				{
+					"usuario" : "Thaís",
+					"data" : "11/03/2016",
+					"comentario" : "Uma delícia."
 				}
 			]
 		}
+		
 	]
 }
