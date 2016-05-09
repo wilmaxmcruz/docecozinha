@@ -1,5 +1,5 @@
 <?php ?>
-<section id="conteudo-principal" class="acessibilidade secao" itemscope itemtype="http://schema.org/Recipe">
+<section class="acessibilidade secao" itemscope itemtype="http://schema.org/Recipe">
 	<h1 itemprop="name">Acessibilidade do site</h1>
 	<p>
 		As ferramentas de acessibilidade, encontradas no topo desse site, foram desenvolvidas para atender diferentes tipos de deficiências como: baixa visão, daltonismo e mobilidade reduzida. Essas ferramentas permitem:

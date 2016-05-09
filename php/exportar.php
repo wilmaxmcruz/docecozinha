@@ -1,5 +1,5 @@
 <?php ?>
-<section id="conteudo-principal" class="exportar secao">	
+<section class="exportar secao">	
 	<h1>Exportar receita: <span id="resultado" class="resultado"><?php echo $_POST['filter']; ?></span></h1>
 	<div class="xml left">
 		<h2>&lt;XML&gt;</h2>

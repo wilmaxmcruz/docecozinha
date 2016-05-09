@@ -36,7 +36,7 @@
 				<nav>
 					<ul>
 						<li>
-							<a href="#conteudo-principal">Conteúdo principal<br>(ALT + 1)</a>
+							<a class="alt1"  href="javascript:void(0)">Conteúdo principal<br>(ALT + 1)</a>
 						</li>
 						<li>
 							<a href="#menu-site">Menu do site<br>(ALT + 2)</a>

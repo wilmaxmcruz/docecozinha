@@ -53,6 +53,12 @@ $(function ()
 	});
 });
 
+$(document).on("click", ".alt1", function()
+{	
+	$("h1").focus();
+	console.log($("h1"));
+});
+
 $(document).on("click", ".login button", function()
 {	
 	$.each(_usuarios, function(i, usuario)

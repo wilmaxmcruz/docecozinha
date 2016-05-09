@@ -1,5 +1,5 @@
 <?php ?>
-<section id="conteudo-principal" class="index secao">	
+<section class="index secao">	
 	<div class="conteudo-inicial" itemscope itemtype="http://schema.org/Recipe">
 		<ul class="clear">
 			<li>			

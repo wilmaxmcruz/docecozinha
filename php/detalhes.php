@@ -1,5 +1,5 @@
 <?php ?>
-<section id="conteudo-principal" class="receita secao">
+<section class="receita secao">
 	<div itemscope itemtype="http://schema.org/Recipe" class="detalhes left">	
 		<h1 itemprop="name">Pudim de leite condensado</h1>		
 		<span class="autoria">Categoria: <span class="categoria">Carnes</span> | Publicado por: <span itemprop="author" class="publicado">Doce Cozinha</span></span>

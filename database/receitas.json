@@ -1,142 +1,130 @@
 {
-	"receitas": [
+	"receitas": 
+	[
 		{
 			"id" : 1,
 			"autor" : "Camila",
-			"titulo" : "Pudim de leite condensado",
+			"titulo" : "Pudim",
 			"tempo" : "40 minutos",
 			"rendimento" : "20 porções",
 			"ingredientes" : [
 				"1 lata de leite condensado",
-				"1 xícara de leite",
-				"4 ovos",
-				"3 colheres de açucar"
+				"1 xícara de leite de vaca",
+				"4 ovos inteiros",
+				"1 xícara (chá) de açúcar",
+				"1/3 de xícara (chá) de água"
 			],
-			"preparo" : "bla bla bla",
+			"preparo" : "CALDA: Em uma panela, misture a água e o açúcar até formar uma calda. Unte uma forma com a calda e reserve. MASSA: Bata todos os ingredientes no liquidificador e despeje na forma caramelizada. Leve para assar em banho-maria por 40 minutos. Desenforme e sirva",
 			"imagens" : [
-				"images/receitas/pudim-de-leite-condensado-1.jpg",
-				"images/receitas/pudim-de-leite-condensado-2.jpg",
-				"images/receitas/pudim-de-leite-condensado-3.jpg",
-				"images/receitas/pudim-de-leite-condensado-4.jpg"
+				"images/receitas/pudim-1.jpg",
+				"images/receitas/pudim-2.jpg",
+				"images/receitas/pudim-3.jpg",
+				"images/receitas/pudim-4.jpg"
 			],
 			"avaliacao" : 5,
 			"categoria" : "doces",
-			"data" : "26/04/2016"
+			"data" : "02/04/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Nai",
+					"data" : "05/05/2016",
+					"comentario" : "Acrescentar um ou dois pães de leite, embebidos no leite, ajuda a dar consistência ao pudim. E é uma opção melhor do que o amido de milho, que deixa a massa pesada e dura."
+				},
+				{
+					"usuario" : "Susy",
+					"data" : "30/04/2016",
+					"comentario" : "Pessoal.... dica: Para o pudim não ficar mto mole acrescente na massa meia colher de maisena e bata no liquidificador. E para nao ficar com cheiro de ovo, usem essência de baunilha."
+				}
+			]
 		},
 		{
 			"id" : 2,
-			"autor" : "Wilmax",
-			"titulo" : "Teste de sobremesa",
-			"tempo" : "40 minutos",
-			"rendimento" : "20 porções",
+			"autor" : "Camila",
+			"titulo" : "Curau",
+			"tempo" : "20 minutos",
+			"rendimento" : "10 porções",
 			"ingredientes" : [
+				"4 espigas de milho verde",
+				"1 xícara e 1/2 de leite",
+				"1 vidro de leite de coco",
 				"1 lata de leite condensado",
-				"1 xícara de leite",
-				"4 ovos",
-				"3 colheres de açucar"
+				"1 colher de margarina",
+				"1 pitada de sal",
+				"Canela em pó para polvilhar"
 			],
-			"preparo" : "bla bla bla",
+			"preparo" : "Retire os grãos do milho com uma faca. Bata no liquidificador com o leite e o leite de coco. Passe para uma panela e misture os demais ingredientes menos a canela. Leve ao fogo até engrossar mexendo sempre passe para uma travessa ou tacinhas e polvilhe a canela em pó. Se quiser pode peneirar acho mais gostoso sem peneirar. Para a minha mãe com carinho",
 			"imagens" : [
-				"images/receitas/pudim-de-leite-condensado-1.jpg",
-				"images/receitas/pudim-de-leite-condensado-2.jpg",
-				"images/receitas/pudim-de-leite-condensado-3.jpg",
-				"images/receitas/pudim-de-leite-condensado-4.jpg"
+				"images/receitas/curau-1.jpg",
+				"images/receitas/curau-2.jpg",
+				"images/receitas/curau-3.jpg",
+				"images/receitas/curau-4.jpg"
 			],
-			"avaliacao" : 5,
-			"categoria" : "carnes",
-			"data" : "26/04/2016"
+			"avaliacao" : 4,
+			"categoria" : "doces",
+			"data" : "05/05/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Gabriela",
+					"data" : "06/05/2016",
+					"comentario" : "Na minha cidade se chama mingau de milho-verde."
+				},
+				{
+					"usuario" : "Juliano Freitas",
+					"data" : "13/03/2016",
+					"comentario" : "Adorei a receita, principalmente o item 6 !! Emocionante."
+				},
+				{
+					"usuario" : "Mônica Cabral",
+					"data" : "10/03/2016",
+					"comentario" : "Se cortar o milho muito rente ao sabugo, você tera um creme com gosto de sabão. Aprendi isso com minha mãe, cresci fazendo canjica com ela."
+				}
+			]
 		},
 		{
 			"id" : 3,
-			"autor" : "José",
-			"titulo" : "Teste de sobremesa",
-			"tempo" : "40 minutos",
-			"rendimento" : "20 porções",
+			"autor" : "Camila",
+			"titulo" : "Caldo verde",
+			"tempo" : "30 minutos",
+			"rendimento" : "5 porções",
 			"ingredientes" : [
-				"1 lata de leite condensado",
-				"1 xícara de leite",
-				"4 ovos",
-				"3 colheres de açucar"
+				"4 batatas médias",
+				"1 tablete de caldo de galinha",
+				"1 colher (sopa) de óleo",
+				"1 colher ( sopa ) rasa de sal ou a gosto",
+				"1 colher ( sopa ) rasa de sal ou a gosto",
+				"1 colher ( sopa ) rasa de sal ou a gosto",
+				"1 colher ( sopa ) rasa de sal ou a gosto"
 			],
-			"preparo" : "bla bla bla",
+			"preparo" : "Na panela de pressão, coloque a batata, caldo de galinha, óleo, água e sal. Cozinhe por cerca de 10 minutos, começar a contar o tempo depois que a panela começar a chiar, até a batata desmanchar. Em seguida, bata tudo no liquidificador. Acrescente as rodelas de calabresa e ferva. Desligue o fogo e adicione a couve manteiga. Na hora de servir, coloque um fio de azeite ou croutons.",
 			"imagens" : [
-				"images/receitas/pudim-de-leite-condensado-1.jpg",
-				"images/receitas/pudim-de-leite-condensado-2.jpg",
-				"images/receitas/pudim-de-leite-condensado-3.jpg",
-				"images/receitas/pudim-de-leite-condensado-4.jpg"
+				"images/receitas/caldo-verde-1.jpg",
+				"images/receitas/caldo-verde-2.jpg",
+				"images/receitas/caldo-verde-3.jpg",
+				"images/receitas/caldo-verde-4.jpg"
 			],
-			"avaliacao" : 5,
-			"categoria" : "massas",
-			"data" : "26/04/2016"
-		},
-		{
-			"id" : 4,
-			"autor" : "Wilmax",
-			"titulo" : "Teste de sobremesa",
-			"tempo" : "40 minutos",
-			"rendimento" : "20 porções",
-			"ingredientes" : [
-				"1 lata de leite condensado",
-				"1 xícara de leite",
-				"4 ovos",
-				"3 colheres de açucar"
-			],
-			"preparo" : "bla bla bla",
-			"imagens" : [
-				"images/receitas/pudim-de-leite-condensado-1.jpg",
-				"images/receitas/pudim-de-leite-condensado-2.jpg",
-				"images/receitas/pudim-de-leite-condensado-3.jpg",
-				"images/receitas/pudim-de-leite-condensado-4.jpg"
-			],
-			"avaliacao" : 5,
-			"categoria" : "doces",
-			"data" : "26/04/2016"
-		},
-		{
-			"id" : 5,
-			"autor" : "Wilmax",
-			"titulo" : "Teste de sobremesa",
-			"tempo" : "40 minutos",
-			"rendimento" : "20 porções",
-			"ingredientes" : [
-				"1 lata de leite condensado",
-				"1 xícara de leite",
-				"4 ovos",
-				"3 colheres de açucar"
-			],
-			"preparo" : "bla bla bla",
-			"imagens" : [
-				"images/receitas/pudim-de-leite-condensado-1.jpg",
-				"images/receitas/pudim-de-leite-condensado-2.jpg",
-				"images/receitas/pudim-de-leite-condensado-3.jpg",
-				"images/receitas/pudim-de-leite-condensado-4.jpg"
-			],
-			"avaliacao" : 5,
-			"categoria" : "doces",
-			"data" : "26/04/2016"
-		},
-		{
-			"id" : 6,
-			"autor" : "Wilmax",
-			"titulo" : "Teste de sobremesa",
-			"tempo" : "40 minutos",
-			"rendimento" : "20 porções",
-			"ingredientes" : [
-				"1 lata de leite condensado",
-				"1 xícara de leite",
-				"4 ovos",
-				"3 colheres de açucar"
-			],
-			"preparo" : "bla bla bla",
-			"imagens" : [
-				"images/receitas/pudim-de-leite-condensado-1.jpg",
-				"images/receitas/pudim-de-leite-condensado-2.jpg",
-				"images/receitas/pudim-de-leite-condensado-3.jpg",
-				"images/receitas/pudim-de-leite-condensado-4.jpg"
-			],
-			"avaliacao" : 5,
-			"categoria" : "doces",
-			"data" : "26/04/2016"
+			"avaliacao" : 4,
+			"categoria" : "sopas",
+			"data" : "05/05/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Gláucia",
+					"data" : "06/05/2016",
+					"comentario" : "Amei a receita, muito fácil de fazer. No dia seguinte coloquei ervilhas e ficou muito gostoso também!!!!"
+				},
+				{
+					"usuario" : "Penha Rosa",
+					"data" : "13/03/2016",
+					"comentario" : "Ja fiz e fica deliciosa. Mas tenho uma duvida. Coloca a linguica crua?"
+				},
+				{
+					"usuario" : "Guilherme78",
+					"data" : "10/03/2016",
+					"comentario" : "Muito boa mesmo. Coloquei um pouco de pimenta e usei um pão preto Australiano de acompanhamento, ficou show!!!"
+				}
+			]
 		}
 	]
 }
