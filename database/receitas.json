@@ -176,10 +176,10 @@
 				"4 batatas médias",
 				"1 tablete de caldo de galinha",
 				"1 colher (sopa) de óleo",
-				"1 colher ( sopa ) rasa de sal ou a gosto",
-				"1 colher ( sopa ) rasa de sal ou a gosto",
-				"1 colher ( sopa ) rasa de sal ou a gosto",
-				"1 colher ( sopa ) rasa de sal ou a gosto"
+				"1 colher (sopa) rasa de sal ou a gosto",
+				"1 colher (sopa) rasa de sal ou a gosto",
+				"1 colher (sopa) rasa de sal ou a gosto",
+				"1 colher (sopa) rasa de sal ou a gosto"
 			],
 			"preparo" : "Na panela de pressão, coloque a batata, caldo de galinha, óleo, água e sal. Cozinhe por cerca de 10 minutos, começar a contar o tempo depois que a panela começar a chiar, até a batata desmanchar. Em seguida, bata tudo no liquidificador. Acrescente as rodelas de calabresa e ferva. Desligue o fogo e adicione a couve manteiga. Na hora de servir, coloque um fio de azeite ou croutons.",
 			"imagens" : [
@@ -207,6 +207,137 @@
 					"usuario" : "Guilherme78",
 					"data" : "10/03/2016",
 					"comentario" : "Muito boa mesmo. Coloquei um pouco de pimenta e usei um pão preto Australiano de acompanhamento, ficou show!!!"
+				}
+			]
+		},
+		{
+			"id" : 6,
+			"autor" : "Izabel",
+			"titulo" : "Canja",
+			"tempo" : "30 minutos",
+			"rendimento" : "4 porções",
+			"ingredientes" : [
+				"1/2 kg de coxinha da asa",
+				"1 cebola",
+				"4 dentes de alho",
+				"1 cenoura grande",
+				"1 tablete de caldo de galinha",
+				"1/2 xícara de arroz",
+				"salsinha a gosto",
+				"1 colher (sopa) de óleo",
+				"1 e 1/2 litro de água fervente"
+			],
+			"preparo" : "Tempere cada pedaço de frango com sal a gosto. Em uma panela de pressão, coloque o óleo, o frango, a cebola, o alho e o caldo de galinha. Deixe fritar por alguns minutos e acrescente a água fervente. Acrescente o arroz e a cenoura, corrija o sal e tampe a panela. Abaixe o fogo assim que a panela atingir a pressão e deixe cozinhar por 20 minutos. Finalize salpicando salsinha e sirva",
+			"imagens" : [
+				"images/receitas/canja-1.jpg",
+				"images/receitas/canja-2.jpg",
+				"images/receitas/canja-3.jpg",
+				"images/receitas/canja-4.jpg"
+			],
+			"avaliacao" : 4,
+			"categoria" : "sopas",
+			"data" : "10/02/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Fernanda",
+					"data" : "07/04/2016",
+					"comentario" : "Ótima receita! Super fácil de fazer!"
+				},
+				{
+					"usuario" : "Sara",
+					"data" : "04/04/2016",
+					"comentario" : "Eu fiz ficou divina ,acrescentei batata."
+				},
+				{
+					"usuario" : "Renata",
+					"data" : "18/03/2016",
+					"comentario" : "Muitooooo bom!"
+				}
+			]
+		},
+		{
+			"id" : 7,
+			"autor" : "Luciana",
+			"titulo" : "Sopa de Batata",
+			"tempo" : "25 minutos",
+			"rendimento" : "4 porções",
+			"ingredientes" : [
+				"4 batatas médias",
+				"água",
+				"2 tabletes de caldo de carne",
+				"2 colheres de sopa de manteiga",
+				"1/2 copo de requeijão",
+				"parmesão"
+			],
+			"preparo" : "Cozinhe as batatas com casca. Descasque as batatas e bata-as no liquidificador, com água filtrada, deixando na consistência desejada (de 1 a 2 copos de água). Numa panela, derreta a manteiga, acrescente a batata batida e os cubinhos de caldo de carne. Mexa a mistura até derreter os cubinhos. Acrescente o requeijão e mexa bem até derretê-lo. Salpique com parmesão ralado ao servir",
+			"imagens" : [
+				"images/receitas/sopabatata-1.jpg",
+				"images/receitas/sopabatata-2.jpg",
+				"images/receitas/sopabatata-3.jpg",
+				"images/receitas/sopabatata-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "sopas",
+			"data" : "05/03/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Bianca",
+					"data" : "13/04/2016",
+					"comentario" : "Quanto de água afinal ??????"
+				},
+				{
+					"usuario" : "Marlúcia",
+					"data" : "24/03/2016",
+					"comentario" : "Rápido e gostoso."
+				},
+				{
+					"usuario" : "Suely",
+					"data" : "22/03/2016",
+					"comentario" : "Gostei muito fácil...."
+				}
+			]
+		},
+		{
+			"id" : 8,
+			"autor" : "Gesiane",
+			"titulo" : "Sopa de Ervilha",
+			"tempo" : "35 minutos",
+			"rendimento" : "6 porções",
+			"ingredientes" : [
+				"500 g de ervilha desidratada (de pacote)",
+				"300 g de bacon",
+				"300 g de costelinha defumada",
+				"1 cebola bem picada",
+				"3 colheres de óleo"
+			],
+			"preparo" : "Na panela de pressão coloque o óleo refogue a cebola, e frite o bacon. Deixe fritar bem o bacon até sair toda a gordura. Após o bacon bem frito, acrescente a costelinha defumada e refoque um pouco. Depois coloque a ervilha e encha a panela de água abaixo da marca do cabo da panela. Cozinhe por 25 a 30 minutos. Após cozida mexa para dissolver os pedaços de ervilha que restaram. É melhor servi-lá com pão murcho do que com torrada",
+			"imagens" : [
+				"images/receitas/sopaervilha-1.jpg",
+				"images/receitas/sopaervilha-2.jpg",
+				"images/receitas/sopaervilha-3.jpg",
+				"images/receitas/sopaervilha-4.jpg"
+			],
+			"avaliacao" : 3,
+			"categoria" : "sopas",
+			"data" : "05/03/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Veridiana",
+					"data" : "06/04/2016",
+					"comentario" : "Olá! Qual a capacidade da panela de pressão que costumam usar, para fazer a sopa com 500g de ervilha?"
+				},
+				{
+					"usuario" : "Carol",
+					"data" : "02/03/2016",
+					"comentario" : "Eu posso coloca calabresa em vez de costelinha."
+				},
+				{
+					"usuario" : "Isabela",
+					"data" : "17/02/2016",
+					"comentario" : "A ervilha fica inteira? Não bate no liquidificador?"
 				}
 			]
 		}
