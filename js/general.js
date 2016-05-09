@@ -133,6 +133,24 @@ $(document).on("mouseleave", "a.estrela", function()
 	$("a.estrela").attr("style", "background-position: 0 0");
 });
 
+$(document).on("click", ".exportar a.copiar", function()
+{
+	var code = $(this).siblings("pre.codigo").attr("name");
+	var toCopy = document.getElementById("copiar-" + code);
+	
+	if (document.createRange) 
+	{
+		document.getSelection().removeAllRanges();
+		var r = document.createRange();
+		r.setStartBefore(toCopy);
+		r.setEndAfter(toCopy);
+		r.selectNode(toCopy);
+		var sel = window.getSelection();
+		sel.addRange(r);
+		document.execCommand('Copy');
+    }
+});
+
 function ativeSlider()
 {
 	$.each(_receitas, function(i, receita)
