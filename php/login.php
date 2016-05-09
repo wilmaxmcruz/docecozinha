@@ -3,7 +3,7 @@
 	<div class="login left">
 		<h1 itemprop="name">Já sou cadastrado</h1>
 		<form>
-			<input type="text" name="login" placeholder="Login" maxlength="25" required>
+			<input type="text" name="login" placeholder="Login" required>
 			<input type="password" name="senha-login" placeholder="Senha" maxlength="8" required>
 			<button type="button">Entrar</button>
 		</form>
