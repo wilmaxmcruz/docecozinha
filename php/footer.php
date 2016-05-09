@@ -1,24 +1,24 @@
 <?php ?>
-	<footer class="container rodape">
+	<footer class="container rodape" itemscope itemtype="http://schema.org/Recipe">
 		<section class="social secao">
-			<div class="title">
+			<div class="title" itemprop="name">
 				Fale com a gente por meio de nossas redes sociais
 			</div>
 			<ul>
 				<li class="youtube">
-					<a href="javascript:void(0)"></a>
+					<a itemprop="url" href="http://youtube.com.br"></a>
 				</li>
 				<li class="pinterest">
-					<a href="javascript:void(0)"></a>
+					<a  itemprop="url" href="javascript:void(0)"></a>
 				</li>
 				<li class="facebook">
-					<a href="javascript:void(0)"></a>
+					<a itemprop="url" href="javascript:void(0)"></a>
 				</li>
 				<li class="twitter">
-					<a href="javascript:void(0)"></a>
+					<a itemprop="url" href="javascript:void(0)"></a>
 				</li>
 				<li class="instagram">
-					<a href="javascript:void(0)"></a>
+					<a itemprop="url" href="javascript:void(0)"></a>
 				</li>
 			</ul>
 		</section>		

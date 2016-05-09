@@ -1,5 +1,5 @@
 <?php ?>
-<section class="lista secao">	
+<section class="lista secao" itemscope itemtype="http://schema.org/Recipe">	
 	<h1>Lista de receitas relacionadas com: <span class="resultado"><?php echo $_POST['filter']; ?></span></h1>
 	<ul>
 		<li>
@@ -7,10 +7,10 @@
 				<div class="foto" style="background-image:url('images/receitas/canape-de-batata.jpg')">
 				</div>
 				<div class="infos">
-					<div>Categoria: </span><span class="categoria salgados">salgados</div>
-					<div>Publicado por: </span><span class="publicado">Doce Cozinha</div>
+					<div>Categoria: </span><span itemprop="name" class="categoria salgados">salgados</div>
+					<div>Publicado por: </span><span itemprop="author" class="publicado">Doce Cozinha</div>
 					<hr class="divisoria salgados">
-					<span class="nome">Canapé de batata</span>
+					<span class="nome" itemprop="alternateName">Canapé de batata</span>
 					<div class="avaliacao">
 						<div class="estrela ativa"></div>
 						<div class="estrela ativa"></div>
@@ -26,10 +26,10 @@
 				<div class="foto" style="background-image:url('images/receitas/vulcao-de-carne-e-bacon.jpg')">
 				</div>
 				<div class="infos">
-					<div>Categoria: </span><span class="categoria carnes">carnes</div>
-					<div>Publicado por: </span><span class="publicado">Doce Cozinha</div>
+					<div>Categoria: </span><span itemprop="name" class="categoria carnes">carnes</div>
+					<div>Publicado por: </span><span itemprop="author" class="publicado">Doce Cozinha</div>
 					<hr class="divisoria carnes">
-					<span class="nome">Vulcão de bacon</span>
+					<span class="nome" itemprop="alternateName">Vulcão de bacon</span>
 					<div class="avaliacao">
 						<div class="estrela ativa"></div>
 						<div class="estrela ativa"></div>

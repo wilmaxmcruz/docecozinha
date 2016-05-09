@@ -1,9 +1,9 @@
 <?php ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<head itemscope itemtype="http://schema.org/Recipe">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Site Doce Cozinha</title>
+	<title itemprop="name">Site Doce Cozinha</title>
 	<link rel="shortcut icon" href="css/images/favicon.ico">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,300italic' rel='stylesheet' type='text/css'>
 	<link href="css/reset.css" rel="stylesheet" type="text/css" />		
@@ -26,7 +26,7 @@
 	<script type="text/javascript" src="js/general.js"></script>
 
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel='mask-icon' href='docecozinha.svg' color='#ffffff'>
+	<link rel='mask-icon' itemprop="url" href='docecozinha.svg' color='#ffffff'>
 </head>
 
 <body>
@@ -54,7 +54,7 @@
 				</nav>
 			</div>
 		</div>
-		<div class="container cabecalho">
+		<div class="container cabecalho" itemscope itemtype="http://schema.org/Recipe">
 			<section class="secao">
 				<div class="menu left">
 					<div class="title">Menu</div>

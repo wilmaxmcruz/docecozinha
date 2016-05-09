@@ -49,14 +49,14 @@
 			<div class="estrela"></div>
 		</div>
 	</div>
-	<div class="comentarios right">
+	<div class="comentarios right" itemscope itemtype="http://schema.org/Recipe">
 		<a class="exportar" href="javascript:changePage('exportar', 'Pudim de leite condensado');">Exportar essa receita</a>
 		<h2>Comentários</h2>
 		<ul>
 			<li class="comentario">
 				<div class="texto">
-					<span itemprop="name" class="usuario">Sandra Calixto</span> em <span class="data">26/04/2016</span>
-					<p  itemprop="comments">
+					<span itemprop="name" class="usuario">Sandra Calixto</span> em <span class="data" itemprop="datePublished">26/04/2016</span>
+					<p  itemprop="comment">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 					</p>
@@ -66,8 +66,8 @@
 			</li>
 			<li class="comentario">				
 				<div class="texto">
-					<span itemprop="name" class="usuario">Joaquim Barbosa</span> em <span class="data">26/04/2016</span>
-					<p  itemprop="comments">
+					<span itemprop="name" class="usuario">Joaquim Barbosa</span> em <span class="data" itemprop="datePublished">26/04/2016</span>
+					<p  itemprop="comment">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 					</p>
