@@ -9,7 +9,6 @@ $(function ()
 		placeholder: "Procurar receitas"
 	};
 	$("#search").easyAutocomplete(options);	
-	ativeSlider();
 
 	$.ajax(
 	{
@@ -147,6 +146,10 @@ function changePage(page, filter)
 			$("#content").html(result);
 			ativeSlider();
 			userLogged();
+			if(page == "lista")
+			{
+				loadList(filter);
+			}
 		},
 		complete: function (result) 
 		{
@@ -167,5 +170,33 @@ function userLogged()
 	{
 		$(".recomendacao h2").html("Receitas recomendadas para você");
 	}
+}
+
+function loadList(filter)
+{
+	$(".lista > h1 > span").html(filter);
+	$.each(_receitas, function(i, receita)
+	{
+		if(receita['categoria'].toLowerCase() == filter.toLowerCase())
+		{
+			var li = "<li>" +
+						"<a href='javascript:changePage(\"detalhes\");'>" +
+							"<div class='foto' style='background-image:url(\"" + receita['imagens'][0] + "\")'>" +
+							"</div>" +
+							"<div class='infos'>" +
+								"<div>Categoria: </span><span itemprop='name' class='categoria " + receita['categoria'] + "'>" + receita['categoria'] + "</div>" +
+								"<div>Publicado por: </span><span itemprop='author' class='publicado'>" + receita['autor'] + "</div>" +
+								"<hr class='divisoria " + receita['categoria'] + "'>" +
+								"<span class='nome' itemprop='alternateName'>" + receita['titulo'] + "</span>" +
+								"<div class='avaliacao'>";
+								
+			for (var i = 1; i <= parseInt(receita['avaliacao']); i++) 
+			{
+				li += "<div class='estrela'></div>";
+			}
+			li += "</div></div></a></li>";
+			$(".lista > ul").append(li);
+		}
+	});
 }
 
