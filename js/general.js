@@ -325,8 +325,7 @@ function exportReceita(filter)
 	});
 
 	$(".exportar > h1 > .resultado").html(receita['titulo']);
-	//$(".exportar > .json > .codigo").html(JSON.stringify(receita));	
-
+	
 	var json = "{<br>" +
 					"	\"autor\" : \"" + receita['autor'] + "\",<br>" +
 					"	\"titulo\" : \"" + receita['titulo'] + "\",<br>" +
