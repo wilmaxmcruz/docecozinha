@@ -4,12 +4,6 @@ var _usuario = null;
 
 $(function () 
 {
-	var options = {
-		data: ["blue", "green", "pink", "red", "yellow"],
-		placeholder: "Procurar receitas"
-	};
-	$("#search").easyAutocomplete(options);	
-
 	$.ajax(
 	{
 		url: 'database/receitas.json', 
@@ -18,7 +12,12 @@ $(function ()
 		success: function(data) 
 		{
 			_receitas = $.makeArray(data['receitas']);	
-			ativeSlider();	
+			ativeSlider();
+			var options = {
+				data: ["blue", "green", "pink", "red", "yellow"],
+				placeholder: "Procurar receitas"
+			};
+			$("#search").easyAutocomplete(options);	
 		},
 		complete: function (data) 
 		{
@@ -59,7 +58,7 @@ $(document).on("click", ".login button", function()
 		if(usuario["email"] == $(".login input[name='login']").val() &&
 			usuario["senha"] == $(".login input[name='senha-login']").val())
 		{
-			_usuario = _usuarios[0];
+			_usuario = _usuarios[i];
 			$(".entre > .title").html(_usuario['nome']);
 			$(".entre > .title").attr("href", "javascript:void(0)");			
 			alert("Login do usuário: " +  _usuario['nome'] + " realizado com sucesso!");
@@ -132,14 +131,6 @@ function ativeSlider()
 		slideWidth: 200,
 		slideMargin: 30
 	});
-}
-
-function userLogged()
-{
-	if(_usuario != null)
-	{
-		$(".recomendacao h2").html("Receitas recomendadas para você");
-	}
 }
 
 function changePage(page, filter) 
