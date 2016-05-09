@@ -11,13 +11,36 @@ $(function ()
 		cache: false,
 		success: function(data) 
 		{
-			_receitas = $.makeArray(data['receitas']);	
-			ativeSlider();
-			var options = {
-				data: ["blue", "green", "pink", "red", "yellow"],
+			var tituloReceitas = [];
+			_receitas = $.makeArray(data['receitas']).sort(function() 
+			{
+				return .5 - Math.random();
+			});
+
+			var options = 
+			{
+				data: _receitas,
+				getValue: "titulo",
+				list: {	
+					match: {
+						enabled: true
+					},
+					maxNumberOfElements: 5,
+					sort: {
+						enabled: true
+					},
+					onSelectItemEvent: function() 
+					{
+						var id = $("#search").getSelectedItemData()['id'];
+						console.log(id);
+					}
+				},
+				highlightPhrase: false,				
+				theme: "square",
 				placeholder: "Procurar receitas"
 			};
 			$("#search").easyAutocomplete(options);	
+			ativeSlider();
 		},
 		complete: function (data) 
 		{
