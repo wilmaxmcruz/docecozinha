@@ -36,6 +36,10 @@ textarea:required:valid {
 	background-repeat: no-repeat;
 }
 
+pre {-moz-tab-size: 3;} /* Code for Firefox */
+pre {-o-tab-size: 3;} /* Code for Opera 10.6-12.1 */
+pre {tab-size: 3;}
+
 /*************** Base **************/
 .clear {	
 	clear: both;

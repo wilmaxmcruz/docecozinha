@@ -6,6 +6,7 @@
 	<title itemprop="name">Site Doce Cozinha</title>
 	<link rel="shortcut icon" href="css/images/favicon.ico">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,300italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
 	<link href="css/reset.css" rel="stylesheet" type="text/css" />		
 	<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
 	<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />

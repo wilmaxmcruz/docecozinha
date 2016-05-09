@@ -1,5 +1,5 @@
 <?php ?>
-<section class="lista secao" itemscope itemtype="http://schema.org/Recipe">	
+<section class="lista secao">	
 	<h1>Lista de receitas relacionadas com: <span class="resultado"></span></h1>
 	<ul>
 		<!-- Objetos <li> inseridos dinamicamente -->

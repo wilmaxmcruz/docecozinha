@@ -49,7 +49,7 @@ $(function ()
 			console.log("ERROR!!!");
 			console.log(r.responseText);
 		}
-	});
+	});	
 });
 
 $(document).on("click", ".login button", function()
@@ -95,6 +95,20 @@ $(document).on("click", "#contraste", function()
 		$("#contrast").attr("href", "");
 		$(this).addClass("contraste");
 	}
+});
+
+$(document).on("mouseenter", "a.estrela", function()
+{
+	for (var i = 0; i < $(this).index(); i++) 
+	{		
+		var $item = $($("a.estrela")[i]);
+		$item.attr("style", "background-position: 0 -36px");
+	}
+});
+
+$(document).on("mouseleave", "a.estrela", function()
+{
+	$("a.estrela").attr("style", "background-position: 0 0");
 });
 
 function ativeSlider()
@@ -143,13 +157,24 @@ function changePage(page, filter)
 		data: { filter: filter },
 		success: function(result) 
 		{
-			$("#content").html(result);
-			ativeSlider();
+			$("#content").html(result);			
 			userLogged();
-			if(page == "lista")
-			{
-				loadList(filter);
+
+			switch(page) {
+				case "index":
+					ativeSlider();
+					break;
+				case "lista":
+					loadList(filter);
+					break;
+				case "detalhes":
+					loadReceita(filter);
+					break;
+				case "exportar":
+					exportReceita(filter);
+					break;
 			}
+
 		},
 		complete: function (result) 
 		{
@@ -178,8 +203,8 @@ function loadList(filter)
 	{
 		if(receita['categoria'].toLowerCase() == filter.toLowerCase())
 		{
-			var li = "<li>" +
-						"<a href='javascript:changePage(\"detalhes\");'>" +
+			var li = "<li itemscope itemtype='http://schema.org/Recipe'>" +
+						"<a href='javascript:changePage(\"detalhes\", \"" + receita['titulo'] + "\");'>" +
 							"<div class='foto' style='background-image:url(\"" + receita['imagens'][0] + "\")'>" +
 							"</div>" +
 							"<div class='infos'>" +
@@ -204,3 +229,130 @@ function loadList(filter)
 	});
 }
 
+function loadReceita(filter)
+{
+	var receita = null;
+
+	$.each(_receitas, function(i, r)
+	{
+		if(r['titulo'].toLowerCase() == filter.toLowerCase())
+		{
+			receita = r;
+			return false;
+		}
+	});
+
+	$(".receita > .detalhes > h1").html(receita['titulo']);
+	$(".receita > .detalhes > .autoria > .categoria").html(receita['categoria']);
+	$(".receita > .detalhes > .autoria > .publicado").html(receita['autor']);
+
+	var li = "";
+	for (var i = 1; i <= 5; i++) 
+	{
+		var ativa = "ativa";
+		if(i > parseInt(receita['avaliacao']))
+		{
+			ativa = "";
+		}
+		li += "<div class='estrela " + ativa + "'></div>";
+	}
+
+	$(".receita > .detalhes > .avaliacao").append(li);
+	$(".receita > .detalhes > .galeria > .flag").addClass(receita['categoria']);
+	$(".receita > .detalhes > .galeria > img.principal").attr("src", receita['imagens'][0]);
+	$(".receita > .detalhes > .galeria > img.principal").attr("alt", "Imagem de " + receita['titulo']);
+	$(".receita > .detalhes > .galeria > img.mini.um").attr("src", receita['imagens'][1]);
+	$(".receita > .detalhes > .galeria > img.mini.um").attr("alt", "Imagem de " + receita['titulo']);
+	$(".receita > .detalhes > .galeria > img.mini.dois").attr("src", receita['imagens'][2]);
+	$(".receita > .detalhes > .galeria > img.mini.dois").attr("alt", "Imagem de " + receita['titulo']);
+	$(".receita > .detalhes > .galeria > img.mini.tres").attr("src", receita['imagens'][3]);
+	$(".receita > .detalhes > .galeria > img.mini.tres").attr("alt", "Imagem de " + receita['titulo']);
+
+	var tempoContent = "PT" + receita['tempo'].split(" ")[0] + receita['tempo'].split(" ")[1].substr(0, 1).toUpperCase();
+	$(".receita > .detalhes > .infos > .tempo").html(receita['tempo']);
+	$(".receita > .detalhes > .infos > .tempo").attr("content", tempoContent);
+	$(".receita > .detalhes > .infos > .rendimento").html(receita['rendimento']);
+
+	$.each(receita['ingredientes'], function(i, ingred)
+	{
+		var li = "<li>" + ingred + "</li>";
+		$(".receita > .detalhes > .ingredientes > ul").append(li);
+	});
+
+	$(".receita > .detalhes > .preparo > p").html(receita['preparo']);
+
+	$(".receita > .comentarios > .exportar").attr("href", "javascript:changePage('exportar', \"" + receita['titulo'] + "\");")
+	
+	$.each(receita['comentarios'], function(i, comment)
+	{
+		var li = "<li class='comentario' itemscope itemtype='http://schema.org/Comment'>" +
+					"<div class='texto'>" +
+						"<span itemprop='author' class='usuario'>" + comment['usuario'] + "</span> em <span class='data' itemprop='datePublished'>" + comment['data'] + "</span>" +
+						"<p  itemprop='comment'>" + comment['comentario'] + "</p>" +
+					"</div>" +
+					"<span class='pointer'></span>" +
+					"<span itemprop='image' class='foto' style='background-image:url(\"images/usuarios/default.svg\")'></span>" +
+				"</li>";
+		$(".receita > .comentarios > ul").append(li);
+	});	
+}
+
+function exportReceita(filter)
+{
+	var receita = null;
+
+	$.each(_receitas, function(i, r)
+	{
+		if(r['titulo'].toLowerCase() == filter.toLowerCase())
+		{
+			receita = r;
+			return false;
+		}
+	});
+
+	$(".exportar > h1 > .resultado").html(receita['titulo']);
+	//$(".exportar > .json > .codigo").html(JSON.stringify(receita));	
+
+	var json = "{<br>" +
+					"	\"autor\" : \"" + receita['autor'] + "\",<br>" +
+					"	\"titulo\" : \"" + receita['titulo'] + "\",<br>" +
+					"	\"tempo\" : \"" + receita['tempo'] + "\",<br>" +
+					"	\"rendimento\" : \"" + receita['rendimento'] + "\",<br>" +
+					"	\"ingredientes\" : <br>" +
+					"	[<br>";
+
+	$.each(receita['ingredientes'], function(i, ingred)
+	{		
+		var virgula = ",";
+		if(i == receita['ingredientes'].length - 1)
+		{
+			virgula = "";
+		}
+
+		json += "		\"" + ingred + "\"" + virgula + "<br>";
+	});
+
+	json +=	"	],<br>" +
+				"	\"preparo\" : \"" + receita['preparo'] + "\",<br>" +
+				"	\"imagens\" : <br>" +
+				"	[<br>";
+	$.each(receita['imagens'], function(i, imagem)
+	{		
+		var virgula = ",";
+		if(i == receita['imagens'].length - 1)
+		{
+			virgula = "";
+		}
+		
+		json += "		\"http://www.docecozinha.com.br/" + imagem + "\"" + virgula + "<br>";
+	});
+
+	json += "	],<br>" +
+				"	\"avaliacao\" : " + receita['avaliacao'] + ",<br>" +
+				"	\"categoria\" : \"" + receita['categoria'] + "\",<br>" +
+				"	\"data\" : \"" + receita['data'] + "\"<br>" +
+			"}";
+	$(".exportar > .json > .codigo").html(json);
+
+
+}

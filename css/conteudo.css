@@ -202,6 +202,11 @@
 	display: inline-block;
 }
 
+.receita .detalhes .autoria .categoria,
+.receita .detalhes .autoria .publicado {
+	text-transform: capitalize;
+}
+
 .receita .detalhes .avaliacao {
     margin-bottom: 10px;
     height: 20px;
@@ -299,7 +304,7 @@
 
 .receita .detalhes .preparo {
 	background: #eaeaea url('images/icones/preparo.svg')  no-repeat 20px 20px;
-	line-height: 20px;
+	line-height: 30px;
 }
 
 .receita .detalhes .ingredientes {
@@ -311,7 +316,11 @@
 }
 
 .receita .detalhes .ingredientes ul li {
-	margin-bottom: 7px;	
+	margin-bottom: 10px;	
+}
+
+.receita .avalie {
+	margin-top: 30px;
 }
 
 .receita .avalie h2 {
@@ -413,17 +422,28 @@
 /*************************************/
 .exportar .xml,
 .exportar .json {
-	width: 428px;
+	/*width: 428px;
+	;*/
 	position: relative;
 	top: 0;
 	left: 0;
+	width: 100%;
+    display: inline-block;
+}
+
+.exportar .json {
+	margin-top: 50px;
 }
 
 .exportar .codigo {
-	height: 500px;
+	height: 400px;
 	background-color: #eaeaea;
 	border: 1px solid #bababa;
 	margin: 10px 0 20px; 
+	font-family: 'Cousine', Courier;
+	overflow: scroll;
+	padding: 20px 10px;
+    box-sizing: border-box;
 }
 
 .exportar a.copiar {
