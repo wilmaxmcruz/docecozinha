@@ -1,6 +1,7 @@
 var _receitas = [];
 var _usuarios = [];
 var _usuario = null;
+var _busca = null;
 
 $(function () 
 {
@@ -25,14 +26,9 @@ $(function ()
 					match: {
 						enabled: true
 					},
-					maxNumberOfElements: 5,
+					maxNumberOfElements: 6,
 					sort: {
 						enabled: true
-					},
-					onSelectItemEvent: function() 
-					{
-						var id = $("#search").getSelectedItemData()['id'];
-						console.log(id);
 					}
 				},
 				highlightPhrase: false,				
@@ -87,6 +83,11 @@ $(document).on("click", ".login button", function()
 			alert("Login do usuário: " +  _usuario['nome'] + " realizado com sucesso!");
 		}
 	});
+});
+
+$(document).on("click", ".search a.buscar", function()
+{
+	changePage("detalhes", $("#search").val());
 });
 
 $(document).on("click", "#tamanho-letras", function()
@@ -274,59 +275,69 @@ function loadReceita(filter)
 		}
 	});
 
-	$(".receita > .detalhes > h1").html(receita['titulo']);
-	$(".receita > .detalhes > .autoria > .categoria").html(receita['categoria']);
-	$(".receita > .detalhes > .autoria > .publicado").html(receita['autor']);
-
-	var li = "";
-	for (var i = 1; i <= 5; i++) 
+	if(receita != null)
 	{
-		var ativa = "ativa";
-		if(i > parseInt(receita['avaliacao']))
+		$(".receita > .detalhes > h1").html(receita['titulo']);
+		$(".receita > .detalhes > .autoria > .categoria").html(receita['categoria']);
+		$(".receita > .detalhes > .autoria > .publicado").html(receita['autor']);
+
+		var li = "";
+		for (var i = 1; i <= 5; i++) 
 		{
-			ativa = "";
+			var ativa = "ativa";
+			if(i > parseInt(receita['avaliacao']))
+			{
+				ativa = "";
+			}
+			li += "<div class='estrela " + ativa + "'></div>";
 		}
-		li += "<div class='estrela " + ativa + "'></div>";
+
+		$(".receita > .detalhes > .avaliacao").append(li);
+		$(".receita > .detalhes > .galeria > .flag").addClass(receita['categoria']);
+		$(".receita > .detalhes > .galeria > img.principal").attr("src", receita['imagens'][0]);
+		$(".receita > .detalhes > .galeria > img.principal").attr("alt", "Imagem de " + receita['titulo']);
+		$(".receita > .detalhes > .galeria > img.mini.um").attr("src", receita['imagens'][1]);
+		$(".receita > .detalhes > .galeria > img.mini.um").attr("alt", "Imagem de " + receita['titulo']);
+		$(".receita > .detalhes > .galeria > img.mini.dois").attr("src", receita['imagens'][2]);
+		$(".receita > .detalhes > .galeria > img.mini.dois").attr("alt", "Imagem de " + receita['titulo']);
+		$(".receita > .detalhes > .galeria > img.mini.tres").attr("src", receita['imagens'][3]);
+		$(".receita > .detalhes > .galeria > img.mini.tres").attr("alt", "Imagem de " + receita['titulo']);
+
+		var tempoContent = "PT" + receita['tempo'].split(" ")[0] + receita['tempo'].split(" ")[1].substr(0, 1).toUpperCase();
+		$(".receita > .detalhes > .infos > .tempo").html(receita['tempo']);
+		$(".receita > .detalhes > .infos > .tempo").attr("content", tempoContent);
+		$(".receita > .detalhes > .infos > .rendimento").html(receita['rendimento']);
+
+		$.each(receita['ingredientes'], function(i, ingred)
+		{
+			var li = "<li>" + ingred + "</li>";
+			$(".receita > .detalhes > .ingredientes > ul").append(li);
+		});
+
+		$(".receita > .detalhes > .preparo > p").html(receita['preparo']);
+
+		$(".receita > .comentarios > .exportar").attr("href", "javascript:changePage('exportar', \"" + receita['titulo'] + "\");")
+		
+		$.each(receita['comentarios'], function(i, comment)
+		{
+			var li = "<li class='comentario' itemscope itemtype='http://schema.org/Comment'>" +
+						"<div class='texto'>" +
+							"<span itemprop='author' class='usuario'>" + comment['usuario'] + "</span> em <span class='data' itemprop='datePublished'>" + comment['data'] + "</span>" +
+							"<p  itemprop='comment'>" + comment['comentario'] + "</p>" +
+						"</div>" +
+						"<span class='pointer'></span>" +
+						"<span itemprop='image' class='foto' style='background-image:url(\"images/usuarios/default.svg\")'></span>" +
+					"</li>";
+			$(".receita > .comentarios > ul").append(li);
+		});	
 	}
-
-	$(".receita > .detalhes > .avaliacao").append(li);
-	$(".receita > .detalhes > .galeria > .flag").addClass(receita['categoria']);
-	$(".receita > .detalhes > .galeria > img.principal").attr("src", receita['imagens'][0]);
-	$(".receita > .detalhes > .galeria > img.principal").attr("alt", "Imagem de " + receita['titulo']);
-	$(".receita > .detalhes > .galeria > img.mini.um").attr("src", receita['imagens'][1]);
-	$(".receita > .detalhes > .galeria > img.mini.um").attr("alt", "Imagem de " + receita['titulo']);
-	$(".receita > .detalhes > .galeria > img.mini.dois").attr("src", receita['imagens'][2]);
-	$(".receita > .detalhes > .galeria > img.mini.dois").attr("alt", "Imagem de " + receita['titulo']);
-	$(".receita > .detalhes > .galeria > img.mini.tres").attr("src", receita['imagens'][3]);
-	$(".receita > .detalhes > .galeria > img.mini.tres").attr("alt", "Imagem de " + receita['titulo']);
-
-	var tempoContent = "PT" + receita['tempo'].split(" ")[0] + receita['tempo'].split(" ")[1].substr(0, 1).toUpperCase();
-	$(".receita > .detalhes > .infos > .tempo").html(receita['tempo']);
-	$(".receita > .detalhes > .infos > .tempo").attr("content", tempoContent);
-	$(".receita > .detalhes > .infos > .rendimento").html(receita['rendimento']);
-
-	$.each(receita['ingredientes'], function(i, ingred)
+	else
 	{
-		var li = "<li>" + ingred + "</li>";
-		$(".receita > .detalhes > .ingredientes > ul").append(li);
-	});
-
-	$(".receita > .detalhes > .preparo > p").html(receita['preparo']);
-
-	$(".receita > .comentarios > .exportar").attr("href", "javascript:changePage('exportar', \"" + receita['titulo'] + "\");")
-	
-	$.each(receita['comentarios'], function(i, comment)
-	{
-		var li = "<li class='comentario' itemscope itemtype='http://schema.org/Comment'>" +
-					"<div class='texto'>" +
-						"<span itemprop='author' class='usuario'>" + comment['usuario'] + "</span> em <span class='data' itemprop='datePublished'>" + comment['data'] + "</span>" +
-						"<p  itemprop='comment'>" + comment['comentario'] + "</p>" +
-					"</div>" +
-					"<span class='pointer'></span>" +
-					"<span itemprop='image' class='foto' style='background-image:url(\"images/usuarios/default.svg\")'></span>" +
-				"</li>";
-		$(".receita > .comentarios > ul").append(li);
-	});	
+		var html = "<h1>Desculpe, mas não foi encontrado<br>" + 
+					"nenhuma receita relativa ao termo: <strong>" + filter + "</strong><br>" + 
+					"Por favor, faça a busca novamente.</h1>";
+		$(".receita").html(html);
+	}
 }
 
 function exportReceita(filter)
