@@ -321,7 +321,7 @@
 			],
 			"avaliacao" : 3,
 			"categoria" : "sopas",
-			"data" : "05/03/2016",
+			"data" : "05/02/2016",
 			"comentarios" :
 			[
 				{
@@ -338,6 +338,138 @@
 					"usuario" : "Isabela",
 					"data" : "17/02/2016",
 					"comentario" : "A ervilha fica inteira? Não bate no liquidificador?"
+				}
+			]
+		},
+		{
+			"id" : 9,
+			"autor" : "Fátima",
+			"titulo" : "Macarrão de Atum",
+			"tempo" : "60 minutos",
+			"rendimento" : "3 porções",
+			"ingredientes" : [
+				"Macarrão espaguete",
+				"atum",
+				"sal",
+				"óleo",
+				"pimenta do reino",
+				"molho de tomate",
+				"ovos",
+				"orégano",
+				"queijo ralado"
+			],
+			"preparo" : "Cozinhe o macarrão em água e óleo, juntamente com dois ovos, coloque sal a gosto. Prepare o molho de tomate para ser misturado ao atum com pimenta-do-reino e orégano. Disponha o macarrão num pirex de vidro, corte ou pique os ovos colocando sobre o macarrão. Agora coloque o molho sobre o macarrão e os ovos, cobrindo toda a superfície. Chegou a hora do queijo ralado, que também deve ser colocado sobre o macarrão. Leve ao forno uns 10 minutos e pronto",
+			"imagens" : [
+				"images/receitas/macarraoatum-1.jpg",
+				"images/receitas/macarraoatum-2.jpg",
+				"images/receitas/macarraoatum-3.jpg",
+				"images/receitas/macarraoatum-4.jpg"
+			],
+			"avaliacao" : 4,
+			"categoria" : "massas",
+			"data" : "18/04/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Bruna",
+					"data" : "07/05/2016",
+					"comentario" : "Sem o molho fica bom tambem?"
+				},
+				{
+					"usuario" : "Anna",
+					"data" : "03/05/2016",
+					"comentario" : "Que tipo de queijo? Parmesao ou mussarela?"
+				},
+				{
+					"usuario" : "Nelson",
+					"data" : "19/04/2016",
+					"comentario" : "Muito gostoso!!"
+				}
+			]
+		},
+		{
+			"id" : 10,
+			"autor" : "Marta",
+			"titulo" : "Pão Caseiro",
+			"tempo" : "40 minutos",
+			"rendimento" : "5 porções",
+			"ingredientes" : [
+				"2 e 1/2 copos de água morna",
+				"2 colheres (sopa) de açúcar",
+				"1 colher de sal",
+				"1 ovo",
+				"1 copo de óleo",
+				"1 kg de farinha de trigo",
+				"50 g de fermento de padaria"
+			],
+			"preparo" : "Misture o fermento e a água morna, reserve. No liquidificador, bata o açúcar, o óleo, o sal, o ovo e a água com o fermento por alguns minutos. Despeje a massa e acrescente a farinha de trigo aos poucos, misturando com as mãos. Acrescente a farinha de trigo até que a massa desgrude das mãos e deixe crescer por 1 hora. Divida a massa em partes e modele os pães. Deixe crescer, novamente, por 40 minutos. Leve para assar por 30 minutos",
+			"imagens" : [
+				"images/receitas/pao-1.jpg",
+				"images/receitas/pao-2.jpg",
+				"images/receitas/pao-3.jpg",
+				"images/receitas/pao-4.jpg"
+			],
+			"avaliacao" : 4,
+			"categoria" : "massas",
+			"data" : "01/04/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Franciele",
+					"data" : "04/05/2016",
+					"comentario" : "O meu pao, ficou duro...pq sera?"
+				},
+				{
+					"usuario" : "Fabiano",
+					"data" : "03/05/2016",
+					"comentario" : "Adorei a receita fiz pão pela primeira vez ficou bom demaissssss..."
+				},
+				{
+					"usuario" : "Paola",
+					"data" : "02/04/2016",
+					"comentario" : "Estou doiiiida pra fazer , deve ser uma delícia !!!"
+				}
+			]
+		},
+		{
+			"id" : 11,
+			"autor" : "Tania",
+			"titulo" : "Panquecas",
+			"tempo" : "60 minutos",
+			"rendimento" : "3 porções",
+			"ingredientes" : [
+				"1 copo de leite",
+				"1 ovo",
+				"1 copo de farinha de trigo",
+				"1 colher (sopa) de óleo",
+				"1 pitada de sal"
+			],
+			"preparo" : "Bata todos os ingredientes no liquidificador até obter uma consistência cremosa. Unte uma frigideira com manteiga, espere esquentar e despeje uma concha de massa. Faça movimentos circulares para que a massa se espalhe por toda a frigideira. Deixe assar até que a borda obtenha uma cor dourada. Espere até a massa se soltar do fundo, vire e deixe fritar do outro lado. Recheie a gosto, enrole e sirva",
+			"imagens" : [
+				"images/receitas/panqueca-1.jpg",
+				"images/receitas/panqueca-2.jpg",
+				"images/receitas/panqueca-3.jpg",
+				"images/receitas/panqueca-4.jpg"
+			],
+			"avaliacao" : 5,
+			"categoria" : "massas",
+			"data" : "14/03/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Andressa",
+					"data" : "05/05/2016",
+					"comentario" : "Todos da minha familia adoram. Acabei de fazer pra jantarmos. Aprovadíssimo!"
+				},
+				{
+					"usuario" : "Claudia",
+					"data" : "12/04/2016",
+					"comentario" : "Muito boa!! Gostosa e super prática! Amei."
+				},
+				{
+					"usuario" : "Cris",
+					"data" : "15/03/2016",
+					"comentario" : "Maravilhosa!"
 				}
 			]
 		}
