@@ -3,7 +3,7 @@
 	[
 		{
 			"id" : 1,
-			"autor" : "Camila",
+			"autor" : "Wil",
 			"titulo" : "Pudim",
 			"tempo" : "40 minutos",
 			"rendimento" : "20 porções",
@@ -84,7 +84,91 @@
 		},
 		{
 			"id" : 3,
-			"autor" : "Camila",
+			"autor" : "Janaina",
+			"titulo" : "Brigadeiro",
+			"tempo" : "25 minutos",
+			"rendimento" : "30 porções",
+			"ingredientes" : [
+				"1 lata de leite condensado",
+				"1 colher (sopa) de margarina sem sal",
+				"7 colheres (sopa) de achocolatado ou 4 colheres (sopa) de chocolate em pó",
+				"chocolate granulado"
+			],
+			"preparo" : "Em uma panela funda, acrescente o leite condensado, a margarina e o chocolate em pó. Cozinhe em fogo médio e mexa até que o brigadeiro comece a desgrudar da panela. Deixe esfriar e faça pequenas bolas com a mão passando a massa no chocolate granulado",
+			"imagens" : [
+				"images/receitas/brigadeiro-1.jpg",
+				"images/receitas/brigadeiro-2.jpg",
+				"images/receitas/brigadeiro-3.jpg",
+				"images/receitas/brigadeiro-4.jpg"
+			],
+			"avaliacao" : 3,
+			"categoria" : "doces",
+			"data" : "03/05/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Gabriela",
+					"data" : "06/05/2016",
+					"comentario" : "Amei chega deu agua na boca agora vou vender brigadeiro."
+				},
+				{
+					"usuario" : "Gustavo",
+					"data" : "13/03/2016",
+					"comentario" : "Muiiiito bom fiz agora e amei não gruda super amei."
+				},
+				{
+					"usuario" : "Margarete",
+					"data" : "10/03/2016",
+					"comentario" : "Maravilhoso Ameei."
+				}
+			]
+		},
+		{
+			"id" : 4,
+			"autor" : "Jiane",
+			"titulo" : "Sagu",
+			"tempo" : "50 minutos",
+			"rendimento" : "10 porções",
+			"ingredientes" : [
+				"9 xícaras de chá de água",
+				"1 xícara e meia de chá de sagu",
+				"cravo e canela em pau a gosto",
+				"3 xícaras de chá de vinho tinto",
+				"1 xícara de chá de groselha",
+				"1 xícara de chá de açúcar"
+			],
+			"preparo" : "Coloque o sagu de molho a noite e faça no dia seguinte. Cozinhe o sagu com a água, a canela e o cravo, mexendo sempre por aproximadamente 35 minutos, ou até que as bolinhas fiquem transparentes. Adicione o vinho, o açúcar, a groselha e cozinhe por aproximadamente uns 10 minutos.",
+			"imagens" : [
+				"images/receitas/sagu-1.jpg",
+				"images/receitas/sagu-2.jpg",
+				"images/receitas/sagu-3.jpg",
+				"images/receitas/sagu-4.jpg"
+			],
+			"avaliacao" : 3,
+			"categoria" : "doces",
+			"data" : "21/04/2016",
+			"comentarios" :
+			[
+				{
+					"usuario" : "Isaura",
+					"data" : "22/04/2016",
+					"comentario" : "Jiane sua receita é excelente! Ficou delicioso."
+				},
+				{
+					"usuario" : "Rosangela",
+					"data" : "22/04/2016",
+					"comentario" : "Delícia."
+				},
+				{
+					"usuario" : "Paola",
+					"data" : "24/04/2016",
+					"comentario" : "Ameei."
+				}
+			]
+		},
+		{
+			"id" : 5,
+			"autor" : "João",
 			"titulo" : "Caldo verde",
 			"tempo" : "30 minutos",
 			"rendimento" : "5 porções",
