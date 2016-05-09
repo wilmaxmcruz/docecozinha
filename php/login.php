@@ -1,7 +1,7 @@
 <?php ?>
-<section class="acesso secao">		
+<section class="acesso secao" itemscope itemtype="http://schema.org/Person">		
 	<div class="login left">
-		<h1>Já sou cadastrado</h1>
+		<h1 itemprop="name">Já sou cadastrado</h1>
 		<form>
 			<input type="text" name="login" placeholder="Login" maxlength="25" required>
 			<input type="password" name="senha-login" placeholder="Senha" maxlength="8" required>
@@ -9,7 +9,7 @@
 		</form>
 	</div> 	
 	<div class="cadastro right">
-		<h1>Quero me cadastrar</h1>
+		<h1 itemprop="name">Quero me cadastrar</h1>
 		<form>
 			<input type="text" name="nome" placeholder="Nome completo" required>
 			<input type="date" name="data-nascimento" placeholder="Data de nascimento" max="2012-01-01" required>
@@ -23,7 +23,7 @@
 			<input type="email" name="confirma-email" placeholder="Digite o e-mail novamente" required>
 			<input type="password" name="senha-cadastro" placeholder="Senha" maxlength="8" required>
 			
-			<h2>Receitas preferidas</h2>
+			<h2 itemprop="name">Receitas preferidas</h2>
 			<div class="preferencias">
 				<input type="checkbox" name="carnes"><label>Carnes</label>
 				<input type="checkbox" name="doces"><label>Doces</label>
