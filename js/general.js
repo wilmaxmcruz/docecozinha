@@ -53,12 +53,6 @@ $(function ()
 	});
 });
 
-$(document).on("click", ".alt1", function()
-{	
-	$("h1").focus();
-	console.log($("h1"));
-});
-
 $(document).on("click", ".login button", function()
 {	
 	$.each(_usuarios, function(i, usuario)
@@ -68,8 +62,8 @@ $(document).on("click", ".login button", function()
 		{
 			_usuario = _usuarios[0];
 			$(".entre > .title").html(_usuario['nome']);
-			$(".entre > .title").attr("href", "javascript:void(0)");
-			alert('Login realizado com sucesso!');
+			$(".entre > .title").attr("href", "javascript:void(0)");			
+			alert("Login do usuário: " +  _usuario['nome'] + " realizado com sucesso!");
 		}
 	});
 });
@@ -106,17 +100,17 @@ $(document).on("click", "#contraste", function()
 
 function ativeSlider()
 {
-	/*$.each(_receitas, function(i, receita)
+	$.each(_receitas, function(i, receita)
 	{
 		var li = "<li>" +
-					"<a href='javascript:changePage(\"detalhes\", \"" + receita['titulo'] + "\");'>" +
-						"<img src='" + receita['imagens'][0] + "' alt='" + receita['titulo'] + "' title='" + receita['titulo'] + "'>" +
-						"<label>" + receita['titulo'] + "</label>" +
+					"<a  href='javascript:changePage(\"detalhes\", \"" + receita['titulo'] + "\");'>" +
+						"<img itemprop='image' src='" + receita['imagens'][0] + "' alt='" + receita['titulo'] + "' title='" + receita['titulo'] + "'>" +
+						"<label itemprop='name'>" + receita['titulo'] + "</label>" +
 						"<div class='flag " + receita['categoria'] + "'></div>" +
 					"</a>" +
 				"</li>";
 		$("ul.bxslider").append(li);
-	});	*/
+	});
 
 	$('.bxslider').bxSlider({
 		pager: false,
@@ -125,6 +119,14 @@ function ativeSlider()
 		slideWidth: 200,
 		slideMargin: 30
 	});
+}
+
+function userLogged()
+{
+	if(_usuario != null)
+	{
+		$(".recomendacao h2").html("Receitas recomendadas para você");
+	}
 }
 
 function changePage(page, filter) 
@@ -144,6 +146,7 @@ function changePage(page, filter)
 		{
 			$("#content").html(result);
 			ativeSlider();
+			userLogged();
 		},
 		complete: function (result) 
 		{
@@ -155,4 +158,14 @@ function changePage(page, filter)
 			console.log(r.responseText);
 		}
 	});		
-}			
+}
+
+
+function userLogged()
+{
+	if(_usuario != null)
+	{
+		$(".recomendacao h2").html("Receitas recomendadas para você");
+	}
+}
+

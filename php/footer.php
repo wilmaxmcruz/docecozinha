@@ -6,19 +6,19 @@
 			</div>
 			<ul>
 				<li class="youtube">
-					<a itemprop="url" href="http://youtube.com.br"></a>
+					<a itemprop="url" href="http://www.youtube.com.br"></a>
 				</li>
 				<li class="pinterest">
-					<a  itemprop="url" href="javascript:void(0)"></a>
+					<a  itemprop="url" href="http://www.pinterest.com"></a>
 				</li>
 				<li class="facebook">
-					<a itemprop="url" href="javascript:void(0)"></a>
+					<a itemprop="url" href="http://www.facebook.com"></a>
 				</li>
 				<li class="twitter">
-					<a itemprop="url" href="javascript:void(0)"></a>
+					<a itemprop="url" href="http://www.twitter.com"></a>
 				</li>
 				<li class="instagram">
-					<a itemprop="url" href="javascript:void(0)"></a>
+					<a itemprop="url" href="http://www.instagram.com"></a>
 				</li>
 			</ul>
 		</section>		

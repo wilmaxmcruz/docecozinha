@@ -1,8 +1,8 @@
 <?php ?>
 <section class="lista secao" itemscope itemtype="http://schema.org/Recipe">	
-	<h1>Lista de receitas relacionadas com: <span class="resultado"><?php echo $_POST['filter']; ?></span></h1>
+	<h1>Lista de receitas relacionadas com: <span class="resultado"></span></h1>
 	<ul>
-		<li>
+		<!--<li>
 			<a href="javascript:changePage('detalhes');">	
 				<div class="foto" style="background-image:url('images/receitas/canape-de-batata.jpg')">
 				</div>
@@ -58,11 +58,11 @@
 					</div>
 				</div>
 			</a>
-		</li>	
+		</li>-->
 	</ul>
-	<div class="mais-receitas clear">
+	<!--<div class="mais-receitas clear">
 		<hr class="divisoria left">
 		<button>Ver mais receitas</button>
 		<hr class="divisoria right">
-	</div>
+	</div>-->
 </section>
