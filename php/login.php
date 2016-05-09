@@ -5,7 +5,7 @@
 		<form>
 			<input type="text" name="login" placeholder="Login" maxlength="25" required>
 			<input type="password" name="senha-login" placeholder="Senha" maxlength="8" required>
-			<button type="button" onclick="alert('Login realizado com sucesso!')">Entrar</button>
+			<button type="button">Entrar</button>
 		</form>
 	</div> 	
 	<div class="cadastro right">

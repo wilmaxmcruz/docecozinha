@@ -1,4 +1,5 @@
 var _receitas = [];
+var _usuarios = [];
 var _usuario = null;
 
 $(function () 
@@ -11,7 +12,7 @@ $(function ()
 	ativeSlider();
 
 	$.ajax(
-	{				
+	{
 		url: 'database/receitas.json', 
 		dataType: 'json',
 		cache: false,
@@ -29,7 +30,42 @@ $(function ()
 			console.log("ERROR!!!");
 			console.log(r.responseText);
 		}
-	});	
+	});
+
+	$.ajax(
+	{
+		url: 'database/usuarios.json', 
+		dataType: 'json',
+		cache: false,
+		success: function(data) 
+		{
+			_usuarios = $.makeArray(data['usuarios']);
+		},
+		complete: function (data) 
+		{
+
+		},
+		error: function(r, s, e)
+		{
+			console.log("ERROR!!!");
+			console.log(r.responseText);
+		}
+	});
+});
+
+$(document).on("click", ".login button", function()
+{	
+	$.each(_usuarios, function(i, usuario)
+	{
+		if(usuario["email"] == $(".login input[name='login']").val() &&
+			usuario["senha"] == $(".login input[name='senha-login']").val())
+		{
+			_usuario = _usuarios[0];
+			$(".entre > .title").html(_usuario['nome']);
+			$(".entre > .title").attr("href", "javascript:void(0)");
+			alert('Login realizado com sucesso!');
+		}
+	});
 });
 
 $(document).on("click", "#tamanho-letras", function()
