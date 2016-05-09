@@ -1,8 +1,8 @@
 <?php ?>
 <section class="receita secao">
-	<div class="detalhes left">	
-		<h1>Pudim de leite condensado</h1>		
-		<span class="autoria">Categoria: <span class="categoria">Carnes</span> | Publicado por: <span class="publicado">Doce Cozinha</span></span>
+	<div itemscope itemtype="http://schema.org/Recipe" class="detalhes left">	
+		<h1 itemprop="name">Pudim de leite condensado</h1>		
+		<span class="autoria">Categoria: <span class="categoria">Carnes</span> | Publicado por: <span itemprop="author" class="publicado">Doce Cozinha</span></span>
 		<div class="avaliacao">
 			<div class="estrela ativa"></div>
 			<div class="estrela ativa"></div>
@@ -12,16 +12,16 @@
 		</div>
 		<div class="galeria">
 			<div class="flag carnes"></div>
-			<img class="principal" src="images/receitas/pudim-de-leite-condensado-1.jpg" alt="Imagem principal">
-			<img class="mini" src="images/receitas/pudim-de-leite-condensado-2.jpg" alt="Imagem miniatura 1">
-			<img class="mini" src="images/receitas/pudim-de-leite-condensado-3.jpg" alt="Imagem miniatura 2">
-			<img class="mini" src="images/receitas/pudim-de-leite-condensado-4.jpg" alt="Imagem miniatura 3">
+			<img class="principal" itemprop="image" src="images/receitas/pudim-de-leite-condensado-1.jpg" alt="Imagem principal">
+			<img class="mini" itemprop="image" src="images/receitas/pudim-de-leite-condensado-2.jpg" alt="Imagem miniatura 1">
+			<img class="mini" itemprop="image" src="images/receitas/pudim-de-leite-condensado-3.jpg" alt="Imagem miniatura 2">
+			<img class="mini" itemprop="image" src="images/receitas/pudim-de-leite-condensado-4.jpg" alt="Imagem miniatura 3">
 		</div>
 		<div class="infos">
-			<div class="tempo">40 minutos</div>
-			<div class="rendimento">6 pessoas</div>
+			<div itemprop="prepTime" content="PT40M" class="tempo">40 minutos</div>
+			<div itemprop="recipeYield" class="rendimento">6 pessoas</div>
 		</div>
-		<div class="ingredientes">
+		<div itemprop="recipeIngredient" class="ingredientes">
 			<h2>Ingredientes</h2>
 			<ul>
 				<li>1 lata de leite condensado</li>
@@ -29,7 +29,7 @@
 				<li>4 ovos</li>
 			</ul>
 		</div>
-		<div class="preparo">
+		<div itemprop="recipeInstructions" class="preparo">
 			<h2>Modo de Preparo</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -55,8 +55,8 @@
 		<ul>
 			<li class="comentario">
 				<div class="texto">
-					<span class="usuario">Sandra Calixto</span> em <span class="data">26/04/2016</span>
-					<p>
+					<span itemprop="name" class="usuario">Sandra Calixto</span> em <span class="data">26/04/2016</span>
+					<p  itemprop="comments">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 					</p>
@@ -66,8 +66,8 @@
 			</li>
 			<li class="comentario">				
 				<div class="texto">
-					<span class="usuario">Joaquim Barbosa</span> em <span class="data">26/04/2016</span>
-					<p>
+					<span itemprop="name" class="usuario">Joaquim Barbosa</span> em <span class="data">26/04/2016</span>
+					<p  itemprop="comments">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 					</p>
