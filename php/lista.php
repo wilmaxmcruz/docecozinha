@@ -1,5 +1,5 @@
 <?php ?>
-<section class="lista secao">	
+<section class="lista secao" role="main">	
 	<h1>Lista de receitas relacionadas com: <span class="resultado"></span></h1>
 	<ul>
 		<!-- Objetos <li> inseridos dinamicamente -->

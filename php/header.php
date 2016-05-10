@@ -91,7 +91,7 @@
 					</ul>
 				</div>
 				<a href="javascript:changePage('index');">
-					<img class="logo left" itemprop="image" src="images/logo.svg" alt="Logo da Doce Cozinha">
+					<img class="logo left" itemprop="image" src="images/logo.svg" alt="Imagem do logotipo do site DoceCozinha.">
 				</a>
 				<div class="entre left">
 					<a class="title" itemprop="url" href="javascript:changePage('login');">Entrar</a>

@@ -1,9 +1,9 @@
 <?php ?>
 <section class="receita secao" itemscope itemtype="http://schema.org/Recipe">
-	<div class="detalhes left">	
+	<div class="detalhes left" role="main">	
 		<h1 itemprop="name"></h1>		
 		<span class="autoria">Categoria: <span class="categoria"></span> | Publicado por: <span itemprop="author" class="publicado"></span></span>
-		<div class="avaliacao">
+		<div class="avaliacao" role="complementary">
 			<!-- Estrelas <div> adicionadas dinamicamente -->
 		</div>
 		<div class="galeria">
@@ -38,7 +38,7 @@
 			<a href="javascript:void(0)" class="estrela"></a>
 		</div>
 	</div>
-	<div class="comentarios right">
+	<div class="comentarios right" role="complementary">
 		<a class="exportar" href="">Exportar essa receita</a>
 		<h2>Comentários</h2>
 		<ul>
