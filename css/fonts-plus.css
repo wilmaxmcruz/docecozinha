@@ -2,6 +2,21 @@ html, body{
 	font-size: 21px !important;
 } 
 
+h1
+{
+	font-size: 34px !important;
+}
+
+h2
+{
+	font-size: 30px !important;
+}
+
+button
+{
+	font-size: 25px !important;	
+}
+
 .menu ul li
 {
 	font-size: 24px !important;
@@ -10,6 +25,11 @@ html, body{
 .entre a
 {
 	font-size: 24px !important;
+}
+
+.acesso .cadastro .preferencias label
+{
+	font-size: 26px !important;
 }
 
 .cabecalho .title
@@ -21,3 +41,30 @@ html, body{
 {
 	font-size: 32px !important;
 }
+.index .conteudo-inicial .mask
+{
+	    top: -168px;
+}
+
+.social .title
+{
+	font-size: 32px !important;
+}
+
+.receita .comentarios .texto
+{
+	font-size: 18px !important;
+}
+
+.receita .detalhes .autoria
+{
+	font-size: 18px !important;
+}
+
+.receita .detalhes .infos .tempo, .receita .detalhes .infos .rendimento
+{
+	font-size: 24px !important;
+	padding-left: 25px;
+}
+
+
