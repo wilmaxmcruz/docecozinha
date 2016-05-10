@@ -1,5 +1,5 @@
 <?php ?>
-<section class="acessibilidade secao" itemscope itemtype="http://schema.org/Recipe">
+<section id="acesso" class="acessibilidade secao"  itemscope itemtype="http://schema.org/Recipe">
 	<h1 itemprop="name">Acessibilidade do site</h1>
 	<div class="acessibilidade">
 		<p>

@@ -37,13 +37,13 @@
 				<nav>
 					<ul>
 						<li>
-							<a href="#content">Conteúdo principal<br>(ALT + 1)</a>
+							<a href="#content" accesskey="1">Conteúdo principal<br>(ALT + 1)</a>
 						</li>
 						<li>
-							<a href="#menu-site">Menu do site<br>(ALT + 2)</a>
+							<a href="#menu-site" accesskey="2">Menu do site<br>(ALT + 2)</a>
 						</li>
-						<li id="acessibilidade">
-							<a href="javascript:changePage('acessibilidade');">Acessibilidade<br>(ALT + 3)</a>
+						<li>
+							<a href="javascript:changePage('acessibilidade');"  id="#acessibilidade" accesskey="3">Acessibilidade<br>(ALT + 3)</a>
 						</li>
 						<li id="aumentar-diminuir">
 							<a id="tamanho-letras" class="aumentar" href="javascript:void(0)"><span>Aumentar</span><br>as letras</a>		
