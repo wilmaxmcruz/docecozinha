@@ -785,7 +785,7 @@
 		{
 			"id" : 19,
 			"autor" : "Nai",
-			"titulo" : "Salada de Maionese",
+			"titulo" : "Maionese",
 			"tempo" : "60 minutos",
 			"rendimento" : "5 porções",
 			"ingredientes" : [
@@ -823,7 +823,7 @@
 		{
 			"id" : 20,
 			"autor" : "Viviane",
-			"titulo" : "Salpicão de Frango",
+			"titulo" : "Salpicão",
 			"tempo" : "40 minutos",
 			"rendimento" : "15 porções",
 			"ingredientes" : [

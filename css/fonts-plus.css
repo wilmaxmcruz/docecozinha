@@ -1,3 +1,23 @@
-html, body {
-	font-size: 30px !important;
+html, body{
+	font-size: 21px !important;
 } 
+
+.menu ul li
+{
+	font-size: 24px !important;
+}
+
+.entre a
+{
+	font-size: 24px !important;
+}
+
+.cabecalho .title
+{
+	font-size: 33px !important;
+}
+
+.index .conteudo-inicial label
+{
+	font-size: 32px !important;
+}
