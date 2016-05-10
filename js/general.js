@@ -70,7 +70,7 @@ $(function ()
 	});	
 });
 
-$(document).on("click", ".login button", function()
+$(document).on("click", ".login input[type='submit']", function()
 {	
 	$.each(_usuarios, function(i, usuario)
 	{

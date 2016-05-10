@@ -5,7 +5,7 @@
 		<form>
 			<input type="text" name="login" placeholder="Login" required>
 			<input type="password" name="senha-login" placeholder="Senha" maxlength="8" required>
-			<input type="submit" value="Entrar">
+			<input type="submit" value="Entrar" formmethod="post">
 		</form>
 	</div> 	
 	<div class="cadastro right">
