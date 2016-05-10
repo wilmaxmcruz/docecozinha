@@ -48,7 +48,7 @@
 						<li id="aumentar-diminuir">
 							<a id="tamanho-letras" class="aumentar" href="javascript:void(0)"><span>Aumentar</span><br>as letras</a>		
 						</li>
-						<li id="contraste">
+						<li>
 							<a id="contraste" class="contraste" href="javascript:void(0)">Contraste</a>
 						</li>
 					</ul>

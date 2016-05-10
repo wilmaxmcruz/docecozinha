@@ -85,12 +85,14 @@ h2 {
 	font-size: 26px;
 }
 
-button {
+button,
+input[type="submit"] {
     background-color: #D4323E;
     padding: 7px 12px;
     color: #ffffff;
     font-size: 21px;
     font-weight: 100;
+    border: 0;
 }
 
 button:disabled {
