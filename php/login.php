@@ -6,14 +6,15 @@
 			<input type="text" name="login" placeholder="Login" required>
 			<input type="password" name="senha-login" placeholder="Senha" maxlength="8" required>
 			<button type="button">Entrar</button>
+			<input type="submit">
 		</form>
 	</div> 	
 	<div class="cadastro right">
 		<h1 itemprop="name">Quero me cadastrar</h1>
 		<form>
-			<input type="text" name="nome" placeholder="Nome completo" required>
+			<input type="text" pattern="[A-Za-z].{1,}"  class="uppercase" name="nome" placeholder="Nome completo" required>
 			<input type="date" name="data-nascimento" placeholder="Data de nascimento" max="2012-01-01" required>
-			<input type="text" name="cidade" placeholder="Cidade" maxlength="50">
+			<input type="text" name="cidade" pattern="[A-Za-z].{1,}"  class="uppercase" placeholder="Cidade">
 			<select>
 				<option value="acre">Acre</option>
 				<option value="alagoas">Alagoas</option>
@@ -43,10 +44,10 @@
 				<option value="sergipe">Sergipe</option>
 				<option value="tocantins">Tocantins</option>
 			</select>
-			<input type="tel" name="telefone" placeholder="Telefone">
+			<input type="tel" name="telefone" pattern="\([0-9]{2}\)[\s][0-9].{3,}-[0-9]{4}" placeholder="Telefone - (XX) XXXX-XXXX" required>
 			<input type="email" name="email" placeholder="E-mail" required>
 			<input type="email" name="confirma-email" placeholder="Digite o e-mail novamente" required>
-			<input type="password" name="senha-cadastro" placeholder="Senha" maxlength="8" required>
+			<input type="password" name="senha-cadastro" placeholder="Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" maxlength="8" required>
 			
 			<h2 itemprop="name">Receitas preferidas</h2>
 			<div class="preferencias">
@@ -58,6 +59,7 @@
 				<input type="checkbox" name="sopas"><label>Sopas</label>
 			</div>
 			<button type="button" onclick="alert('Cadastro realizado com sucesso!')">Salvar</button>
+			<input type="submit">
 		</form>
 	</div>
 	

@@ -336,3 +336,10 @@ input[type="text"]:disabled {
 	height: 30px;
 	background-color: #d4323e;
 }
+/*******************************************/
+/************* formulario **************/
+/*******************************************/
+.uppercase
+{
+	text-transform:uppercase !important;
+}
