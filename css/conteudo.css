@@ -605,9 +605,51 @@
 	margin-bottom: 20px;
 }
 
-.inserir .fotos-receita a.foto {
-    margin: 0 15px 15px 0;
-    display: inline-block;
+.inserir .files canvas {
+	float: left;
+	margin: 0 15px 15px 0;
+	border: 1px solid #bababa;
+	box-sizing: border-box;
+}
+
+.inserir .btn-success {
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+}
+.inserir .btn {
+	display: inline-block;
+	width: 86px;
+	height: 86px;
+	cursor: pointer;
+	background: url('images/mais-fotos.svg') no-repeat center center;
+}
+
+.inserir .fileinput-button {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+.inserir .fileinput-button input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	opacity: 0;
+	-ms-filter: 'alpha(opacity=0)';
+	font-size: 200px !important;
+	direction: ltr;
+	cursor: pointer;
+	width: 86px;
+	height: 86px;	
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+	.inserir .fileinput-button input {
+		filter: alpha(opacity=0);
+		font-size: 100%;
+		height: 100%;
 }
 
 

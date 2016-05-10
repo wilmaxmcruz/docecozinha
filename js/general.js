@@ -152,6 +152,11 @@ $(document).on("click", ".exportar a.copiar", function()
     }
 });
 
+$(document).on("click", ".ingredientes a.add-ingrediente", function()
+{
+	$(".ingredientes").append($("input.ingrediente").first().clone().val(""));
+});
+
 function ativeSlider()
 {
 	$.each(_receitas, function(i, receita)
@@ -226,6 +231,9 @@ function userLogged()
 	if(_usuario != null)
 	{
 		$(".recomendacao h2").html("Receitas recomendadas para você");
+		$(".comentarios > textarea").attr("placeholder", "Envie um comentário para essa receita");
+		$(".comentarios > textarea").prop("disabled", false);
+		$(".comentarios > button").prop("disabled", false);
 	}
 }
 
@@ -333,9 +341,9 @@ function loadReceita(filter)
 	}
 	else
 	{
-		var html = "<h1>Desculpe, mas não foi encontrado<br>" + 
-					"nenhuma receita relativa ao termo: <strong>" + filter + "</strong><br>" + 
-					"Por favor, faça a busca novamente.</h1>";
+		var html = "<h1>Desculpe, mas não foi encontrado nenhuma receita<br>" + 
+					"relativa ao termo: <strong>" + filter + "</strong></h1>" + 
+					"<h2>Por favor, faça a busca novamente.</h2>";
 		$(".receita").html(html);
 	}
 }

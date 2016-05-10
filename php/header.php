@@ -98,11 +98,11 @@
 		</div>
 	</header>
 	<div class="container">
-		<section class="search secao">
+		<section class="search secao">			
+			<input id="search" type="search">
 			<a class="buscar" href="javascript:void(0)">
 				<img src="images/lupa.svg" alt="Procurar receita">
-			</a>
-			<input id="search" type="search">			
+			</a>			
 		</section>
 	</div>
 	

@@ -44,7 +44,7 @@
 		<ul>
 			<!-- Comentário <li> adicionadas dinamicamente -->
 		</ul>
-		<textarea placeholder="Envie um comentário para essa receita"></textarea>
-		<button class="right">Enviar</button>
+		<textarea placeholder="Comentários apenas para usuários identificados" disabled></textarea>
+		<button class="right" disabled>Enviar</button>
 	</div>
 </section>

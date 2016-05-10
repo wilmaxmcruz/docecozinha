@@ -14,18 +14,60 @@
 				<input type="checkbox" name="salgados"><label itemprop="name">Salgados</label>
 				<input type="checkbox" name="sopas"><label itemprop="name">Sopas</label>
 			</div>
-			<input type="text" class="ingrediente" name="ingrediente" placeholder="Ingrediente" required>
-			<a class="add-ingrediente" href="javascript:void(0);">
-				<img src="images/formulario/mais-ingredientes.svg" alt="Botão com um símbolo de adição para inserir um novo ingrediente"></img>
-			</a>
+			<div class="ingredientes">
+				<input type="text" class="ingrediente" name="ingrediente" placeholder="Ingrediente" required>
+				<a class="add-ingrediente" href="javascript:void(0);">
+					<img src="images/formulario/mais-ingredientes.svg" alt="Botão com um símbolo de adição para inserir um novo ingrediente"></img>
+				</a>
+			</div>
 			<textarea name="modo-preparo" placeholder="Modo de preparo" required></textarea>
 		</div>
 		<div class="fotos-receita right">
 			<h2 itemprop="name">Fotos</h2>
-			<a class="foto" href="javascript:void(0);">
-				<img itemprop="image" src="images/formulario/mais-fotos.svg" alt="Botão com um símbolo de adição para inserir fotos da receita"></img>
-			</a>
+			<div id="files" class="files"></div>
+			<span class="btn btn-success fileinput-button left">
+				<input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
+			</span>
 		</div>
 		<button type="button" onclick="alert('Receita salva com sucesso!')">Inserir receita</button>
 	</form>
 </section>
+<script type="text/javascript" src="js/lib/jquery-2.1.1.js"></script>
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="js/load-image.all.min.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+<script src="js/jquery.fileupload-process.js"></script>
+<script src="js/jquery.fileupload-image.js"></script>
+<script>
+$(function () 
+{
+	$('#fileupload').fileupload(
+	{
+		dataType: 'json',
+		autoUpload: false,
+		maxFileSize: 999000,
+		previewMaxWidth: 86,
+		previewMaxHeight: 86,
+		previewCrop: true
+	}).on('fileuploadadd', function (e, data) 
+	{
+		data.context = $('<div/>').appendTo('#files');
+		$.each(data.files, function (index, file) 
+		{
+			var node = $('<span/>');
+			node.appendTo(data.context);
+		});
+	}).on('fileuploadprocessalways', function (e, data) 
+	{
+		var index = data.index,
+			file = data.files[index],
+			node = $(data.context.children()[index]);
+
+		if (file.preview) 
+		{
+			node.prepend(file.preview);
+		}
+	});
+});
+</script>

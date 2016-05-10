@@ -93,6 +93,11 @@ button {
     font-weight: 100;
 }
 
+button:disabled {
+    background-color: #B1B1B1;
+    color: #ffffff;
+}
+
 .carnes { background-color: #00796b; padding: 3px; color:#ffffff; }
 .doces { background-color: #2196f3; padding: 3px; color:#ffffff;  }
 .massas { background-color: #ffc107; padding: 3px; color:#ffffff;  }
