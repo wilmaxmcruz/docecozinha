@@ -15,7 +15,7 @@
 	<p>Em qualquer página do site é possível acessar os conteúdos pelas teclas de atalho citadas abaixo:</p>
 
 	<p itemprop="accessibilityFeature">
-		<strong>Teclando-se ALT + 1</strong>, chega-se diretamente ao começo do conteúdo principal do site;<br>
+		<strong>Teclando-se ALT + 1</strong>, chega-se diretamente ao começo do conteúdo principal da página;<br>
 		<strong>Teclando-se ALT + 2</strong>, chega-se ao início do menu principal do site, que leva a todas as páginas internas;<br>
 		<strong>Teclando-se ALT + 3</strong>, chega-se a esta página (Acessibilidade deste site), que possui a explicação destas funções.
 	</p>

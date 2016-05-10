@@ -534,7 +534,8 @@
     width: 540px;
 }
 
-.inserir button {
+.inserir button,
+.inserir input[type="submit"] {
     clear: both;
     display: block;
 }

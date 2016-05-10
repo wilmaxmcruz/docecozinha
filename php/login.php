@@ -5,8 +5,7 @@
 		<form>
 			<input type="text" name="login" placeholder="Login" required>
 			<input type="password" name="senha-login" placeholder="Senha" maxlength="8" required>
-			<button type="button">Entrar</button>
-			<input type="submit">
+			<input type="submit" value="Entrar">
 		</form>
 	</div> 	
 	<div class="cadastro right">
@@ -57,9 +56,8 @@
 				<input type="checkbox" name="saladas"><label>Saladas</label>
 				<input type="checkbox" name="salgados"><label>Salgados</label>
 				<input type="checkbox" name="sopas"><label>Sopas</label>
-			</div>
-			<button type="button" onclick="alert('Cadastro realizado com sucesso!')">Salvar</button>
-			<input type="submit">
+			</div>			
+			<input type="submit" value="Cadastrar">
 		</form>
 	</div>
 	

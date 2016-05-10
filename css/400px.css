@@ -1,0 +1,8 @@
+/* 400px */
+html, body { 
+	min-width:400px;
+} 
+
+.secao {
+	width:400px;
+}

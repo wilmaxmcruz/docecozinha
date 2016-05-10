@@ -1,7 +1,7 @@
 <?php ?>
 <section class="inserir secao" itemscope itemtype="http://schema.org/Recipe">
  	<h1 itemprop="name">Inserir Receita</h1>
-	
+	<form>
 		<div class="infos-receita left">
 			<input type="text" class="autor" name="autor" value="Autor da receita" disabled>
 			<input type="text" name="titulo" placeholder="Título da receita" required>
@@ -29,7 +29,7 @@
 				<input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
 			</span>
 		</div>
-		<button type="button" onclick="alert('Receita salva com sucesso!')">Inserir receita</button>
+		<input type="submit" value="Inserir receita">
 	</form>
 </section>
 <script type="text/javascript" src="js/lib/jquery-2.1.1.js"></script>

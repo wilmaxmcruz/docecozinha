@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head itemscope itemtype="http://schema.org/Recipe">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title itemprop="name">Site Doce Cozinha</title>
 	<link rel="shortcut icon" href="css/images/favicon.ico">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,300italic' rel='stylesheet' type='text/css'>
@@ -14,6 +15,9 @@
 	<link href="css/conteudo.css" rel="stylesheet" type="text/css" />
 	<link id="plus" href="" rel="stylesheet" type="text/css" />
 	<link id="contrast" href="" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" media="(max-width: 600px)" href="css/400px.css">
+	<link rel="stylesheet" media="(min-width: 601px) and (max-width: 900px)" href="css/600px.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,7 +41,7 @@
 				<nav>
 					<ul>
 						<li>
-							<a href="#content" accesskey="1">Conteúdo principal<br>(ALT + 1)</a>
+							<a href="#content" accesskey="1">Conteúdo da página<br>(ALT + 1)</a>
 						</li>
 						<li>
 							<a href="#menu-site" accesskey="2">Menu do site<br>(ALT + 2)</a>

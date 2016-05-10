@@ -1,0 +1,8 @@
+/* 600px */
+html, body { 
+	min-width:600px;
+} 
+
+.secao {
+	width:600px;
+}
