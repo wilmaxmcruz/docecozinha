@@ -24,6 +24,8 @@
 		</section>		
 	</footer>
 	<div class="container strip">
+		© Copyright 2016 - All Rights Reserved <br/>
+		Camila Dias de Oliveira / Wilmax Marreiro Cruz
 	</div>
 </body>
 </html>

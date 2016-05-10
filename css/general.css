@@ -335,8 +335,12 @@ input[type="text"]:disabled {
 .instagram > a:hover { background-position: -176px -44px !important; }
 
 .strip {
-	height: 30px;
-	background-color: #d4323e;
+	height: 50px;
+    background-color: #d4323e;
+    text-align: center;
+    padding-top: 23px;
+    color: #FFFFFF;
+    font-size: 14px;
 }
 /*******************************************/
 /************* formulario **************/
