@@ -1,8 +1,8 @@
 <?php ?>
 <section class="index secao">	
-	<div class="conteudo-inicial" itemscope itemtype="http://schema.org/Recipe">
-		<ul class="clear">
-			<li>			
+	<div class="conteudo-inicial">
+		<ul class="clear" role="list">
+			<li itemscope itemtype="http://schema.org/WebPageElement" role="listitem">			
 				<a href="javascript:changePage('lista', 'carnes');">					
 					<div class="mask"></div>
 					<label itemprop="name">Carnes</label>					
@@ -10,7 +10,7 @@
 					<img itemprop="image" src="images/menu/carnes.jpg" alt="carnes" title="carnes">					
 				</a>
 			</li>
-			<li>
+			<li itemscope itemtype="http://schema.org/WebPageElement" role="listitem">
 				<a href="javascript:changePage('lista', 'doces');">
 					<div class="mask"></div>
 					<label itemprop="name">Doces</label>
@@ -18,7 +18,7 @@
 					<img itemprop="image" src="images/menu/doces.jpg" alt="doces" title="doces">
 				</a>
 			</li>
-			<li>
+			<li itemscope itemtype="http://schema.org/WebPageElement" role="listitem">
 				<a href="javascript:changePage('lista', 'massas');">
 					<div class="mask"></div>
 					<label itemprop="name">Massas</label>
@@ -27,8 +27,8 @@
 				</a>
 			</li>
 		</ul>
-		<ul class="clear">
-			<li>
+		<ul class="clear" role="list">
+			<li itemscope itemtype="http://schema.org/WebPageElement" role="listitem">
 				<a href="javascript:changePage('lista', 'saladas');">
 					<div class="mask"></div>
 					<label itemprop="name">Saladas</label>
@@ -36,7 +36,7 @@
 					<img itemprop="image" src="images/menu/saladas.jpg" alt="saladas" title="saladas">
 				</a>
 			</li>
-			<li>
+			<li itemscope itemtype="http://schema.org/WebPageElement" role="listitem">
 				<a href="javascript:changePage('lista', 'salgados');">
 					<div class="mask"></div>
 					<label itemprop="name">Salgados</label>
@@ -44,7 +44,7 @@
 					<img itemprop="image" src="images/menu/salgados.jpg" alt="salgados" title="salgados">
 				</a>
 			</li>
-			<li>
+			<li itemscope itemtype="http://schema.org/WebPageElement" role="listitem">
 				<a href="javascript:changePage('lista', 'sopas');">
 					<div class="mask"></div>
 					<label itemprop="name">Sopas</label>
@@ -54,11 +54,11 @@
 			</li>
 		</ul>			
 	</div>
-	<div class="recomendacao clear"  itemscope itemtype="http://schema.org/Recipe">
+	<div class="recomendacao clear">
 		<h2>
 			Últimas receitas cadastradas
 		</h2>
-		<aside>
+		<aside role=”complementary”>
 			<ul class="bxslider">
 				<!-- Objetos <li> inseridos dinamicamente -->
 			</ul>

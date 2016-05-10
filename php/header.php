@@ -1,7 +1,7 @@
 <?php ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head itemscope itemtype="http://schema.org/Recipe">
+<head itemscope itemtype="http://schema.org/WebPageElement">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title itemprop="name">Site Doce Cozinha</title>
@@ -35,75 +35,75 @@
 </head>
 
 <body>
-	<header>
+	<header itemscope itemtype="http://schema.org/WPHeader">
 		<div class="container menu-acessibilidade">
 			<div class="secao">
 				<nav>
-					<ul>
-						<li>
+					<ul role="menubar">
+						<li role="menuitem">
 							<a href="#content" accesskey="1">Conteúdo da página<br>(ALT + 1)</a>
 						</li>
-						<li>
+						<li role="menuitem">
 							<a href="#menu-site" accesskey="2">Menu do site<br>(ALT + 2)</a>
 						</li>
-						<li>
+						<li role="menuitem">
 							<a href="javascript:changePage('acessibilidade');"  id="#acessibilidade" accesskey="3">Acessibilidade<br>(ALT + 3)</a>
 						</li>
-						<li id="aumentar-diminuir">
+						<li id="aumentar-diminuir" role="menuitem">
 							<a id="tamanho-letras" class="aumentar" href="javascript:void(0)"><span>Aumentar</span><br>as letras</a>		
 						</li>
-						<li>
+						<li role="menuitem">
 							<a id="contraste" class="contraste" href="javascript:void(0)">Contraste</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</div>
-		<div class="container cabecalho" itemscope itemtype="http://schema.org/Recipe">
+		<div class="container cabecalho">
 			<section class="secao">
 				<div class="menu left">
-					<div class="title">Menu</div>
+					<div itemprop="name" class="title">Menu</div>
 					<hr class="line">
-					<ul>
-						<li id="menu-site">
-							<a href="javascript:changePage('lista', 'carnes');">Carnes</a>
+					<ul role="menubar">
+						<li id="menu-site" role="menuitem">
+							<a itemprop="url" href="javascript:changePage('lista', 'carnes');">Carnes</a>
 							<span class="divisoria"></span>
 						</li>
-						<li>
-							<a href="javascript:changePage('lista', 'doces');">Doces</a>
+						<li role="menuitem">
+							<a itemprop="url" href="javascript:changePage('lista', 'doces');">Doces</a>
 							<span class="divisoria"></span>
 						</li>
-						<li>
-							<a href="javascript:changePage('lista', 'massas');">Massas</a>
+						<li role="menuitem">
+							<a itemprop="url" href="javascript:changePage('lista', 'massas');">Massas</a>
 							<span class="divisoria"></span>
 						</li>
-						<li>
-							<a href="javascript:changePage('lista', 'saladas');">Saladas</a>
+						<li role="menuitem">
+							<a itemprop="url" href="javascript:changePage('lista', 'saladas');">Saladas</a>
 							<span class="divisoria"></span>
 						</li>
-						<li>
-							<a href="javascript:changePage('lista', 'salgados');">Salgados</a>
+						<li role="menuitem">
+							<a itemprop="url" href="javascript:changePage('lista', 'salgados');">Salgados</a>
 							<span class="divisoria"></span>
 						</li>
-						<li>
-							<a href="javascript:changePage('lista', 'sopas');">Sopas</a>
+						<li role="menuitem">
+							<a itemprop="url" href="javascript:changePage('lista', 'sopas');">Sopas</a>
 						</li>
 					</ul>
 				</div>
 				<a href="javascript:changePage('index');">
-					<img class="logo left" src="images/logo.svg" alt="Logo da Doce Cozinha">
+					<img class="logo left" itemprop="image" src="images/logo.svg" alt="Logo da Doce Cozinha">
 				</a>
 				<div class="entre left">
-					<a class="title" href="javascript:changePage('login');">Entrar</a>
+					<a class="title" itemprop="url" href="javascript:changePage('login');">Entrar</a>
 					<hr class="line">
-					<a href="javascript:changePage('inserir');">Inserir uma receita</a>
+					<a itemprop="url" href="javascript:changePage('inserir');">Inserir uma receita</a>
 				</div>
 			</section>		
 		</div>
 	</header>
 	<div class="container">
 		<section class="search secao">			
-			<input id="search" type="search">
+			<input role="search" id="search" type="search">
 			<a class="buscar" href="javascript:void(0)">
 				<img src="images/lupa.svg" alt="Procurar receita">
 			</a>			
