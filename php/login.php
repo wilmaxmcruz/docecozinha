@@ -47,7 +47,7 @@
 			<input type="tel" name="telefone" pattern="\([0-9]{2}\)[\s][0-9].{3,}-[0-9]{4}" placeholder="Telefone - (XX) XXXX-XXXX" required>
 			<input type="email" name="email" placeholder="E-mail" required>
 			<input type="email" name="confirma-email" placeholder="Digite o e-mail novamente" required>
-			<input type="password" name="senha-cadastro" placeholder="Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" maxlength="8" required>
+			<input type="password" name="senha-cadastro" placeholder="Senha" title="A senha deve ser composta por números, letras maiúsculas e minúsculas" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" maxlength="8" required>
 			
 			<h2 itemprop="name">Receitas preferidas</h2>
 			<div class="preferencias">
