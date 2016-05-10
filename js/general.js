@@ -71,7 +71,7 @@ $(function ()
 });
 
 $(document).on("click", ".login input[type='submit']", function()
-{	
+{		
 	$.each(_usuarios, function(i, usuario)
 	{
 		if(usuario["email"] == $(".login input[name='login']").val() &&
@@ -79,7 +79,7 @@ $(document).on("click", ".login input[type='submit']", function()
 		{
 			_usuario = _usuarios[i];
 			$(".entre > .title").html(_usuario['nome']);
-			$(".entre > .title").attr("href", "javascript:void(0)");			
+			$(".entre > .title").attr("href", "javascript:void(0)");
 			alert("Login do usuário: " +  _usuario['nome'] + " realizado com sucesso!");
 		}
 	});
