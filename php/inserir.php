@@ -29,15 +29,15 @@
 				<input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
 			</span>
 		</div>
-		<input type="submit" value="Inserir receita">
+		<input type="submit" value="Inserir receita" formmethod="post">
 	</form>
 </section>
-<script src="js/vendor/jquery.ui.widget.js"></script>
-<script src="js/load-image.all.min.js"></script>
-<script src="js/jquery.iframe-transport.js"></script>
-<script src="js/jquery.fileupload.js"></script>
-<script src="js/jquery.fileupload-process.js"></script>
-<script src="js/jquery.fileupload-image.js"></script>
+<script src="js/upload/jquery.ui.widget.js"></script>
+<script src="js/upload/load-image.all.min.js"></script>
+<script src="js/upload/jquery.iframe-transport.js"></script>
+<script src="js/upload/jquery.fileupload.js"></script>
+<script src="js/upload/jquery.fileupload-process.js"></script>
+<script src="js/upload/jquery.fileupload-image.js"></script>
 <script>
 $(function () 
 {

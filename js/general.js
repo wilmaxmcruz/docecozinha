@@ -9,6 +9,123 @@ $(function ()
 	getAllUsuarios();
 });
 
+/************************************************/
+/***************** DOCUMENT ON ******************/
+/************************************************/
+
+$(document).on("click", ".login input[type='submit']", function()
+{
+	login($(".login input[name='login']").val(), $(".login input[name='senha-login']").val());
+});
+
+$(document).on("click", ".entre .sair", function()
+{
+	$.post(
+		"php/logout.php",
+		function(data)
+		{
+			window.document.location.href = './';
+			ativeSlider();
+		}
+	);
+});
+
+$(document).on("click", ".search a.buscar", function()
+{
+	changePage("detalhes", $("#search").val());
+});
+
+$(document).on("click", "#tamanho-letras", function()
+{
+	if($(this).hasClass("aumentar"))
+	{
+		$("#plus").attr("href", "css/fonts-plus.css");
+		$(this).children("span").html("Diminuir");
+		$(this).removeClass("aumentar");
+	}
+	else 
+	{
+		$("#plus").attr("href", "");
+		$(this).children("span").html("Aumentar");
+		$(this).addClass("aumentar");
+	}
+});
+
+$(document).on("click", "#contraste", function()
+{
+	if($(this).hasClass("contraste"))
+	{
+		$("#contrast").attr("href", "css/contraste.css");
+		$(this).removeClass("contraste");
+	}
+	else 
+	{
+		$("#contrast").attr("href", "");
+		$(this).addClass("contraste");
+	}
+});
+
+$(document).on("click", ".entre .inserir-receita", function()
+{
+	var func = "";
+	if(_usuario != null)
+	{
+		func = "javascript:changePage('inserir');";
+	}
+	else
+	{
+		func = "javascript:alert('Inserir receitas apenas para usuários identificados.');";
+	};
+
+	$(this).attr("href", func);
+});
+
+$(document).on("click", ".ingredientes a.add-ingrediente", function()
+{
+	$(".ingredientes").append($("input.ingrediente").first().clone().val(""));
+});
+
+$(document).on("mouseenter", "a.estrela", function()
+{
+	for (var i = 0; i < $(this).index(); i++) 
+	{		
+		var $item = $($("a.estrela")[i]);
+		$item.attr("style", "background-position: 0 -36px");
+	}
+});
+
+$(document).on("mouseleave", "a.estrela", function()
+{
+	$("a.estrela").attr("style", "background-position: 0 0");
+});
+
+$(document).on("click", ".exportar a.copiar", function()
+{
+	var code = $(this).siblings("pre.codigo").attr("name");
+	var toCopy = document.getElementById("copiar-" + code);
+	
+	if (document.createRange) 
+	{
+		document.getSelection().removeAllRanges();
+		var r = document.createRange();
+		r.setStartBefore(toCopy);
+		r.setEndAfter(toCopy);
+		r.selectNode(toCopy);
+		var sel = window.getSelection();
+		sel.addRange(r);
+		document.execCommand('Copy');
+    }
+});
+
+$(document).on("click", ".login input[type='submit']", function()
+{
+	
+});
+
+/************************************************/
+/******************* FUNCTIONS ******************/
+/************************************************/
+
 function login(login, senha)
 {	
 	getAllUsuarios();
@@ -102,110 +219,6 @@ function getAllUsuarios()
 		}
 	});	
 }
-
-$(document).on("click", ".login input[type='submit']", function()
-{
-	login($(".login input[name='login']").val(), $(".login input[name='senha-login']").val());
-});
-
-$(document).on("click", ".entre .sair", function()
-{
-	$.post(
-		"php/logout.php",
-		function(data)
-		{
-			window.document.location.href = './';
-			ativeSlider();
-		}
-	);
-});
-
-$(document).on("click", ".search a.buscar", function()
-{
-	changePage("detalhes", $("#search").val());
-});
-
-$(document).on("click", "#tamanho-letras", function()
-{
-	if($(this).hasClass("aumentar"))
-	{
-		$("#plus").attr("href", "css/fonts-plus.css");
-		$(this).children("span").html("Diminuir");
-		$(this).removeClass("aumentar");
-	}
-	else 
-	{
-		$("#plus").attr("href", "");
-		$(this).children("span").html("Aumentar");
-		$(this).addClass("aumentar");
-	}
-});
-
-$(document).on("click", "#contraste", function()
-{
-	if($(this).hasClass("contraste"))
-	{
-		$("#contrast").attr("href", "css/contraste.css");
-		$(this).removeClass("contraste");
-	}
-	else 
-	{
-		$("#contrast").attr("href", "");
-		$(this).addClass("contraste");
-	}
-});
-
-$(document).on("click", ".entre .inserir-receita", function()
-{
-	var func = "";
-	if(_usuario != null)
-	{
-		func = "javascript:changePage('inserir');";
-	}
-	else
-	{
-		func = "javascript:alert('Inserir receitas apenas para usuários identificados.');";
-	};
-
-	$(this).attr("href", func);
-});
-
-$(document).on("mouseenter", "a.estrela", function()
-{
-	for (var i = 0; i < $(this).index(); i++) 
-	{		
-		var $item = $($("a.estrela")[i]);
-		$item.attr("style", "background-position: 0 -36px");
-	}
-});
-
-$(document).on("mouseleave", "a.estrela", function()
-{
-	$("a.estrela").attr("style", "background-position: 0 0");
-});
-
-$(document).on("click", ".exportar a.copiar", function()
-{
-	var code = $(this).siblings("pre.codigo").attr("name");
-	var toCopy = document.getElementById("copiar-" + code);
-	
-	if (document.createRange) 
-	{
-		document.getSelection().removeAllRanges();
-		var r = document.createRange();
-		r.setStartBefore(toCopy);
-		r.setEndAfter(toCopy);
-		r.selectNode(toCopy);
-		var sel = window.getSelection();
-		sel.addRange(r);
-		document.execCommand('Copy');
-    }
-});
-
-$(document).on("click", ".ingredientes a.add-ingrediente", function()
-{
-	$(".ingredientes").append($("input.ingrediente").first().clone().val(""));
-});
 
 function ativeSlider()
 {

@@ -46,7 +46,7 @@
 			<input type="tel" name="telefone" pattern="\([0-9]{2}\)[\s][0-9].{3,}-[0-9]{4}" placeholder="Telefone - (XX) XXXX-XXXX" required aria-required="true">
 			<input type="email" name="email" placeholder="E-mail" required aria-required="true">
 			<input type="email" name="confirma-email" placeholder="Digite o e-mail novamente" required aria-required="true">
-			<input type="password" name="senha-cadastro" placeholder="Senha" title="A senha deve ser composta por números, letras maiúsculas e minúsculas" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" maxlength="8" required aria-required="true">
+			<input type="password" name="senha-cadastro" placeholder="Senha" title="A senha deve ser composta por 8 caracteres, sendo: números, letras maiúsculas e minúsculas" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" maxlength="8" required aria-required="true">
 			
 			<h2 itemprop="name">Receitas preferidas</h2>
 			<div class="preferencias" role="checkbox">
@@ -57,7 +57,7 @@
 				<input type="checkbox" name="salgados" aria-checked="false"><label>Salgados</label>
 				<input type="checkbox" name="sopas" aria-checked="false"><label>Sopas</label>
 			</div>			
-			<input type="submit" value="Cadastrar" role="button">
+			<input type="submit" value="Cadastrar" role="button" formmethod="post">
 		</form>
 	</div>
 	
