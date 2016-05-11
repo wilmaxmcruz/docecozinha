@@ -233,6 +233,14 @@ input[type="text"]:disabled {
 	letter-spacing: 1px;
 }
 
+.entre .sair {
+    position: relative;
+    top: -31px;
+    left: 105px;
+    background-color: #D4323E;
+    padding: 5px 8px;
+}
+
 /**********************************/
 /************* Busca **************/
 /***********************************/

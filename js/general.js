@@ -5,6 +5,35 @@ var _busca = null;
 
 $(function () 
 {
+	getAllReceitas();
+	getAllUsuarios();
+});
+
+function login(login, senha)
+{	
+	getAllUsuarios();
+	$.each(_usuarios, function(i, usuario)
+	{		
+		if(usuario["email"] == login && usuario["senha"] == senha)
+		{
+			_usuario = _usuarios[i];
+			$(".entre > .title").html(_usuario['nome']);
+			$(".entre > .title").attr("href", "javascript:void(0)");
+			$(".entre > .sair").removeClass("hidden");
+			
+			$.ajax (
+			{
+				url: "php/log.php",
+				type: "POST",
+				cache: false,
+				data: { nome: _usuario['nome'], email: _usuario['email'], senha: usuario["senha"] }
+			});			
+		}
+	});
+}
+
+function getAllReceitas()
+{
 	$.ajax(
 	{
 		url: 'database/receitas.json', 
@@ -48,12 +77,16 @@ $(function ()
 			console.log(r.responseText);
 		}
 	});
+}
 
+function getAllUsuarios()
+{
 	$.ajax(
 	{
 		url: 'database/usuarios.json', 
 		dataType: 'json',
 		cache: false,
+		async: false, //Somente por causa de não ter um BD do lado do servidor
 		success: function(data) 
 		{
 			_usuarios = $.makeArray(data['usuarios']);
@@ -68,21 +101,23 @@ $(function ()
 			console.log(r.responseText);
 		}
 	});	
-});
+}
 
 $(document).on("click", ".login input[type='submit']", function()
-{		
-	$.each(_usuarios, function(i, usuario)
-	{
-		if(usuario["email"] == $(".login input[name='login']").val() &&
-			usuario["senha"] == $(".login input[name='senha-login']").val())
+{
+	login($(".login input[name='login']").val(), $(".login input[name='senha-login']").val());
+});
+
+$(document).on("click", ".entre .sair", function()
+{
+	$.post(
+		"php/logout.php",
+		function(data)
 		{
-			_usuario = _usuarios[i];
-			$(".entre > .title").html(_usuario['nome']);
-			$(".entre > .title").attr("href", "javascript:void(0)");
-			alert("Login do usuário: " +  _usuario['nome'] + " realizado com sucesso!");
+			window.document.location.href = './';
+			ativeSlider();
 		}
-	});
+	);
 });
 
 $(document).on("click", ".search a.buscar", function()

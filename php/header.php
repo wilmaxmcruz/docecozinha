@@ -95,6 +95,7 @@
 				</a>
 				<div class="entre left">
 					<a class="title" itemprop="url" href="javascript:changePage('login');">Entrar</a>
+					<a class="sair hidden" itemprop="url" href="javascript:void(0)">Sair</a>
 					<hr class="line">
 					<a itemprop="url" href="javascript:changePage('inserir');">Inserir uma receita</a>
 				</div>

@@ -5,7 +5,7 @@
 		<form>
 			<input type="text" name="login" placeholder="Login" required aria-required="true">
 			<input type="password" name="senha-login" placeholder="Senha" maxlength="8" required aria-required="true">
-			<input type="submit" value="Entrar" role="button">
+			<input type="submit" value="Entrar" role="button" formmethod="post">
 		</form>
 	</div> 	
 	<div class="cadastro right">

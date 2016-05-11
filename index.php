@@ -1,4 +1,5 @@
 <?php 
+	session_start(); 
 	include './php/setup.php';
 ?>
 
@@ -10,4 +11,19 @@
 	?>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer(); 
+	
+	if (isset($_SESSION['nome'], $_SESSION['senha'], $_SESSION['email'])) 
+	{
+		echo "<script type='text/javascript'>";
+		echo "login('" . $_SESSION['email'] . "','" . $_SESSION['senha'] . "');";
+		echo "</script>";
+	}
+	else
+	{
+		echo "<script type='text/javascript'>";
+		echo "console.log('sem usuario');";
+		echo "</script>";
+	}
+
+?>
