@@ -74,7 +74,8 @@ $(document).on("click", ".entre .inserir-receita", function()
 	}
 	else
 	{
-		func = "javascript:alert('Inserir receitas apenas para usuários identificados.');";
+		func = "javascript:alert('Inserir receitas apenas para usuários identificados. Você será redirecionado à página de cadastro.');";
+		changePage('login');
 	};
 
 	$(this).attr("href", func);
