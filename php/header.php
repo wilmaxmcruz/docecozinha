@@ -23,8 +23,6 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	
-	
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel='mask-icon' itemprop="url" href='docecozinha.svg' color='#ffffff'>
 </head>

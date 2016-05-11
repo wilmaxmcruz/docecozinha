@@ -13,7 +13,7 @@ $(function ()
 /***************** DOCUMENT ON ******************/
 /************************************************/
 
-$(document).on("click", ".login input[type='submit']", function()
+$(document).on("click", ".login form input[type='submit']", function()
 {
 	login($(".login input[name='login']").val(), $(".login input[name='senha-login']").val());
 });
@@ -117,14 +117,50 @@ $(document).on("click", ".exportar a.copiar", function()
     }
 });
 
-$(document).on("click", ".login input[type='submit']", function()
+$(document).on("click", ".comentarios button", function()
 {
-	
+	alert("Comentário: \"" + $(this).siblings("textarea").val() + "\", enviado com sucesso!");
+	$(this).siblings("textarea").val("");
+});
+
+$(document).on("click", ".xml > button", function()
+{
+	var xml = $("#copiar-xml").html().toString().replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/<br>/g, "").replace(/	/g, "");
+	var code = $.parseXML(xml);
+	alert(xml);
+});
+
+$(document).on("click", ".json > button", function()
+{
+	var json = $("#copiar-json").html().toString().replace(/<br>/g, "");//.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/<br>/g, "");
+	var code = $.parseJSON(json);
+	alert(json);
 });
 
 /************************************************/
 /******************* FUNCTIONS ******************/
 /************************************************/
+
+function checkLogin()
+{
+   // do javascript code
+   alert('Login realizado com sucesso!');
+   document.getElementById("form-login").submit();
+}
+
+function checkCadastro()
+{
+   // do javascript code
+   alert('Cadastro realizado com sucesso!');
+   document.getElementById("form-cadastro").submit();
+}
+
+function checkInserir()
+{
+   // do javascript code
+   alert('Receita inserida no Doce Cozinha com sucesso!');
+   document.getElementById("form-inserir").submit();
+}
 
 function login(login, senha)
 {	

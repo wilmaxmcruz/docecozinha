@@ -1,7 +1,7 @@
 <?php ?>
 <section class="inserir secao" itemscope itemtype="http://schema.org/Recipe">
  	<h1 itemprop="name">Inserir Receita</h1>
-	<form>
+	<form id="form-inserir" onsubmit="return checkInserir();">
 		<div class="infos-receita left">
 			<input type="text" class="autor" name="autor" value="Autor da receita" disabled>
 			<input type="text" name="titulo" placeholder="Título da receita" required>

@@ -2,7 +2,7 @@
 <section class="acesso secao" itemscope itemtype="http://schema.org/Person">		
 	<div class="login left">
 		<h1 itemprop="name">Já sou cadastrado</h1>
-		<form>
+		<form id="form-login" onsubmit="return checkLogin();">
 			<input type="text" name="login" placeholder="Login" required aria-required="true">
 			<input type="password" name="senha-login" placeholder="Senha" maxlength="8" required aria-required="true">
 			<input type="submit" value="Entrar" role="button" formmethod="post">
@@ -10,7 +10,7 @@
 	</div> 	
 	<div class="cadastro right">
 		<h1 itemprop="name">Quero me cadastrar</h1>
-		<form>
+		<form id="form-cadastro" onsubmit="return checkCadastro();">
 			<input type="text" pattern="[A-Za-z].{1,}"  class="uppercase" name="nome" placeholder="Nome completo" required aria-required="true">
 			<input type="date" name="data-nascimento" class="uppercase" placeholder="Data de nascimento" max="2012-01-01" required aria-required="true">
 			<input type="text" name="cidade" pattern="[A-Za-z].{1,}"  class="uppercase" placeholder="Cidade">
@@ -43,9 +43,9 @@
 				<option value="sergipe">SERGIPE</option>
 				<option value="tocantins">TOCANTINS</option>
 			</select>
-			<input type="tel" name="telefone" pattern="\([0-9]{2}\)[\s][0-9].{3,}-[0-9]{4}" placeholder="Telefone - (XX) XXXX-XXXX" required aria-required="true">
+			<input type="tel" name="telefone" pattern="\([0-9]{2}\)[\s][0-9].{3,}-[0-9]{4}" placeholder="Telefone - (XX) XXXX-XXXX" maxlength="14" required aria-required="true">
 			<input type="email" name="email" placeholder="E-mail" required aria-required="true">
-			<input type="email" name="confirma-email" placeholder="Digite o e-mail novamente" required aria-required="true">
+			<input id="confirm-email" type="email" name="confirma-email" placeholder="Digite o e-mail novamente" required aria-required="true">
 			<input type="password" name="senha-cadastro" placeholder="Senha" title="A senha deve ser composta por 8 caracteres, sendo: números, letras maiúsculas e minúsculas" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" maxlength="8" required aria-required="true">
 			
 			<h2 itemprop="name">Receitas preferidas</h2>
@@ -62,3 +62,4 @@
 	</div>
 	
 </section>
+<script type="text/javascript" src="js/mask.js"></script>

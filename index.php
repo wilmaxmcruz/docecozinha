@@ -22,7 +22,7 @@
 	else
 	{
 		echo "<script type='text/javascript'>";
-		echo "console.log('sem usuario');";
+		echo "console.log('Nenhum usuário logado.');";
 		echo "</script>";
 	}
 

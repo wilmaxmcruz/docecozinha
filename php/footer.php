@@ -32,6 +32,6 @@
 	<script type="text/javascript" src="js/lib/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/lib/jquery.easy-autocomplete.js"></script>
 	<script type="text/javascript" src="js/lib/jquery.bxslider.js"></script>	
-	<script type="text/javascript" src="js/general.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>	
 </body>
 </html>
