@@ -27,5 +27,11 @@
 		<div itemprop="copyrightHolder">© Copyright 2016 - All Rights Reserved <div>
 		<div itemprop="author">Camila Dias de Oliveira / Wilmax Marreiro Cruz<div>
 	</div>
+	<!-- JavaScript Lib -->	
+	<script type="text/javascript" src="js/lib/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.easy-autocomplete.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.bxslider.js"></script>	
+	<script type="text/javascript" src="js/general.js"></script>
 </body>
 </html>

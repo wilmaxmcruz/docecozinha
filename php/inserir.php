@@ -32,7 +32,6 @@
 		<input type="submit" value="Inserir receita">
 	</form>
 </section>
-<script type="text/javascript" src="js/lib/jquery-2.1.1.js"></script>
 <script src="js/vendor/jquery.ui.widget.js"></script>
 <script src="js/load-image.all.min.js"></script>
 <script src="js/jquery.iframe-transport.js"></script>

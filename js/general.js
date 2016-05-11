@@ -155,6 +155,21 @@ $(document).on("click", "#contraste", function()
 	}
 });
 
+$(document).on("click", ".entre .inserir-receita", function()
+{
+	var func = "";
+	if(_usuario != null)
+	{
+		func = "javascript:changePage('inserir');";
+	}
+	else
+	{
+		func = "javascript:alert('Inserir receitas apenas para usuários identificados.');";
+	};
+
+	$(this).attr("href", func);
+});
+
 $(document).on("mouseenter", "a.estrela", function()
 {
 	for (var i = 0; i < $(this).index(); i++) 
@@ -206,7 +221,8 @@ function ativeSlider()
 		$("ul.bxslider").append(li);
 	});
 
-	$('.bxslider').bxSlider({
+	$('.bxslider').bxSlider(
+	{
 		pager: false,
 		minSlides: 4,
 		maxSlides: 5,
@@ -233,7 +249,8 @@ function changePage(page, filter)
 			$("#content").html(result);			
 			userLogged();
 
-			switch(page) {
+			switch(page) 
+			{
 				case "index":
 					ativeSlider();
 					break;

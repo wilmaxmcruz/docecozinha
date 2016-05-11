@@ -221,6 +221,9 @@ input[type="text"]:disabled {
 .entre {
 	padding-left: 20px;
 	box-sizing: border-box;	
+	position: relative;
+	left: 0;
+	top: 0;
 }
 
 .entre .title {
@@ -234,9 +237,9 @@ input[type="text"]:disabled {
 }
 
 .entre .sair {
-    position: relative;
-    top: -31px;
-    left: 105px;
+    position: absolute;
+    top: -30px;
+    left: 292px;
     background-color: #D4323E;
     padding: 5px 8px;
 }

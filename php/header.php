@@ -23,12 +23,7 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- JavaScript Lib -->	
-	<script type="text/javascript" src="js/lib/jquery-2.1.1.js"></script>
-	<script type="text/javascript" src="js/lib/jquery-ui.js"></script>
-	<script type="text/javascript" src="js/lib/jquery.easy-autocomplete.js"></script>
-	<script type="text/javascript" src="js/lib/jquery.bxslider.js"></script>	
-	<script type="text/javascript" src="js/general.js"></script>
+	
 	
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel='mask-icon' itemprop="url" href='docecozinha.svg' color='#ffffff'>
@@ -97,7 +92,7 @@
 					<a class="title" itemprop="url" href="javascript:changePage('login');">Entrar</a>
 					<a class="sair hidden" itemprop="url" href="javascript:void(0)">Sair</a>
 					<hr class="line">
-					<a itemprop="url" href="javascript:changePage('inserir');">Inserir uma receita</a>
+					<a class="inserir-receita" itemprop="url" href="">Inserir uma receita</a>
 				</div>
 			</section>		
 		</div>
