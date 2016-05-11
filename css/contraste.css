@@ -34,3 +34,8 @@ a {
 input[type="checkbox"] {
 	border: 2px solid yellow !important;
 }
+
+.codigo {
+	background-color: #000 !important;
+	color: yellow;
+}
