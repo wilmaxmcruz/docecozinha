@@ -49,13 +49,13 @@
 			<input type="password" name="senha-cadastro" placeholder="Senha" title="A senha deve ser composta por 8 caracteres, sendo: números, letras maiúsculas e minúsculas" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" maxlength="8" required aria-required="true">
 			
 			<h2 itemprop="name">Receitas preferidas</h2>
-			<div class="preferencias" role="checkbox">
-				<input type="checkbox" name="carnes" aria-checked="false"><label>Carnes</label>
-				<input type="checkbox" name="doces" aria-checked="false"><label>Doces</label>
-				<input type="checkbox" name="massas" aria-checked="false"><label>Massas</label>
-				<input type="checkbox" name="saladas" aria-checked="false"><label>Saladas</label>
-				<input type="checkbox" name="salgados" aria-checked="false"><label>Salgados</label>
-				<input type="checkbox" name="sopas" aria-checked="false"><label>Sopas</label>
+			<div class="preferencias">
+				<input type="checkbox" name="carnes" aria-checked="false" role="checkbox"><label>Carnes</label>
+				<input type="checkbox" name="doces" aria-checked="false" role="checkbox"><label>Doces</label>
+				<input type="checkbox" name="massas" aria-checked="false" role="checkbox"><label>Massas</label>
+				<input type="checkbox" name="saladas" aria-checked="false" role="checkbox"><label>Saladas</label>
+				<input type="checkbox" name="salgados" aria-checked="false" role="checkbox"><label>Salgados</label>
+				<input type="checkbox" name="sopas" aria-checked="false" role="checkbox"><label>Sopas</label>
 			</div>			
 			<input type="submit" value="Cadastrar" role="button" formmethod="post">
 		</form>

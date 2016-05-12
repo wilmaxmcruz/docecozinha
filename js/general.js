@@ -313,6 +313,9 @@ function changePage(page, filter)
 				case "exportar":
 					exportReceita(filter);
 					break;
+				case "inserir":
+					$(".infos-receita > .autor").val(_usuario['nome']);
+					break;
 			}
 
 		},

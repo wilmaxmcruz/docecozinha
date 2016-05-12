@@ -3,16 +3,16 @@
  	<h1 itemprop="name">Inserir Receita</h1>
 	<form id="form-inserir" onsubmit="return checkInserir();">
 		<div class="infos-receita left">
-			<input type="text" class="autor" name="autor" value="Autor da receita" disabled>
+			<input type="text" class="autor" name="autor" value="" disabled>
 			<input type="text" name="titulo" placeholder="Título da receita" required>
 			<h2 itemprop="name">Categorias</h2>
 			<div class="categorias">			
-				<input type="checkbox" name="carnes"><label itemprop="name">Carnes</label>
-				<input type="checkbox" name="doces"><label itemprop="name">Doces</label>
-				<input type="checkbox" name="massas"><label itemprop="name">Massas</label>
-				<input type="checkbox" name="saladas"><label itemprop="name">Saladas</label>
-				<input type="checkbox" name="salgados"><label itemprop="name">Salgados</label>
-				<input type="checkbox" name="sopas"><label itemprop="name">Sopas</label>
+				<input type="checkbox" name="carnes" role="checkbox"><label itemprop="name">Carnes</label>
+				<input type="checkbox" name="doces" role="checkbox"><label itemprop="name">Doces</label>
+				<input type="checkbox" name="massas" role="checkbox"><label itemprop="name">Massas</label>
+				<input type="checkbox" name="saladas" role="checkbox"><label itemprop="name">Saladas</label>
+				<input type="checkbox" name="salgados" role="checkbox"><label itemprop="name">Salgados</label>
+				<input type="checkbox" name="sopas" role="checkbox"><label itemprop="name">Sopas</label>
 			</div>
 			<div class="ingredientes">
 				<input type="text" class="ingrediente" name="ingrediente" placeholder="Ingrediente" required>
